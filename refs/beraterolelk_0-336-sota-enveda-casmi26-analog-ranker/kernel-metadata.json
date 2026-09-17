@@ -1,0 +1,32 @@
+{
+  "id": "beraterolelk/0-336-sota-enveda-casmi26-analog-ranker",
+  "id_no": 134645646,
+  "title": "\u26a1 [0.336+ SOTA] Enveda CASMI26 Analog Ranker",
+  "code_file": "0-336-sota-enveda-casmi26-analog-ranker.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [
+    "chemistry",
+    "gpu"
+  ],
+  "dataset_sources": [
+    "beraterolelk/arc-agi-5000-synthetic-reasoning-tasks",
+    "aidensong123/casmi26-offline-rdkit-2026033",
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/casmi26-fp-models",
+    "prvsiyan/chebi-lipidmaps-casmi26",
+    "prvsiyan/coconut-casmi26-candidates",
+    "beraterolelk/kaggle-grandmaster-winning-solutions-2015-2026"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "enveda-CASMI26-molecule-id-mass-spectra"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "NvidiaTeslaT4"
+}

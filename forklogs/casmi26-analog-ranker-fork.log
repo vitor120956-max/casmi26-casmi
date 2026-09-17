@@ -1,0 +1,88 @@
+[{"stream_name":"stderr","time":10.037612027,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":10.037669632,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":11.436919821,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.436950402,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.436955121,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.436963938,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.179371552,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.179405669,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.179411647,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.179415879,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":15.052260346,"data":"competition files: ['sample_submission.csv', 'train.parquet', 'test.parquet']\n"}
+,{"stream_name":"stdout","time":22.901263904,"data":"RDKit available: True (fragmentation channel is optional - the notebook runs without it)\n"}
+,{"stream_name":"stdout","time":42.143156057,"data":"ranker fitted on 142,762 candidate rows x 31 features   (W1=0.45)\n"}
+,{"stream_name":"stdout","time":46.143869926,"data":"  loaded fp_model_a.pt: d=512 layers=6 step=18000\n"}
+,{"stream_name":"stdout","time":48.741276553,"data":"  loaded fp_model_b.pt: d=512 layers=6 step=20000\n"}
+,{"stream_name":"stdout","time":48.741317866,"data":"fingerprint ensemble: 2 model(s) on cuda\n"}
+,{"stream_name":"stdout","time":52.763097682,"data":"COCONUT: 436,389 structures\n"}
+,{"stream_name":"stdout","time":53.378208447,"data":"+ ChEBI/LIPID MAPS: 62,744 structures\n"}
+,{"stream_name":"stdout","time":55.060847426,"data":"training structures to fingerprint: 275,810  (~5 min)\n"}
+,{"stream_name":"stdout","time":307.880414747,"data":"pool: 774,943 structures   (259s)\n"}
+,{"stream_name":"stdout","time":309.116995923,"data":"candidate pool: 774,943 structures, 6930 fingerprint bits\n"}
+,{"stream_name":"stdout","time":336.662579314,"data":"library: 2,539,608 spectra / 275,810 structures  (28s)\n"}
+,{"stream_name":"stdout","time":338.271839011,"data":"analog reference set: 275,632 spectra (one per structure)\n"}
+,{"stream_name":"stdout","time":338.916670522,"data":"1,213 spectra / 400 molecules to identify\n"}
+,{"stream_name":"stderr","time":364.044593291,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":364.044628531,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":364.044634971,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":364.044773841,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":364.044811741,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":364.044965251,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":364.045450723,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":364.045470931,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":364.045475736,"data":"Exception encountered at \"In [13]\":\n"}
+,{"stream_name":"stderr","time":364.045479707,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":364.045483534,"data":"ValueError                                Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":364.045487402,"data":"/tmp/ipykernel_23/698315759.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":364.045491447,"data":"     42             zlog = model_logits(sub)\n"}
+,{"stream_name":"stderr","time":364.045495247,"data":"     43             X   = rank_features(cfp, lv, afp, np.array(sims, np.float32), zlog, fsc)[:, :NFEAT]\n"}
+,{"stream_name":"stderr","time":364.045499054,"data":"---\u003e 44             p   = RANKER.predict_proba(X)[:, 1]\n"}
+,{"stream_name":"stderr","time":364.045503051,"data":"     45             order = np.argsort(-p)[:CFG.TOPN]\n"}
+,{"stream_name":"stderr","time":364.045508518,"data":"     46             smis  = [pool.smiles[cand[i]] for i in order]\n"}
+,{"stream_name":"stderr","time":364.045520444,"data":"\n"}
+,{"stream_name":"stderr","time":364.045522917,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py in predict_proba(self, X)\n"}
+,{"stream_name":"stderr","time":364.045525691,"data":"   2190             The class probabilities of the input samples.\n"}
+,{"stream_name":"stderr","time":364.045528179,"data":"   2191         \"\"\"\n"}
+,{"stream_name":"stderr","time":364.045530801,"data":"-\u003e 2192         raw_predictions = self._raw_predict(X)\n"}
+,{"stream_name":"stderr","time":364.045533427,"data":"   2193         return self._loss.predict_proba(raw_predictions)\n"}
+,{"stream_name":"stderr","time":364.045536103,"data":"   2194 \n"}
+,{"stream_name":"stderr","time":364.045538531,"data":"\n"}
+,{"stream_name":"stderr","time":364.045540947,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py in _raw_predict(self, X, n_threads)\n"}
+,{"stream_name":"stderr","time":364.045543699,"data":"   1253         is_binned = getattr(self, \"_in_fit\", False)\n"}
+,{"stream_name":"stderr","time":364.045546423,"data":"   1254         if not is_binned:\n"}
+,{"stream_name":"stderr","time":364.045548808,"data":"-\u003e 1255             X = self._preprocess_X(X, reset=False)\n"}
+,{"stream_name":"stderr","time":364.045551958,"data":"   1256 \n"}
+,{"stream_name":"stderr","time":364.045554357,"data":"   1257         n_samples = X.shape[0]\n"}
+,{"stream_name":"stderr","time":364.045556799,"data":"\n"}
+,{"stream_name":"stderr","time":364.045559159,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py in _preprocess_X(self, X, reset)\n"}
+,{"stream_name":"stderr","time":364.045561806,"data":"    262         if not reset:\n"}
+,{"stream_name":"stderr","time":364.045564244,"data":"    263             if self._preprocessor is None:\n"}
+,{"stream_name":"stderr","time":364.045566744,"data":"--\u003e 264                 return validate_data(self, X, reset=False, **check_X_kwargs)\n"}
+,{"stream_name":"stderr","time":364.045569245,"data":"    265             return self._preprocessor.transform(X)\n"}
+,{"stream_name":"stderr","time":364.045571725,"data":"    266 \n"}
+,{"stream_name":"stderr","time":364.045582254,"data":"\n"}
+,{"stream_name":"stderr","time":364.045584882,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py in validate_data(_estimator, X, y, reset, validate_separately, skip_check_array, **check_params)\n"}
+,{"stream_name":"stderr","time":364.04558757,"data":"   2963 \n"}
+,{"stream_name":"stderr","time":364.045589958,"data":"   2964     if not no_val_X and check_params.get(\"ensure_2d\", True):\n"}
+,{"stream_name":"stderr","time":364.045592491,"data":"-\u003e 2965         _check_n_features(_estimator, X, reset=reset)\n"}
+,{"stream_name":"stderr","time":364.045595583,"data":"   2966 \n"}
+,{"stream_name":"stderr","time":364.045597951,"data":"   2967     return out\n"}
+,{"stream_name":"stderr","time":364.045600573,"data":"\n"}
+,{"stream_name":"stderr","time":364.045602879,"data":"/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py in _check_n_features(estimator, X, reset)\n"}
+,{"stream_name":"stderr","time":364.045605472,"data":"   2827 \n"}
+,{"stream_name":"stderr","time":364.045607911,"data":"   2828     if n_features != estimator.n_features_in_:\n"}
+,{"stream_name":"stderr","time":364.045610345,"data":"-\u003e 2829         raise ValueError(\n"}
+,{"stream_name":"stderr","time":364.045612803,"data":"   2830             f\"X has {n_features} features, but {estimator.__class__.__name__} \"\n"}
+,{"stream_name":"stderr","time":364.045615332,"data":"   2831             f\"is expecting {estimator.n_features_in_} features as input.\"\n"}
+,{"stream_name":"stderr","time":364.045617918,"data":"\n"}
+,{"stream_name":"stderr","time":364.045620214,"data":"ValueError: X has 25 features, but HistGradientBoostingClassifier is expecting 31 features as input.\n"}
+,{"stream_name":"stderr","time":364.045622908,"data":"\n"}
+,{"stream_name":"stderr","time":366.227665798,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":366.227695027,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":366.414564482,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":366.414594784,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":367.179557344,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":367.480069884,"data":"[NbConvertApp] Writing 99543 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":369.917403693,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":371.00836933,"data":"[NbConvertApp] Writing 588413 bytes to __results__.html\n"}
+]

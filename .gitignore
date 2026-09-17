@@ -1,0 +1,18 @@
+# secrets & personal
+.kaggle/
+uploads/
+.secrets/
+*.pem
+kaggle.json
+
+# tooling binaries / caches
+.bin/
+__pycache__/
+*.pyc
+.cache/
+.venv/
+
+# scratch
+/tmp/
+*.tmp
+.config/

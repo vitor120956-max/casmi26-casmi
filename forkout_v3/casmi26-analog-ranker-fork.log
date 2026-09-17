@@ -1,0 +1,56 @@
+[{"stream_name":"stderr","time":7.384928755,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.38499693,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":8.369081337,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.369133455,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.369140675,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.369146145,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.060008759,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.060050313,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.060058043,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.060063563,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.350399642,"data":"competition files: ['sample_submission.csv', 'train.parquet', 'test.parquet']\n"}
+,{"stream_name":"stdout","time":18.223812142,"data":"RDKit available: True (fragmentation channel is optional - the notebook runs without it)\n"}
+,{"stream_name":"stdout","time":88.842438857,"data":"ranker fitted on 142,762 candidate rows x 31 features   (W1=0.45)\n"}
+,{"stream_name":"stdout","time":91.284616287,"data":"  loaded fp_model_a.pt: d=512 layers=6 step=18000\n"}
+,{"stream_name":"stdout","time":92.62422061,"data":"  loaded fp_model_b.pt: d=512 layers=6 step=20000\n"}
+,{"stream_name":"stdout","time":92.624257648,"data":"fingerprint ensemble: 2 model(s) on cuda\n"}
+,{"stream_name":"stdout","time":95.021189467,"data":"COCONUT: 436,389 structures\n"}
+,{"stream_name":"stdout","time":95.575823031,"data":"+ ChEBI/LIPID MAPS: 62,744 structures\n"}
+,{"stream_name":"stdout","time":97.429294532,"data":"training structures to fingerprint: 275,810  (~5 min)\n"}
+,{"stream_name":"stdout","time":385.320726059,"data":"pool: 774,943 structures   (293s)\n"}
+,{"stream_name":"stdout","time":386.635231023,"data":"candidate pool: 774,943 structures, 6930 fingerprint bits\n"}
+,{"stream_name":"stdout","time":416.955858068,"data":"library: 2,539,608 spectra / 275,810 structures  (30s)\n"}
+,{"stream_name":"stdout","time":418.725894545,"data":"analog reference set: 275,632 spectra (one per structure)\n"}
+,{"stream_name":"stdout","time":419.382401688,"data":"1,213 spectra / 400 molecules to identify\n"}
+,{"stream_name":"stdout","time":444.492555612,"data":"  0/400  433s\n"}
+,{"stream_name":"stdout","time":873.284082204,"data":"  50/400  862s\n"}
+,{"stream_name":"stdout","time":1327.709698223,"data":"  100/400  1316s\n"}
+,{"stream_name":"stdout","time":1749.470084997,"data":"  150/400  1738s\n"}
+,{"stream_name":"stdout","time":2225.234469384,"data":"  200/400  2214s\n"}
+,{"stream_name":"stdout","time":2647.084025411,"data":"  250/400  2636s\n"}
+,{"stream_name":"stdout","time":3082.775744234,"data":"  300/400  3071s\n"}
+,{"stream_name":"stdout","time":3498.994064251,"data":"  350/400  3488s\n"}
+,{"stream_name":"stdout","time":3960.535474136,"data":"\n"}
+,{"stream_name":"stdout","time":3960.535519761,"data":"wrote submission.csv  (400, 2)   total 3949s\n"}
+,{"stream_name":"stdout","time":3960.731135193,"data":"       n_candidates  best_library_sim  best_analog_sim  top_prob\n"}
+,{"stream_name":"stdout","time":3960.73116911,"data":"count       400.000             400.0          400.000   400.000\n"}
+,{"stream_name":"stdout","time":3960.731174716,"data":"mean        135.482               1.0            0.930     0.682\n"}
+,{"stream_name":"stdout","time":3960.731178935,"data":"std         118.804               0.0            0.130     0.120\n"}
+,{"stream_name":"stdout","time":3960.73118331,"data":"min           2.000               1.0            0.444     0.257\n"}
+,{"stream_name":"stdout","time":3960.731187394,"data":"25%          52.000               1.0            0.892     0.602\n"}
+,{"stream_name":"stdout","time":3960.731191375,"data":"50%         100.000               1.0            1.000     0.698\n"}
+,{"stream_name":"stdout","time":3960.73119527,"data":"75%         173.250               1.0            1.000     0.750\n"}
+,{"stream_name":"stdout","time":3960.731199177,"data":"max         609.000               1.0            1.000     0.943\n"}
+,{"stream_name":"stdout","time":3961.41633039,"data":"\n"}
+,{"stream_name":"stdout","time":3961.416383264,"data":"molecules with a confident library hit (sim \u003e 0.85): 100.0%  -\u003e the other 0.0% are carried by analog propagation\n"}
+,{"stream_name":"stderr","time":3966.965315662,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3966.965370896,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3967.154178297,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3967.154209726,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3967.955563402,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3968.321847036,"data":"[NbConvertApp] Writing 159144 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3971.144514329,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3972.418110789,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":3972.418156201,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":3972.418604173,"data":"[NbConvertApp] Writing 588456 bytes to __results__.html\n"}
+]
