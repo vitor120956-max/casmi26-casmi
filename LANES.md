@@ -3,6 +3,9 @@
 Como usar: abra uma conversa nova (Arena ou outra IA de sua confiança) e cole o briefing
 da raia inteira. A sessão trabalha de forma independente e grava resultados no repo.
 **Fonte da verdade: este repositório (git). Bastão: HANDOFF.md.**
+Repo: https://github.com/vitor120956-max/casmi26-casmi (privado).
+Clone numa sessão nova: `git clone https://x-access-token:<SEU_PAT>@github.com/vitor120956-max/casmi26-casmi /home/user/casmi26-casmi`
+(PAT = fine-grained token que o humano fornece; permissões Contents R/W só neste repo.)
 
 ## Regras de coordenação (TODAS as raias)
 1. Uma única conta Kaggle (victor120956). Somente a **Raia A (Controlador)** faz

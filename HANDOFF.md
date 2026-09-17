@@ -138,3 +138,15 @@ Submission history: 56293614=0.097 · 56293951=0.101 · 56295650=**0.306** · 56
    -k victor120956/casmi26-analog-ranker-fork -v 7 -m "v6: twin demotion"`
   (bare `-k` without `-f`/`-v` burns the daily slot!).
 - Finals plan seed: Final A = demote-twin lineage, Final B = twin@1 lineage (A/B on private).
+
+## GitHub backup LIVE (2026-09-17 ~17:00 UTC)
+- Repo: **https://github.com/vitor120956-max/casmi26-casmi** (private). gh user: vitor120956-max.
+- History SQUASHED into one clean commit (c9fe780) because .config/gh/hosts.yml (gh OAuth token)
+  had been committed in earlier history. .config/ now gitignored. Verified: no tracked file
+  contains 'oauth_token'. End of project: human should revoke GitHub CLI authorization at
+  github.com/settings/applications.
+- Multi-session workflow: other agent conversations clone via fine-grained PAT (Contents R/W,
+  repo casmi26-casmi only). Starter paste template lives in LANES.md header.
+- git identity in sandbox: local config user.name "Victor Alexandre" / victor120956@users.noreply
+  (re-set after any session restart; .git/config does NOT persist). `gh auth setup-git` done —
+  if pushes fail with auth error after restart, re-run it or use HOME=/home/user /home/user/.bin/gh.
