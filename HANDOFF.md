@@ -164,3 +164,12 @@ Submission history: 56293614=0.097 · 56293951=0.101 · 56295650=**0.306** · 56
   orphan artifact, f_t>0 → REVERT to v3/v4 lineage (twin@1) and re-probe properly with full
   submit syntax (-f+-k+-v in one call).
 - Lanes PAUSED (user chose solo operation 17/09). LANES.md archived for future.
+
+## Sandbox-restart checklist (recycles happen every few hours — run on any fresh session)
+1. `pip install -q kaggle rdkit pyarrow scipy` (packages do NOT persist; kaggle lands in /usr/local/bin)
+2. `chmod 600 ~/.kaggle/kaggle.json` and `chmod +x /home/user/.bin/gh` (perms reset on recycle)
+3. `git config user.name "Victor Alexandre"; git config user.email victor120956@users.noreply.github.com`
+4. `git remote add origin https://github.com/vitor120956-max/casmi26-casmi.git` (.git/config not persisted)
+5. `HOME=/home/user /home/user/.bin/gh auth setup-git` (token DOES persist in ~/.config/gh/hosts.yml)
+6. Check `auto_submit.log` / background processes: scheduler may have died on recycle → re-run
+   its submit command manually if the v6 submission never appeared.
