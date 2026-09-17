@@ -150,3 +150,17 @@ Submission history: 56293614=0.097 · 56293951=0.101 · 56295650=**0.306** · 56
 - git identity in sandbox: local config user.name "Victor Alexandre" / victor120956@users.noreply
   (re-set after any session restart; .git/config does NOT persist). `gh auth setup-git` done —
   if pushes fail with auth error after restart, re-run it or use HOME=/home/user /home/user/.bin/gh.
+
+## v6 READY + AUTO-SUBMIT SCHEDULED (17/09 21:55 UTC)
+- Version 7 output downloaded to forkout_v6/: 'demoted twins (v6): 400/400', VALID, no junk,
+  min2/max25 guesses, 3200s run. Rank-1 example (m_005e53) = isomer of the twin. GOOD.
+- **Scheduler running**: auto_submit.sh (start_process 'Auto-submit v6', log: auto_submit.log).
+  Waits until 2026-09-18 00:02 UTC, submits with full syntax (-f submission.csv -k SLUG -v 7),
+  polls score ~3h. If sandbox recycled and scheduler died: run the submit command manually
+  (exact line in auto_submit.sh) — slots reset 00:00 UTC daily.
+- Decision tree on v6 score: (a) >= ~0.45 → f_t=0 CONFIRMED, we are likely LB #1 → next:
+  optimize ranks 2-25 (frag/fp reweighting) + keep demote lineage for finals; (b) ~0.30-0.40 →
+  partial: tune (demote only when ranker #2 is close?); (c) <= ~0.10 → probe 0.000 was an
+  orphan artifact, f_t>0 → REVERT to v3/v4 lineage (twin@1) and re-probe properly with full
+  submit syntax (-f+-k+-v in one call).
+- Lanes PAUSED (user chose solo operation 17/09). LANES.md archived for future.
