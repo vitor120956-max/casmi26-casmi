@@ -173,3 +173,4 @@ Submission history: 56293614=0.097 · 56293951=0.101 · 56295650=**0.306** · 56
 5. `HOME=/home/user /home/user/.bin/gh auth setup-git` (token DOES persist in ~/.config/gh/hosts.yml)
 6. Check `auto_submit.log` / background processes: scheduler may have died on recycle → re-run
    its submit command manually if the v6 submission never appeared.
+scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
