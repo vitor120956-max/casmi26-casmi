@@ -211,3 +211,18 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Version 8 (PROBE B with junk) COMPLETE but NEVER submitted (superseded; junk suspect).
 - Scores expected ~14:30/15:30/16:30 UTC. After decomposition: if p_2 big → twin-vs-#2
   discriminator (perfect switching ≈ 0.48); absent ~50% → candidate coverage work.
+
+## 18/09 ~22:30 UTC — DECOMPOSITION PROGRESS
+- **f_t = 0.275 EXACT** (A2 probe, ref 56336819: twin-only, 1 guess/molecule). Twin@1 lineage
+  CONFIRMED as base (v3/v4). Junk-poison CONFIRMED: same twin row scores 0.275 without junk,
+  0.000 with junk 2-25 (refs 56319030/56308489). NEVER use filler guesses.
+- Arithmetic from v3: Σ_{j≥2} p_j/j = 0.324-0.275 = 0.049 → p_2 ≤ 0.098. B2 probe (ref pending,
+  submitted 22:18 UTC, -v 10) measures p_2 exactly. C probe (version 11, scheduler4 =
+  auto_submit4.sh/log) measures tail Σ_{j≥3} p_j/(j-2), submits ~23:25 UTC with last slot.
+- **-v MECHANISM ANOMALY**: ref 56317314 ("v6 demote", -v 7) scored 0.324, but local diff proves
+  forkout_v6 == exact rotation of forkout_v3 (400/400) → with f_t=0.275 a true demote scores
+  ≤ ~0.11. So -v 7 scored some OTHER version's output (likely v3/v4). Trust protocol: sanity-check
+  every score against arithmetic bounds; prefer submitting the LATEST version right after its run.
+  B2 result is the litmus: ≤0.098 → system healthy; 0.324 again → -v systematically broken.
+- Absent-mass estimate: 1 - 0.275 - Σ_{j≥2}p_j, with Σp_j ≥ 0.098 → up to ~63% of visible
+  answers are NOT in our top-25 at all → candidate generation / isomer discrimination is THE lever.
