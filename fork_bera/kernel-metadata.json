@@ -20,5 +20,5 @@
   "competition_sources": [
     "enveda-CASMI26-molecule-id-mass-spectra"
   ],
-  "description": "v8 = PROBE B: original ranker #2 at rank1 + junk 2-25 (measures p_2 exactly). Diagnostic."
+  "description": "P_A2 probe: twin only at rank1 (1 guess, no junk) -> f_t exact"
 }

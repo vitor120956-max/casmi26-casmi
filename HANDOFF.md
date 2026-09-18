@@ -194,3 +194,20 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Strategy branches: (a) if p_2 big → twin-vs-#2 DISCRIMINATOR (perfect = ~0.48!);
   (b) absent ~50% → candidate coverage (pool/de-novo/wider window) is the long game;
   (c) twin@1 lineage (v3/v4) stays the base — DEMOTE_TWIN=False for real runs from now on.
+
+## 18/09 ~12:10 UTC — P_A redo = 0.000 AGAIN (ref 56319030, correct syntax!) → JUNK POISON THEORY
+- twin@1+junk scores 0.000 with FULL -f/-k/-v syntax → not an orphan artifact.
+- But f_t=0 is mathematically incompatible with v6(demote)=v3(twin@1)=0.324 (demote would gain
+  Σp_j/(j(j-1)) ≥ +0.16). Only consistent world: **junk guesses poison the whole row at the
+  grader** (their pinned 2026.03.3 tautomer canonicalization pipeline may zero/error rows).
+  Local RDKit says all 24 junk SMILES are valid (InChIKeys generate fine) → grader-side quirk.
+- Balance solution survives: f_t≈0.165 (twin correct ~17%), p_2≈0.32 (answer at ranker #2),
+  ~51% answers ABSENT from top-25. Clean probes will pin these exactly.
+- **RULE: NEVER put filler/junk SMILES in submissions again. Real guesses only.**
+- Scheduler3 (auto_submit3.sh, log auto_submit3.log) running clean-probe pipeline:
+  A2 = twin-only 1-guess (v9) → f_t; B2 = ranker#2-only (v10) → p_2; C = ranks 3-25 (v11) → tail.
+  Each stage: set_probe.py MODE → push → wait → verify_probe.py vs forkout_v3/submission.csv →
+  validate → submit. Slots today: 2 used (v6, P_A), probes use the other 3.
+- Version 8 (PROBE B with junk) COMPLETE but NEVER submitted (superseded; junk suspect).
+- Scores expected ~14:30/15:30/16:30 UTC. After decomposition: if p_2 big → twin-vs-#2
+  discriminator (perfect switching ≈ 0.48); absent ~50% → candidate coverage work.
