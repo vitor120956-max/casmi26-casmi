@@ -226,3 +226,18 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
   B2 result is the litmus: ≤0.098 → system healthy; 0.324 again → -v systematically broken.
 - Absent-mass estimate: 1 - 0.275 - Σ_{j≥2}p_j, with Σp_j ≥ 0.098 → up to ~63% of visible
   answers are NOT in our top-25 at all → candidate generation / isomer discrimination is THE lever.
+
+## 18/09 ~23:59 UTC — C SUBMITTED (ref 56343007, last slot; NOTE: "0 submissions remaining"
+## AFTER a submit call = SUCCESS message, not rejection — it reports slots left afterwards).
+- p_2 = 0.055 EXACT (B2, ref 56341942). Full consistent decomposition of v3=0.324:
+  f_t 0.275 + p_2/2 0.0275 + tail(3-25) 0.0215 = 0.324 EXACT. -v mechanism healthy
+  (B2 within arithmetic bound ≤0.098); ref 56317314 (0.324 "demote") stays an isolated anomaly.
+- Absent mass ≈ 60-67% of visible answers NOT in top-25 → THE lever = get answers INTO the list
+  (pool coverage / isomer discrimination), not just reorder. C score (~01:00-01:30 UTC) pins tail.
+- Adduct audit: ADDUCTS dict covers formate/Na/K/NH4/2M — no easy mass bug found.
+- Scheduler4 died at 22:20 recycle (log froze); C submitted manually instead. Zombies: none.
+- NEXT (19/09, 5 fresh slots, GPU quota refreshes): (1) C score → decomposition complete;
+  (2) local pool audit: coco_meta/coco_fp completeness (~400k COCONUT?) + window sizes;
+  (3) v12 two-stage re-rank experiment: twin locked @1, ranks 2-25 = ranker retrained WITHOUT
+  lv feature (non-twin discrimination); (4) test GDrive reachability for DreaMS weights;
+  (5) optional label-harvest probes (subset-split A/B) to build per-molecule ground truth.
