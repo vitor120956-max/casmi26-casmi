@@ -180,3 +180,17 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Score watcher: score_watch.log (background, checks every 5 min for up to 20h).
 - Slots 18/09: 1 used (v6), 4 left. Next kernel experiments WAIT for v6 score (decision tree above).
 - If watcher died on recycle: poll manually (submissions list, 2nd row = v6 ref 56317314).
+
+## 18/09 ~03:00 UTC — v6 SCORED 0.324 (ref 56317314) = EXACT TIE WITH v3!
+- Math: if f_t were 0, promoting ranks 2-25 would STRICTLY raise the score. Tie ⇒ f_t > 0 ⇒
+  the v5 probe 0.000 was the orphan-submission artifact (bare -k submit, never linked output).
+- Balance solution (consistent, not unique): |T|≈66/400 (twin correct, ~17%), p_2≈127/400
+  (answer at ranker #2, ~32%), ~51% of answers ABSENT from top-25 entirely.
+- Decomposition probes today (correct syntax ALWAYS: -f submission.csv -k slug -v N):
+  P_A = resubmit kernel VERSION 5 output (twin@1+junk) → f_t exact. No GPU needed.
+  P_B = new version: original ranker #2 @1 + junk → p_2 exact.
+  P_C = new version: original ranks 3-25 promoted (twin & #2 dropped) → tail Σp_k/(k-2).
+  Then: Σ_{k≥3} p_k/k = 0.324 - f_t - p_2/2; absent = 1 - f_t - p_2 - Σ_{k≥3} p_k.
+- Strategy branches: (a) if p_2 big → twin-vs-#2 DISCRIMINATOR (perfect = ~0.48!);
+  (b) absent ~50% → candidate coverage (pool/de-novo/wider window) is the long game;
+  (c) twin@1 lineage (v3/v4) stays the base — DEMOTE_TWIN=False for real runs from now on.
