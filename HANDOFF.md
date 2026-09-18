@@ -174,3 +174,9 @@ Submission history: 56293614=0.097 · 56293951=0.101 · 56295650=**0.306** · 56
 6. Check `auto_submit.log` / background processes: scheduler may have died on recycle → re-run
    its submit command manually if the v6 submission never appeared.
 scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
+
+
+## 18/09 01:18 UTC — v6 SUBMITTED (ref 56317314, manual; scheduler died on recycle)
+- Score watcher: score_watch.log (background, checks every 5 min for up to 20h).
+- Slots 18/09: 1 used (v6), 4 left. Next kernel experiments WAIT for v6 score (decision tree above).
+- If watcher died on recycle: poll manually (submissions list, 2nd row = v6 ref 56317314).
