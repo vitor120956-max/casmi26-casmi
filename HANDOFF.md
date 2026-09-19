@@ -272,3 +272,8 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Use case (realistic): spectrum→spectrum embedding retrieval channel (complement to entropy
   sim) for analog/hidden classes 2-3; NOT a direct fix for the absent-60% (those need
   structure-level discrimination among window candidates). Local copies deleted (disk).
+
+## 19/09 02:05 UTC — scheduler5 (auto_submit5.sh/log) armado: submete version 13 (v12 real)
+## quando completar (~03:45-04:00 UTC), com verificação tripla (log hook 'v12 twin-sim rerank',
+## rank1==twin 400/400, validate). Se morrer por recycle: submeter manualmente de manhã
+## (comando exato no script; slots de 19/09 intactos).
