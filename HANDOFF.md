@@ -331,3 +331,10 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Árvore de decisão: >=0.34 migra linhagem canônica (fusões/derivativos/DreaMS em cima); 0.324-0.34 migra mesmo assim (código mais completo+mantido); <0.324 investigar (refazer com fp-models-v4).
 - Saída local: /home/user/prvsiyan_out/ (submission.csv + log + train_fingerprint_model.py que ele emite).
 - Enquanto espera: estudar código de ranking dele (células ~900-1013 do code.py em refs/parents/) para preparar variante fusão tani+p.
+
+## 2026-09-19 15:20 UTC — MAPA DE FEATURES DO RANKER CANÔNICO (refs/parents/prvsiyan.../code.py:441-530)
+- N_FEAT=31, N_ANALOG=80, P_SIM=3.0. Grupos: lib(5): lv, rank_norm, lvmax, lv-lvmax, lv>0 | analog(9): ap=max tani·sim^3, rank_norm, apmax, ap-apmax, a1 (peso linear), best_tan, top_tan (tani c/ análogo #1), mean_tan, top_sim | log(nc)(1) | modelo f·z(6): z(raw), rank_norm, raw-max, z(norm-comprimento), rank_norm, is_argmax | frag(4): fr, rank_norm, fr-max, z | cross-canal(6): lv·(1-mr), ap·(1-mr), agree (modelo corrobora melhor lib?), agree_a, agree·lvmax, corr(lv,-mr).
+- CHAVE: "agree" = gating dinâmico de confiança — twin de biblioteca só domina se o modelo fp CONCORDA (lv*(1-mr) desconta impostor de mesma massa). Nosso fork fazia LIB_OVERRIDE硬-pin; canônico deixa o ranker decidir.
+- Nossa contribuição v12 (Tanimoto-ao-twin) NÃO existe como feature (existe top_tan=ao-análogo-#1, que é outro coisa). FUSÃO viável SEM retreinar: blend pós-ranker no loop final: score = p_ranker + λ·tani(cand, fp_melhor_lib), λ pequeno; ou reordenar cauda 2-25 mantendo rank1 do ranker. Treino é de rank_train.npz (31 feats fixas) → adicionar feature 32 exigiria regerar simulação (caro); blend pós-ranker é o caminho barato.
+- rank_train.npz vem de prvsiyan/casmi26-ranker-features; fit in-notebook (~linha 913-940); loop final ~940-1013 (ler quando desenhar o patch).
+- Status: score do canônico PENDING (submetido 15:11 UTC; ETA 17:00-18:30 UTC).
