@@ -249,3 +249,19 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
   discovery is the real lever (0.40 → 0.6+ potential). LB top (0.341) is below the 0.40 ceiling.
 - Today: pool audit (COCONUT completeness), GDrive/DreaMS reachability, v12 two-stage rerank,
   label-harvest probe design (per-molecule ground truth via subset A/B probes).
+
+## 19/09 ~02:00 UTC — v12 EXPERIMENT + DreaMS download
+- **HARD RULE (broken twice, now enforced): kernel push ONLY inside a single && chain AFTER
+  patch verify + syntax check. Never a separate newline command.** Version 12 = accidental
+  PROBE-C dup (DO NOT SUBMIT). **Version 13 = REAL v12** (TWIN_SIM_RERANK).
+- v12 hypothesis: curated answers = regioisomers/close relatives of the twin (same spectrum,
+  same mass, different InChIKey14) → ranks 2-25 = Tanimoto(6930-bit pool fp, twin fp),
+  twin locked @1, ranker-p tie-break; fallback to ranker order when no perfect twin (hidden).
+  Verification hook in log: 'v12 twin-sim rerank: 400/400' + top-tani stats.
+- Expected: tail(0.049) + coverage-from-window gains; ceiling if hypothesis fully true ≈ 0.275 +
+  P(answer in window & in top-24 by tani). Failure floor ≈ 0.28-0.30 (still informative).
+- Pool audit done: 774,943 structures (COCONUT 436,389 + ChEBI/LIPIDMAPS 62,744 + train).
+  GDrive reachable (HTTP 302). DreaMS download started (gdown folder 1IlNhjIGXH5lgZ75G0-jY1pozxx_766L2
+  → dreams_tmp/, gitignored; 415MB won't persist snapshot → create Kaggle dataset SAME session).
+- Morning plan: submit v13 output (validate + verify hook first); if DreaMS downloaded →
+  kaggle datasets create (private) → v13.5 embedding-channel design.

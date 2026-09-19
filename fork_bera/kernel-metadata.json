@@ -20,5 +20,5 @@
   "competition_sources": [
     "enveda-CASMI26-molecule-id-mass-spectra"
   ],
-  "description": "P_C probe: original ranks 3-25 promoted (23 guesses) -> tail sum"
+  "description": "v12 REAL: twin@1 locked; ranks 2-25 = Tanimoto-fp-sim to twin (tie: ranker p). Regioisomer-neighbor hypothesis for the 60% absent. (version 12 = accidental C dup, DO NOT SUBMIT)"
 }
