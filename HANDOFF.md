@@ -346,3 +346,11 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Draft do post de discussão salvo em /home/user/drafts/discussion_post.md (decomposição probes + junk-poison + tie v12 + seed noise; NÃO revela fusão/derivados/DreaMS). Usuário revisa e posta (conta dele).
 - DreaMS = MIT (código+pesos+GeMS, Nat Biotech, github pluskal-lab/DreaMS, pesos tb no Zenodo) → dataset PODE virar público sem risco. RECOMENDAÇÃO: publicar DEPOIS das finais (14/12) para não armar competidores; badges não expiram.
 - Canônico: PENDING às 15:55 UTC (44 min).
+
+## 2026-09-19 17:15 UTC — SCORE CANÔNICO 0.320 + FUSÃO NO FORNO
+- CANÔNICO AS-IS = **0.320** (ref 56363228) — empate técnico com fork 0.324 (ruído ±0.006). v6 ensemble sozinho NÃO levanta; cluster 0.339 roda outra coisa (provável: config antiga W1 (0.30,0.60)+N_ANALOG 100+P_SIM 4, como NOSSO fork tinha; ou variante berat privada).
+- DECISÃO: migra para linhagem canônica (mantida pelo autor, gating mais esperto, auto-contida). Empate se decide por estrutura.
+- FUSÃO v2 pushed 17:14 UTC (patch_fuse.py executado com sucesso após 2 correções: âncora do print sem indent + assert rank_proba(X) que casava com o def). Versão 2 = canon.ipynb com blend cauda p+0.25·tani-ao-melhor-lib, twin sem boost (gating canônico no rank1), hook 'FUSE-tani blend:'. Backup limpo: prvsiyan_fork/canon_backup_v1.ipynb. RUNNING; ETA ~18:30-18:45 UTC (15:30-15:45 BRT). Submeter com -v 2.
+- Slots: 3 restantes hoje (uso: v12, canônico; fusão será o 3º).
+- FILA AMANHÃ: (1) config-revert probe no canônico (W1_PRIORS=(0.30,0.60), N_ANALOG=100, SIM_POWER=4) para caçar o delta do cluster 0.339; (2) expansão-derivados ±CH2/±O/hexose + canal frag; (3) canal DreaMS; (4) usuário posta draft da discussão (drafts/discussion_post.md) quando aprovar.
+- Leitura de resultado fusão: >0.33 = fusão paga (tunar λ 0.5/0.15 em probes); ~0.32 = neutro (ruído); <0.31 = λ alto demais desordenando (baixar λ ou reverter).

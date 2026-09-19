@@ -40,7 +40,7 @@ def loop_repl(m):
 INIT_ANCHOR = re.compile(r"rows, diag = \[\], \[\]")
 INIT_NEW = "rows, diag, fuse_n, fuse_t2 = [], [], 0, []"
 
-PRINT_ANCHOR = re.compile(r"(\n(?P<ind>[ \t]+))submission = pd\.DataFrame\(rows")
+PRINT_ANCHOR = re.compile(r"(\n(?P<ind>[ \t]*))submission = pd\.DataFrame\(rows")
 def print_repl(m):
     ind = m.group('ind')
     return (f"\n{ind}if fuse_t2:\n"
