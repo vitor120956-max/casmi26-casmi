@@ -322,3 +322,12 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Atenção: código dele tem fillna('CCO') p/ linhas vazias (anti-rejeição; inócuo se não dispara).
 - SUBMETER COM -v 1. Expectativa: 0.33-0.36 (cluster 0.339, berat 0.336, topo 0.362). Se >=0.34 → migra linhagem; senão investiga (v6 pesado demais? fallback v4/v2).
 - fp-models versões: v1 267MB (nosso fork antigo), v2 single+merged, v3 1.19GB, v4 1.58GB, v6 ensemble 2.61GB.
+
+## 2026-09-19 15:12 UTC — CANÔNICO SUBMETIDO
+- Kernel COMPLETE ~15:05 (75 min de run). Hooks OK: "fingerprint models: 3 single-input, 3 merged-input, on cuda"; "pool: 712,199 structures (261s)"; "candidate pool: 712,199 structures, 6930 fingerprint bits".
+- CSV: 400 linhas, 0 nulos, 0 dups, 0 CCO-filler, mediana 25 candidatos/linha.
+- SUBMETIDO 15:11 UTC, -v 1, msg "canonical prvsiyan pipeline as-is...". 3 slots restantes hoje.
+- Score ETA 17:00-18:30 UTC (14:00-15:30 BRT) — rerun oculto do pipeline completo.
+- Árvore de decisão: >=0.34 migra linhagem canônica (fusões/derivativos/DreaMS em cima); 0.324-0.34 migra mesmo assim (código mais completo+mantido); <0.324 investigar (refazer com fp-models-v4).
+- Saída local: /home/user/prvsiyan_out/ (submission.csv + log + train_fingerprint_model.py que ele emite).
+- Enquanto espera: estudar código de ranking dele (células ~900-1013 do code.py em refs/parents/) para preparar variante fusão tani+p.
