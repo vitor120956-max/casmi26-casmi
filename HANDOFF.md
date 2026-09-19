@@ -354,3 +354,11 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Slots: 3 restantes hoje (uso: v12, canônico; fusão será o 3º).
 - FILA AMANHÃ: (1) config-revert probe no canônico (W1_PRIORS=(0.30,0.60), N_ANALOG=100, SIM_POWER=4) para caçar o delta do cluster 0.339; (2) expansão-derivados ±CH2/±O/hexose + canal frag; (3) canal DreaMS; (4) usuário posta draft da discussão (drafts/discussion_post.md) quando aprovar.
 - Leitura de resultado fusão: >0.33 = fusão paga (tunar λ 0.5/0.15 em probes); ~0.32 = neutro (ruído); <0.31 = λ alto demais desordenando (baixar λ ou reverter).
+
+## 2026-09-19 18:55-19:00 UTC — FUSÃO SUBMETIDA + KNOB-PROBE NO FORNO
+- FUSÃO v2 SUBMETIDA 18:53 UTC (ref a confirmar), -v 2, 2 slots restantes depois. Verificações: hook 'FUSE-tani blend: 400/400 molecules; lam=0.25; top-tani mean=0.545 median=0.520'; CSV 400x2 limpo, 0 CCO; rank1 igual ao canônico 399/400; conjuntos iguais só 35/400 (blend recruta vizinhos da janela — efeito esperado). Score ETA ~20:30-21:00 UTC (17:30-18:00 BRT).
+- POST DISCUSSÃO PUBLICADO pelo usuário ~14:55 BRT: "Dissecting the 0.32-0.34 plateau..." (topo da lista recent; sem id capturado ainda). Monitorar votos (1 = bronze).
+- CFG canônico REAL lido: W1_PRIORS=(0.30,0.60) já (comentário: plateau estreito .40/.45/.50 'scored 0.3789' em métrica local dele), N_ANALOG=80, PPM_WIN=10.0, SEEDS 0-3, CAND_CAP=500. Diferença p/ receita do fork: N_ANALOG 100, PPM 8.5, P_SIM 4.
+- v3 = KNOB-REVERT probe pushed 19:00 UTC RUNNING (canon_knobs.ipynb = backup v1 + N_ANALOG=100 + PPM_WIN=8.5 + P_SIM/SIM_POWER=4.0; hook 'KNOB-REVERT: N_ANALOG=100 PPM=8.5 P_SIM=4.0'). Testa se a receita-fork no motor canônico busca o 0.339 do cluster. Completa ~20:40 UTC (17:40 BRT) → submeter -v 3 (último slot do dia) → score ~19:40-20:00 BRT.
+- Leitura combinada: fusão>0.33 e knobs>0.33 → v4 = fusão+knobs juntos; só um paga → v4 = o que paga; nenhum → derivativos+frag vira prioridade máxima.
+- Forum minerar: DancingLumberjack 'Adduct labels: Enveda's are clean, the library's are not (numbers)' (novo, 8min na época) + respostas do plateau thread (starkhushi 742055).

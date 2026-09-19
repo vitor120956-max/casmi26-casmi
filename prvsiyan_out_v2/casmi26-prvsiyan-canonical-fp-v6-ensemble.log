@@ -1,0 +1,62 @@
+[{"stream_name":"stderr","time":6.253553664,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.253589808,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.113209672,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.113247889,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.113269334,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.113274569,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.735786362,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.735816251,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.735821283,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.735824995,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.783250256,"data":"competition files: ['sample_submission.csv', 'train.parquet', 'test.parquet']\n"}
+,{"stream_name":"stdout","time":16.467388629,"data":"RDKit available: True (fragmentation channel is optional - the notebook runs without it)\n"}
+,{"stream_name":"stdout","time":81.867362214,"data":"ranker: 8 GBMs (2 priors x 4 seeds) on 142,762 rows x 31 features\n"}
+,{"stream_name":"stdout","time":86.086592714,"data":"  loaded fp_merged_m1.pt: d=512 layers=6 step=24000\n"}
+,{"stream_name":"stdout","time":88.763452101,"data":"  loaded fp_merged_m1b.pt: d=512 layers=6 step=36000\n"}
+,{"stream_name":"stdout","time":91.475040601,"data":"  loaded fp_merged_m2.pt: d=512 layers=6 step=20000\n"}
+,{"stream_name":"stdout","time":93.980255556,"data":"  loaded fp_single_aug.pt: d=512 layers=6 step=20000\n"}
+,{"stream_name":"stdout","time":97.827243319,"data":"  loaded fp_single_big.pt: d=640 layers=8 step=22000\n"}
+,{"stream_name":"stdout","time":100.344101424,"data":"  loaded fp_single_s2.pt: d=512 layers=6 step=20000\n"}
+,{"stream_name":"stdout","time":100.344147657,"data":"fingerprint models: 3 single-input, 3 merged-input, on cuda\n"}
+,{"stream_name":"stdout","time":100.344152305,"data":"PubChem store not attached - pool expansion off\n"}
+,{"stream_name":"stdout","time":102.696032471,"data":"COCONUT: 436,389 structures\n"}
+,{"stream_name":"stdout","time":104.272426496,"data":"training structures to fingerprint: 275,810  (~5 min)\n"}
+,{"stream_name":"stdout","time":366.361492511,"data":"pool: 712,199 structures   (266s)\n"}
+,{"stream_name":"stdout","time":367.528343475,"data":"candidate pool: 712,199 structures, 6930 fingerprint bits\n"}
+,{"stream_name":"stdout","time":395.225795234,"data":"library: 2,539,608 spectra / 275,810 structures  (28s)\n"}
+,{"stream_name":"stdout","time":396.933846971,"data":"analog reference set: 275,632 spectra (one per structure)\n"}
+,{"stream_name":"stdout","time":397.53818574,"data":"1,213 spectra / 400 molecules to identify\n"}
+,{"stream_name":"stdout","time":420.207685236,"data":"  0/400  410s\n"}
+,{"stream_name":"stdout","time":807.107144488,"data":"  50/400  797s\n"}
+,{"stream_name":"stdout","time":1219.003518213,"data":"  100/400  1209s\n"}
+,{"stream_name":"stdout","time":1600.266183633,"data":"  150/400  1590s\n"}
+,{"stream_name":"stdout","time":2029.80133579,"data":"  200/400  2020s\n"}
+,{"stream_name":"stdout","time":2413.727750972,"data":"  250/400  2404s\n"}
+,{"stream_name":"stdout","time":2808.068169801,"data":"  300/400  2798s\n"}
+,{"stream_name":"stdout","time":3188.767257258,"data":"  350/400  3179s\n"}
+,{"stream_name":"stdout","time":3608.095000621,"data":"FUSE-tani blend: 400/400 molecules; lam=0.25; top-tani mean=0.545 median=0.520\n"}
+,{"stream_name":"stdout","time":3608.153846889,"data":"\n"}
+,{"stream_name":"stdout","time":3608.15389338,"data":"wrote submission.csv  (400, 2)   total 3598s\n"}
+,{"stream_name":"stdout","time":3608.348472975,"data":"       n_candidates  best_library_sim  best_analog_sim  top_prob\n"}
+,{"stream_name":"stdout","time":3608.348518904,"data":"count       400.000             400.0          400.000   400.000\n"}
+,{"stream_name":"stdout","time":3608.348525163,"data":"mean        143.112               1.0            0.930     0.676\n"}
+,{"stream_name":"stdout","time":3608.348529288,"data":"std         118.675               0.0            0.130     0.122\n"}
+,{"stream_name":"stdout","time":3608.348533315,"data":"min           2.000               1.0            0.444     0.254\n"}
+,{"stream_name":"stdout","time":3608.348537268,"data":"25%          58.750               1.0            0.892     0.597\n"}
+,{"stream_name":"stdout","time":3608.348541295,"data":"50%         107.000               1.0            1.000     0.696\n"}
+,{"stream_name":"stdout","time":3608.348545022,"data":"75%         184.250               1.0            1.000     0.741\n"}
+,{"stream_name":"stdout","time":3608.348548955,"data":"max         500.000               1.0            1.000     0.936\n"}
+,{"stream_name":"stdout","time":3608.914816404,"data":"\n"}
+,{"stream_name":"stdout","time":3608.914852428,"data":"molecules with a confident library hit (sim \u003e 0.85): 100.0%  -\u003e the other 0.0% are carried by analog propagation\n"}
+,{"stream_name":"stdout","time":3608.953817008,"data":"wrote train_fingerprint_model.py 11704 bytes\n"}
+,{"stream_name":"stderr","time":3615.001267469,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3615.001302384,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3615.171195065,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3615.171221644,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3615.894826226,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3616.225600102,"data":"[NbConvertApp] Writing 220223 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3618.714354949,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3619.856573945,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":3619.856614286,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":3619.857058199,"data":"[NbConvertApp] Writing 699706 bytes to __results__.html\n"}
+]

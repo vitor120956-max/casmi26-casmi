@@ -1,7 +1,7 @@
 {
   "id": "victor120956/casmi26-prvsiyan-canonical-fp-v6-ensemble",
   "title": "CASMI26 prvsiyan canonical (fp v6 ensemble)",
-  "code_file": "canon.ipynb",
+  "code_file": "canon_knobs.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": true,
@@ -18,5 +18,5 @@
   "competition_sources": [
     "enveda-CASMI26-molecule-id-mass-spectra"
   ],
-  "description": "Canonical prvsiyan analog-propagation pipeline as-is (no patches): pool train+COCONUT+ChEBI/LIPIDMAPS, fp-models-v6 ensemble dual-view, MetFrag-lite, calibrated ranker. Lineage measurement vs our 0.324 fork."
+  "description": "KNOB-REVERT probe v3: canonical engine + fork-era knobs (N_ANALOG=100, PPM_WIN=8.5, P_SIM=4). Hook: KNOB-REVERT:"
 }
