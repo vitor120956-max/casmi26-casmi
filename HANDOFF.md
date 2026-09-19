@@ -338,3 +338,11 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Nossa contribuição v12 (Tanimoto-ao-twin) NÃO existe como feature (existe top_tan=ao-análogo-#1, que é outro coisa). FUSÃO viável SEM retreinar: blend pós-ranker no loop final: score = p_ranker + λ·tani(cand, fp_melhor_lib), λ pequeno; ou reordenar cauda 2-25 mantendo rank1 do ranker. Treino é de rank_train.npz (31 feats fixas) → adicionar feature 32 exigiria regerar simulação (caro); blend pós-ranker é o caminho barato.
 - rank_train.npz vem de prvsiyan/casmi26-ranker-features; fit in-notebook (~linha 913-940); loop final ~940-1013 (ler quando desenhar o patch).
 - Status: score do canônico PENDING (submetido 15:11 UTC; ETA 17:00-18:30 UTC).
+
+## 2026-09-19 ~15:55 UTC — PREPARAÇÃO PÓS-SCORE (enquanto canônico PENDING)
+- Loop final canônico mapeado (code.py 905-1013): fusão média-espectro por molécula (target=mediana nm), lib_sim+analog_sim, pool.window 8.5ppm (fallback 30), model_logits dual-view, CAND_CAP coarse (lv*100+z(f·z)), pubchem_extra (inerte sem store), frag_scores MetFrag-lite, rank_features[:NFEAT], rank_proba = média GBMs (W1_PRIORS×SEEDS), order=argsort(-p)[:25], 'CCO' só se linha vazia.
+- PÉROLA do código dele: mesmo notebook 2x → 0.292/0.298 (ruído de seed ±0.006); fix = seeds pinados+média. REGRA DE LEITURA: diferenças <0.01 no LB = ruído.
+- patch_fuse.py PRONTO em /home/user/prvsiyan_fork/ (NÃO EXECUTADO): blend pós-ranker p+0.25·tani-ao-melhor-lib, twin NÃO boostado (tani[t]=0 → gating canônico mantém rank1), hook 'FUSE-tani blend:'. Executar só em cadeia && com verificação, após score decidir linhagem.
+- Draft do post de discussão salvo em /home/user/drafts/discussion_post.md (decomposição probes + junk-poison + tie v12 + seed noise; NÃO revela fusão/derivados/DreaMS). Usuário revisa e posta (conta dele).
+- DreaMS = MIT (código+pesos+GeMS, Nat Biotech, github pluskal-lab/DreaMS, pesos tb no Zenodo) → dataset PODE virar público sem risco. RECOMENDAÇÃO: publicar DEPOIS das finais (14/12) para não armar competidores; badges não expiram.
+- Canônico: PENDING às 15:55 UTC (44 min).
