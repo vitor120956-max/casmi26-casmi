@@ -386,3 +386,10 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - Team merge oficial: permitido (max 5, antes do Team Merger Deadline; combined submissions ≤ dias×5), MAS o limite de 5 subs/dia é do TIME (não dobra). Ganho real seria só GPU-quota do amigo — não somos throttled (~8h/30h). Custos: prize split + obrigações de finais. VEREDITO: seguir SOLO (alinhado com decisão de 17/09). REGRA PERMANENTE: nenhuma conta de terceiro toca nossos code/submissions.
 - Deliverable: /home/user/analise_19set.html — análise gráfica PT-BR (trajetória, decomposição 0.275+0.055+cauda/teto 0.40, alavancas com EV, temos×precisamos, distâncias +0.011 bronze/+0.015 prata/+0.024 ouro/+0.033 top5, plano 72h).
 - Fornos: knobs v3 score ETA ~21:50 UTC; kernel fp-v4 completa ~22:00 UTC → submeter último slot → score ~23:45 UTC.
+
+## 2026-09-19 21:15 UTC — FP-V4 SUBMETIDA + FP-LATE NO FORNO
+- v4 probe SUBMETIDA 21:14 UTC (ref 56371652, último slot de hoje; reset 00:00 UTC/21:00 BRT). Hooks: '2 single-input, 2 merged-input' ✓, sem KNOB/FUSE ✓. rank1 idêntico ao v6: 400/400 → diferença mora na cauda (ranks 2-25). Score ETA ~22:10-22:55 UTC (19:10-19:55 BRT).
+- knobs v3 (ref 56370706) ainda PENDING às 21:14 UTC; score ETA ~21:55-22:05 UTC (18:55-19:05 BRT).
+- v5 kernel = FP-LATE probe pushed 21:15 UTC (canon_fplate.ipynb = backup v1 as-is + dataset prvsiyan/casmi26-fp-models-late, 2 models 432MB treinados 19/09 17:02 UTC). Hook esperado: '1 single-input, 1 merged-input'. Completa ~22:10 UTC → SUBMETER AMANHÃ como 1º slot pós-reset (ou hoje 21:00 BRT+ se reset já ocorreu — checar).
+- Árvore de decisão da noite: v4≥0.33 → adotar v4, -late vira linhagem principal; v4~0.32 & late≥0.33 → late adota; ambos ~0.32 → gap NÃO é fp-version (suspeitas: vintage train/pool) → frag-derivados + DreaMS viram prioridade.
+- Slots amanhã: 5 novos a partir 00:00 UTC. Fila: late (se não submetida), depois derivados-frag design.
