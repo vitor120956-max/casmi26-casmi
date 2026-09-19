@@ -277,3 +277,12 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 ## quando completar (~03:45-04:00 UTC), com verificação tripla (log hook 'v12 twin-sim rerank',
 ## rank1==twin 400/400, validate). Se morrer por recycle: submeter manualmente de manhã
 ## (comando exato no script; slots de 19/09 intactos).
+
+## 2026-09-19 manhã — v12 submetido + plantão Termux CONSERTADO
+- Kernel v13 (=v12 real) COMPLETE ~03:05 UTC. Watcher do celular detectou, baixou, VERIFICOU hook ("output VERIFICADO") mas FALHOU no submit: kaggle CLI 1.6.17 não tem -k/-v (recurso do 2.x). Sem dano.
+- 12:23 UTC: submeti v12 manualmente do sandbox (CLI 2.2.4), ref 56358656, PENDING às 12:35.
+- Verificações do output v12 (forkout_v12/): hook 400/400, top-tani mean 0.545 med 0.521 min 0.158 max 0.936; CSV 400x2 formato longo (molecule_id,smiles c/ ';' separando 25) — É o formato da competição (v3 idem); rank1 igual v3 400/400; conjunto da cauda difere em 360/400 (patch escolhe 24 vizinhos por Tanimoto na JANELA inteira, não reordena o top-25 do ranker); 3000 caudas amostradas: 0 unparseable.
+- MECANISMO-CHAVE p/ submeter kernel-versionado sem CLI 2.x: POST https://api.kaggle.com/v1/competitions.CompetitionApiService/CreateCodeSubmission, JSON {competitionName,kernelOwner,kernelSlug,kernelVersion,fileName,submissionDescription}, basic auth kaggle.json, UA kaggle-api/v1.7.0. Dry-run (comp falsa) → 403 PERMISSION_DENIED = auth/endpoint OK.
+- Termux do usuário agora tem: ~/ksubmit.py (testado 403 OK) + ~/night_watch.sh v2 (usa ksubmit; score polling via `2>/dev/null | grep -m1 submission.csv`). Plantão 100% operacional p/ próximas noites.
+- Vibração noturna: watcher terminou 00:05 BRT sozinho; não era loop. Usuário silenciou notificações do Termux.
+- PRÓXIMO: score v12 → 0.35-0.45 = H1 confirma (v14 blend tani+p); 0.28-0.30 = pivô H6 COCONUT + label-harvest; ~0.324 = redundante. 4 slots hoje.
