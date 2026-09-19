@@ -241,3 +241,11 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
   (3) v12 two-stage re-rank experiment: twin locked @1, ranks 2-25 = ranker retrained WITHOUT
   lv feature (non-twin discrimination); (4) test GDrive reachability for DreaMS weights;
   (5) optional label-harvest probes (subset-split A/B) to build per-molecule ground truth.
+
+## 19/09 01:49 UTC — C = 0.059 → DECOMPOSITION FINAL
+- Tail (ranks 3-25) mass ≈ 7% concentrated at ranks 3-4 (solve: p_3≈4.8%, p_4≈2.2%, deeper ~0).
+- **Present-in-top-25 total = 0.275 + 0.055 + 0.070 = 0.40** → PERFECT-RERANK CEILING = 0.40.
+- **ABSENT = ~60%** of visible answers are not in our 25 guesses at all → coverage/isomer-
+  discovery is the real lever (0.40 → 0.6+ potential). LB top (0.341) is below the 0.40 ceiling.
+- Today: pool audit (COCONUT completeness), GDrive/DreaMS reachability, v12 two-stage rerank,
+  label-harvest probe design (per-molecule ground truth via subset A/B probes).
