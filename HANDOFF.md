@@ -265,3 +265,10 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
   → dreams_tmp/, gitignored; 415MB won't persist snapshot → create Kaggle dataset SAME session).
 - Morning plan: submit v13 output (validate + verify hook first); if DreaMS downloaded →
   kaggle datasets create (private) → v13.5 embedding-channel design.
+
+## DreaMS dataset LIVE: victor120956/dreams-weights-casmi26 (private)
+- Contents: DreaMS_embedding_model_torchscript.pt (468MB) + settings.json. TorchScript →
+  torch.jit.load in kernel, no package needed. Attach via dataset_sources when building v13.5+.
+- Use case (realistic): spectrum→spectrum embedding retrieval channel (complement to entropy
+  sim) for analog/hidden classes 2-3; NOT a direct fix for the absent-60% (those need
+  structure-level discrimination among window candidates). Local copies deleted (disk).
