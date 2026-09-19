@@ -371,3 +371,12 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - AJUSTES DE PLANO: v3 knobs deve dar empate (B dele confirma inércia) — ler como confirmação, não aposta; derivativos só valem se rankeados pelo canal de FRAG (explicabilidade de isômeros posicionais), nunca como expansão naive; two-ranker descartado; ensemble-add de fp models = marginal positivo (C).
 - DancingLumberjack (adduct thread): título entrega: adutos Enveda (train) LIMPOS, bibliotecas externas SUJAS → nosso lib channel usa train (load_library(TRAIN)) = limpo ✓ sem ação.
 - Top 0.36 continua sem explicação pública → magia privada (fp melhor? de novo? pool?) → nossa diferenciação de fim de jogo (DreaMS + de novo finais) é o caminho.
+
+## 2026-09-19 20:10-20:25 UTC — FUSÃO=0.320 (NEUTRA, lane despriorizada) + v3 SUBMETIDA + FP-V4 PROBE NO FORNO
+- FUSÃO v2 score 0.320 (ref 56369301) = EMPATE com canônico v1. Blend de Tanimoto na cauda não moveu MRR → sinal redundante (ranker já tem lib-sim nos features). λ-tuning = provável ruído. LANE DE FUSÃO DESPRIORIZADA.
+- v3 KNOB-REVERT SUBMETIDA 20:11 UTC (ref 56370706, PENDING; rank1 idêntico ao canônico 400/400). Score ETA ~21:50 UTC (18:50 BRT). Expectativa (starkhushi B): ~0.32 empate → knobs inertes.
+- SLOTS: resta 1 hoje; reset 00:00 UTC (21:00 BRT).
+- FP-VERSION PROBE (kernel v4) pushed 20:20 UTC RUNNING: canon_fpv4.ipynb = canon_backup_v1 (as-is, sem knobs/fusão) + dataset fp-models-v4 no lugar de v6. Hook esperado: 'fingerprint models: 2 single-input, 2 merged-input, on cuda'. Completa ~22:00 UTC (19:00 BRT) → verificar + SUBMETER COM O ÚLTIMO SLOT DE HOJE (v4k). Score ~23:45 UTC (20:45 BRT).
+- ARQUITETURA: v4 = subconjunto exato do v6 (mesmos 4 arquivos 432MB: merged_m1, merged_m2, single_aug, single_s2); v6 = v4 + fp_single_big (690MB) + fp_merged_m1b. Loader = glob fp_*.pt (auto-adapta; nomes compatíveis). v2 (144MB) = arquitetura diferente, RISCO de incompatibilidade — não usar sem inspecionar.
+- NOVO: prvsiyan/casmi26-fp-models-late (792MB, 19/09 17:02 UTC): fp_merged_m1.pt + fp_single_s2.pt (432MB cada, TREINADOS HOJE) → 'late merged'. Próxima probe depois da v4k (pode ser o degrau real: treinado no train atualizado). v5 = 403 (inexistente/privado).
+- DECISÕES PENDENTES: se v4k ≥0.33 → adotar v4 como assets e rodar -late probe; se ~0.32 → gap 0.320-vs-0.335 não é fp-version (suspeitas restantes: vintage do train, datasets de pool, ou sorteio do hidden split) → partir para frag-ranked derivatives + -late mesmo assim.
