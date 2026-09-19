@@ -286,3 +286,16 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - Termux do usuário agora tem: ~/ksubmit.py (testado 403 OK) + ~/night_watch.sh v2 (usa ksubmit; score polling via `2>/dev/null | grep -m1 submission.csv`). Plantão 100% operacional p/ próximas noites.
 - Vibração noturna: watcher terminou 00:05 BRT sozinho; não era loop. Usuário silenciou notificações do Termux.
 - PRÓXIMO: score v12 → 0.35-0.45 = H1 confirma (v14 blend tani+p); 0.28-0.30 = pivô H6 COCONUT + label-harvest; ~0.324 = redundante. 4 slots hoje.
+
+## 2026-09-19 ~13:30 UTC — RECON DISCUSSION (mina de ouro)
+- LB 19/09: 803 times (era 441), topo 0.362 (Ozymandias31415), 7 times >=0.35, nós 0.324 = rank 253. Topo ABAIXO do nosso teto de rerank 0.40 → nossa pool já basta p/ ~1º lugar; falta ordenação (+ expansão de teto depois).
+- HOST (David Healey, thread 741857): "PubChem structures for retrieval are acceptable for prize-eligible solutions" → pacote de subconjunto PubChem como Kaggle Dataset = alavanca CLASS 2 p/ os 60% ausentes. COCONUT=CC0; ChEBI/LIPID MAPS=CC-BY.
+- STAFF (inversion, thread 741471): train.parquet ATUALIZADO (~15/09) — water-loss adducts adicionados em algumas amostras; re-download recomendado. Competition input em kernel pega versão atual automaticamente → runs v14+ treinam com dado novo; v12/v3 treinaram com o antigo.
+- STAFF (thread 741851): SCORING NOTEBOOK OFICIAL linkado na seção Evaluation do Overview → capturar e reproduzir grader 1:1 localmente (H4 canonicalization). Pipeline local do Burhan: MolFromSmiles → rdMolStandardize.TautomerEnumerator().Canonicalize → MolToInchiKey[:14], RDKit 2026.03.3, CleanupParameters default (maxTautomers=1000, maxTransforms=1000, tautomerRemoveSp3Stereo=True).
+- Thread 741815: participante confirma moléculas NOVEL no test (nem em PubChem) → retrieval puro tem teto; classe 3 pede de novo. Consistente com H5.
+- Thread "Six variants, one plateau at 0.33-0.34" (starkhushi, 4h, sem id) + CV-LB thread 741597 (250 enveda-np-examples não servem de CV) → pelotão inteiro preso no teto do fork.
+- Thread "[0.339 Top 1 Solution] 4-Channel Mass-Shifted Analog Propagation & Neural Bayes Reranking" (haideptry, 8 upvotes, sem id capturado — proxy falhou) + notebook dele "Fast Spectral Cosine Baseline" (142 upvotes): https://www.kaggle.com/code/haideptry/enveda-casmi-2026-fast-spectral-cosine-baseline. LER.
+- Thread "Data leak: every test spectrum appears verbatim in train.parquet" (Nipon Sriwasut, -3 votos, contestado) → quase certamente falso/inócuo: se real, topo seria >0.9, não 0.362. Obter texto p/ confirmar.
+- Ativo externo: "[Dataset+Notebook] 139K harmonized MassBank spectra + fingerprints" (Samar Talwar) → reforçar canal espectral. chemberta permitido (thread 742011).
+- GitHub de terceiros: kabir0774/Enveda-Casmi-2026 (achados: retrieval quality >> fusion policy; gate unilateral prejudica; blend > pinning; gap = qualidade de candidatos) e Rythamo8055/envida-casmi26-molecule-id (3-tier: library search / fp-prediction retrieval COCONUT+LOTUS+PubChem / de novo).
+- v12 (ref 56358656): PENDING às 13:31 UTC (~70 min).
