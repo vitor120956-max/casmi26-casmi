@@ -313,3 +313,12 @@ scheduler died on recycle; v6 submitted manually 01:18 UTC 18/09
 - GitHub: Isaackjoshua/casmi-2026 (roadmap, "~0.52 achievable"), tyofthestars11-lab, ibnmarzuk (train ~2.5M espectros/275k estruturas), kabir0774 (retrieval >> fusion policy), Rythamo8055 (3-tier).
 - Acadêmico: DreaMS paper (retrieval SOTA + analog search MCES≤5; embeddings organizam por fórmula); SpecBridge (DreaMS→ChemBERTa, +20-25% top-1 relativo); JAMSEF jul/2026 (DreaMS entre featurizations mais consistentes; mantém acurácia em espectros inéditos); MassSpecGym benchmark.
 - Nossas linhas de ataque reordenadas: (1) migrar fp-models v4/re-fork prvsiyan → medir; (2) fusão tani+p (v14) na linhagem vencedora; (3) expansão-derivados ±CH2/±O/hexose + canal frag (diferenciação, open problem do prvsiyan); (4) DreaMS embeddings (dataset pronto) p/ análogos/classe 2-3; (5) de novo tutorial p/ finais classe 3.
+
+## 2026-09-19 ~13:55 UTC — KERNEL CANÔNICO prvsiyan NO FORNO
+- Novo kernel: victor120956/casmi26-prvsiyan-canonical-fp-v6-ensemble (dir /home/user/prvsiyan_fork/, code canon.ipynb = cópia EXATA do notebook dele puxado hoje, sem patches).
+- dataset_sources: prvsiyan/coconut-casmi26-candidates + chebi-lipidmaps-casmi26 + casmi26-ranker-features + casmi26-fp-models-v6 (2.6GB ensemble, 18/09 16:52) + aidensong123/casmi26-offline-rdkit-2026033. GPU on, internet off.
+- Versão 1 pushed ~13:54 UTC, RUNNING 13:55. ETA 1.5-3h (pool rebuild 5min CPU + ensemble inference).
+- Hooks de verificação no log: "candidate pool: N structures, 6930 fingerprint bits" + "fingerprint models: N single-input, M merged-input" + "pool: N structures".
+- Atenção: código dele tem fillna('CCO') p/ linhas vazias (anti-rejeição; inócuo se não dispara).
+- SUBMETER COM -v 1. Expectativa: 0.33-0.36 (cluster 0.339, berat 0.336, topo 0.362). Se >=0.34 → migra linhagem; senão investiga (v6 pesado demais? fallback v4/v2).
+- fp-models versões: v1 267MB (nosso fork antigo), v2 single+merged, v3 1.19GB, v4 1.58GB, v6 ensemble 2.61GB.
