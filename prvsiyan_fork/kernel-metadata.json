@@ -1,7 +1,7 @@
 {
   "id": "victor120956/casmi26-prvsiyan-canonical-fp-v6-ensemble",
   "title": "CASMI26 prvsiyan canonical (fp v6 ensemble)",
-  "code_file": "canon_fplate.ipynb",
+  "code_file": "canon_fpv2.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": true,
@@ -12,11 +12,11 @@
     "prvsiyan/chebi-lipidmaps-casmi26",
     "prvsiyan/casmi26-ranker-features",
     "aidensong123/casmi26-offline-rdkit-2026033",
-    "prvsiyan/casmi26-fp-models-late"
+    "prvsiyan/casmi26-fp-models-v2"
   ],
   "kernel_sources": [],
   "competition_sources": [
     "enveda-CASMI26-molecule-id-mass-spectra"
   ],
-  "description": "FP-LATE probe: canonical as-is with fp-models-late (1 single + 1 merged, trained 19/09 on updated train). Hook: fingerprint models: 1 single-input, 1 merged-input."
+  "description": "FP-V2 probe: canonical as-is with original fp-models-v2 (144MB, 1 single + 1 merged, 16/09). Risk: older arch may fail load; kernel error = zero slot cost."
 }

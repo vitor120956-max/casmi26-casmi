@@ -393,3 +393,10 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - v5 kernel = FP-LATE probe pushed 21:15 UTC (canon_fplate.ipynb = backup v1 as-is + dataset prvsiyan/casmi26-fp-models-late, 2 models 432MB treinados 19/09 17:02 UTC). Hook esperado: '1 single-input, 1 merged-input'. Completa ~22:10 UTC → SUBMETER AMANHÃ como 1º slot pós-reset (ou hoje 21:00 BRT+ se reset já ocorreu — checar).
 - Árvore de decisão da noite: v4≥0.33 → adotar v4, -late vira linhagem principal; v4~0.32 & late≥0.33 → late adota; ambos ~0.32 → gap NÃO é fp-version (suspeitas: vintage train/pool) → frag-derivados + DreaMS viram prioridade.
 - Slots amanhã: 5 novos a partir 00:00 UTC. Fila: late (se não submetida), depois derivados-frag design.
+
+## 2026-09-19 22:20 UTC — LATE VERIFICADA (pronta p/ reset) + V2 PROBE PUSHED
+- Kernel v5 (fp-late) COMPLETE ~22:10 UTC: hook '1 single-input, 1 merged-input' ✓, pool 712,199 ✓, CSV limpo ✓. Output em /home/user/prvsiyan_out_late/. SUBMETER APÓS RESET 00:00 UTC (21:00 BRT) — slot 1.
+- Kernel v6 (fp-v2 probe: canon_fpv2.ipynb + dataset prvsiyan/casmi26-fp-models-v2, 144MB, arqu. antiga) pushed 22:18 UTC. Se ERROR = arqu. incompatível (custo zero). Completa ~23:10 UTC (20:10 BRT) → slot 2 pós-reset.
+- knobs v3 (ref 56370706) + fp-v4 (ref 56371652) ainda PENDING às 22:17 UTC (ETA minutos).
+- PLANO DE SLOTS PÓS-RESET (21:00 BRT, 5 novos): 1=late, 2=v2(se ok), 3=réplica do vencedor v4/late SE ≥0.33, 4=réplica extra, 5=reserva. Réplicas = resubmit do MESMO -v (novo seed do ranker) — ruído ±0.006 exige ≥2 leituras p/ decidir linhagem.
+- Preparados: drafts/derivatives_frag_design.md (swap-rule + validação offline sem slots); canon_fpv2.ipynb; pedido pendente ao usuário ~23h: colar ~/ksubmit.py + ~/night_watch.sh p/ adaptar réplica noturna no Termux.
