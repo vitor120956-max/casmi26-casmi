@@ -1,0 +1,22 @@
+{
+  "id": "victor120956/casmi26-priors-high-probe",
+  "title": "casmi26 priors high probe",
+  "code_file": "probe.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "prvsiyan/coconut-casmi26-candidates",
+    "prvsiyan/chebi-lipidmaps-casmi26",
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/casmi26-fp-models-v2",
+    "aidensong123/casmi26-offline-rdkit-2026033"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "envida-CASMI26-molecule-id-mass-spectra"
+  ],
+  "description": "PORT berat priors: config 0.328 (canonical + fp-models-v2) com W1_PRIORS (0.55,0.65,0.75) no lugar de (0.30,0.60). Hook: ranker 12 GBMs (3 priors x 4 seeds)."
+}

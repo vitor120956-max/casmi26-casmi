@@ -17,3 +17,9 @@ __pycache__/
 *.tmp
 .config/
 dreams_tmp/
+# 2026-09-20: janela autônoma
+harness_data/
+probeout_*/
+day_watch.log
+harness_download.log
+*.parquet

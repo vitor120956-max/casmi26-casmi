@@ -1,0 +1,22 @@
+{
+  "id": "victor120956/casmi26-megayak-engine-probe",
+  "title": "casmi26 megayak engine probe",
+  "code_file": "probe.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "prvsiyan/coconut-casmi26-candidates",
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/casmi26-fp-models-v2",
+    "megayak/casmi26-simulated-ranker-rows",
+    "aidensong123/casmi26-offline-rdkit-2026033"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "envida-CASMI26-molecule-id-mass-spectra"
+  ],
+  "description": "MEGAYAK two-rankers-one-engine as-is (CPU-friendly ~56min; author 0.337 blend .65). GPU=true exigido p/ competition source anexar."
+}
