@@ -19,7 +19,7 @@ wait_done(){
 }
 dl_verify(){ # slug outdir
   mkdir -p "/home/user/$2"
-  (cd "/home/user/$2" && timeout 300 kaggle kernels output $K/$1 . >> $LOG 2>&1)
+  timeout 300 kaggle kernels output $K/$1 -p "/home/user/$2" >> $LOG 2>&1
   v=$(bash /home/user/verify_out.sh "/home/user/$2" 2>&1 | tail -1)
   log "finish: $1 → $2 | $v"
 }

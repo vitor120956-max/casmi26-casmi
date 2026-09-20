@@ -26,7 +26,7 @@ PROBES=(
 "probeout_berat|casmi26-berat-sota-probe|1|berat|PROBE-WAVE1:berat — replication of 0.341 claim (SOTA quad-channel GBM)"
 "probeout_megayak2|casmi26-megayak-engine-probe2|3|megayak2|PROBE-WAVE1:megayak2 — two-rankers-one-engine as-is (0.337 blend claim)"
 "probeout_seedswap2|casmi26-seedswap-probe2|3|seedswap2|PROBE-WAVE1:seedswap2 — 0.328 config with SEEDS 4-7 (seed sensitivity)"
-"probeout_priors2|casmi26-priors-high-probe2|3|priors2|PROBE-WAVE1:priors2 — 0.328 config with priors 0.55/0.65/0.75"
+"probeout_priors2|casmi26-priors-high-probe2|2|priors2|PROBE-WAVE1:priors2 — 0.328 config with priors 0.55/0.65/0.75"
 )
 log "wave: START ($(grep -c PROBE-WAVE1 $SUBBED) já submetidas)"
 if [ "${1:-}" != "now" ] && [ "$(grep -c PROBE-WAVE1 $SUBBED)" -eq 0 ]; then
@@ -48,7 +48,7 @@ for entry in "${PROBES[@]}"; do
   if grep -q "PROBE-WAVE1:$tag" $SUBBED; then log "wave: $tag já submetida — skip"; continue; fi
   if [ ! -f "/home/user/$dir/submission.csv" ]; then
     mkdir -p "/home/user/$dir"
-    (cd "/home/user/$dir" && timeout 300 kaggle kernels output victor120956/$slug . >> $LOG 2>&1)
+    timeout 300 kaggle kernels output victor120956/$slug -p "/home/user/$dir" >> $LOG 2>&1
     log "wave: $tag — output re-baixado (auto-cura)"
   fi
   if ! bash verify_out.sh "/home/user/$dir" > /tmp/v_$tag.txt 2>&1; then
