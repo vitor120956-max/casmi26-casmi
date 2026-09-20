@@ -473,3 +473,16 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - Sandbox restartou de novo ~16:19 (3º do dia; factory morreu no buffer sem pushar). Reinstalei kaggle, corrigi sed envida→enveda nos 6 arquivos, **push v3 seedswap2+megayak2 às 16:23:45Z = LIMPO ✓✓** (sem warning).
 - `finish_line.sh` (processo "Linha de chegada") no ar: espera PAR1 → baixa+verifica probeout_seedswap2/megayak2 → push priors2 v3 → baixa+verifica probeout_priors2. ETAs: PAR1 COMPLETE ~17:15-17:25Z (14:15-14:25 BRT); priors2 ~18:15Z (15:15 BRT).
 - Rank atual: 296/944 (LB movendo). PLANO 21:00 BRT inalterado: 5 slots = haideptry, berat, megayak2, seedswap2, priors2.
+
+## 2026-09-20 16:40 UTC — PROTOCOLO DE VERIFICAÇÃO OBRIGATÓRIO (pedido explícito do usuário)
+- Usuário: "da próxima verifique" / "a gente não pode ficar cometendo erros nesse projeto". O typo envida→enveda passou 7h não detectado porque (a) metadata foi clonado sem diff e (b) o warning do servidor (que imprimia o slug errado literalmente) foi tratado como ruído em vez de dado.
+- **PROTOCOLO (inegociável, scripts prontos e testados):**
+  1. ANTES de todo `kaggle kernels push`: `bash precheck.sh <kpush_dir>` — FAIL = não pushar. (golden slug exato, enable_gpu=true, id, code_file parseável, formato dos dataset slugs)
+  2. DEPOIS do push: ler o output literalmente — "not valid competition sources" ou "error" = FALHA (nunca contar como sucesso; bug do queue_push3).
+  3. DEPOIS do download: `bash verify_out.sh <probeout_dir>` — só PASS = submisível (400 linhas, cols molecule_id,smiles, 0 vazias, 0 CCO, sem Traceback).
+  4. Clonar metadata = diff obrigatório contra referência boa (kpush_berat/kernel-metadata.json = golden).
+  5. Antes de planejar submissões: `competition_get_submission_limits` + listar submissões recentes (evitar double-submit com Termux).
+- Testado agora: precheck PASS nos 3 dirs ativos; verify PASS em probeout_berat + probeout_haideptry.
+- Slots de hoje (20/09 UTC) JÁ USADOS = 5 submissões da nossa noite de 19/09 (00:06-01:31 UTC): fp-late 0.312, fp-v2 0.328, canonical-replica 0.320, replicas 0.328×2. Termux NÃO submeteu nada. Próximos 5 slots: 21:00 BRT.
+- Sandbox restart #4 (~16:25) matou finish_line v1; .git revertido (padrão dos restarts). RESYNC FEITO (reset --hard origin/main = b44d148). Kernels v3 IMUNES a restart (server-side): seedswap2+megayak2 RUNNING desde 16:23:45Z, ETA 17:15-17:25Z (14:15-14:25 BRT); priors2 v3 será pushado pelo finish_line v2 após o par (ETA ~18:20Z = 15:20 BRT).
+- CHECKLIST DE RECONEXÃO (todo contato pós-restart): pip install kaggle; chmod 600 ~/.kaggle/kaggle.json; chmod +x .bin/gh + gh auth setup-git; git fetch + reset --hard origin/main + re-set identity; conferir day_watch.log; conferir status dos kernels.
