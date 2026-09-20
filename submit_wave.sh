@@ -14,10 +14,15 @@ python3 - <<'PY' 2>/dev/null | tail -1
 from kaggle.api.kaggle_api_extended import KaggleApi
 api=KaggleApi(); api.authenticate()
 r=api.competition_get_submission_limits('enveda-CASMI26-molecule-id-mass-spectra')
-try: print(int(getattr(r,'numAllowedNow')))
-except Exception:
-    try: print(int(r['numAllowedNow']))
-    except Exception: print(-1)
+v=None
+for a in ('numAllowedNow','num_allowed_now'):
+    v=getattr(r,a,None)
+    if v is not None: break
+if v is None:
+    for k in ('numAllowedNow','num_allowed_now'):
+        try: v=r[k]; break
+        except Exception: pass
+print(int(v) if v is not None else -1)
 PY
 }
 # dir|slug|kver|tag|msg   (ordem = prioridade)
