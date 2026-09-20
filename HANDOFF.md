@@ -400,3 +400,13 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - knobs v3 (ref 56370706) + fp-v4 (ref 56371652) ainda PENDING às 22:17 UTC (ETA minutos).
 - PLANO DE SLOTS PÓS-RESET (21:00 BRT, 5 novos): 1=late, 2=v2(se ok), 3=réplica do vencedor v4/late SE ≥0.33, 4=réplica extra, 5=reserva. Réplicas = resubmit do MESMO -v (novo seed do ranker) — ruído ±0.006 exige ≥2 leituras p/ decidir linhagem.
 - Preparados: drafts/derivatives_frag_design.md (swap-rule + validação offline sem slots); canon_fpv2.ipynb; pedido pendente ao usuário ~23h: colar ~/ksubmit.py + ~/night_watch.sh p/ adaptar réplica noturna no Termux.
+
+## 2026-09-20 00:10 UTC — BUG DO CAMINHO ABSOLUTO RESOLVIDO; 3 PROBES NO AR
+- SINTOMA: CreateCodeSubmission 400 "Did not find provided Notebook Output File" em TODAS as submissões 23:53→00:05, mesmo com slots ok (numToday=0, numAllowedNow=5 via competition_get_submission_limits) e CSV byte-idêntico ao output do servidor (md5 b5492c3f... confere p/ v6).
+- CAUSA RAIZ: ApiCreateCodeSubmissionRequest.file_name = a string passada; servidor casa contra o manifesto de output ("submission.csv"). CLI/python com path ABSOLUTO → 400. Ontem 5/5 sucessos usaram `cd <dir> && -f submission.csv` (relativo).
+- CORREÇÃO PERMANENTE (REGRA): submeter SEMPRE com file_name='submission.csv' relativo, cwd=dir do output. Método confiável: python KaggleApi.competition_submit_code('submission.csv', msg, COMP, kernel=SLUG, kernel_version=V) com os.chdir(dir) antes. Verificar ksubmit.py do Termux quanto a isso quando usuário colar (~22:30 BRT).
+- OUTPUTS ANTIGOS NÃO EXPIRAM: réplica v1 (output de 15:11 UTC 19/09) aceita → réplicas noturnas = resubmit dos CSVs em disco (cada scoreamento re-executa hidden com novo seed). Sem necessidade de re-push.
+- SCORES DA NOITE: knobs v3 = 0.322 (INERTE, lane fechada); fp-v4 = 0.323 (NÃO explica gap 0.335, lane fechada). Fusão 0.320 (fechada). Motor honesto = ~0.32x.
+- NO AR: fp-late ref 56374186 (-v 5, ETA ~00:55-01:00 UTC), fp-v2-models ref 56374189 (-v 6, ETA ~00:55 UTC), réplica-canônica-1 ref 56374191 (-v 1, ETA ~01:30-01:45 UTC). Restam 2 slots hoje (20/09 UTC).
+- DRIFT DE DATASETS: ranker-features atualizado 17/09 08h, chebi 16/09, coconut 15/09 — suspeita residual p/ gap do starkhushi (0.335), NÃO testável via CLI (pin de versão só pela UI). Se late+v2 falharem, parar de caçar o gap e ir p/ alavancas estruturais (frag-derivados design já em drafts/, DreaMS).
+- PLANO 22:00-00:00 BRT: ler os 3 scores; se algum ≥0.33 → usar 2 slots restantes em réplicas dele; senão → réplica extra do canônico p/ fechar distribuição de ruído + preparar Termux overnight (usuário cola ksubmit.py/night_watch.sh ~22:30).
