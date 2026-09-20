@@ -1,0 +1,22 @@
+{
+  "id": "victor120956/casmi26-hello-test",
+  "title": "casmi26 hello test",
+  "code_file": "probe.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "prvsiyan/coconut-casmi26-candidates",
+    "prvsiyan/chebi-lipidmaps-casmi26",
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/casmi26-fp-models-v2",
+    "aidensong123/casmi26-offline-rdkit-2026033"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "enveda-CASMI26-molecule-id-mass-spectra"
+  ],
+  "description": "DIAG2: hello com os 5 datasets do seedswap \u2014 competition anexa?"
+}
