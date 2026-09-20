@@ -16,7 +16,7 @@
   ],
   "kernel_sources": [],
   "competition_sources": [
-    "envida-CASMI26-molecule-id-mass-spectra"
+    "enveda-CASMI26-molecule-id-mass-spectra"
   ],
   "description": "MEGAYAK two-rankers-one-engine as-is (CPU-friendly ~56min; author 0.337 blend .65). GPU=true exigido p/ competition source anexar."
 }

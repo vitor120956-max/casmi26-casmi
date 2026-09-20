@@ -16,7 +16,7 @@
   ],
   "kernel_sources": [],
   "competition_sources": [
-    "envida-CASMI26-molecule-id-mass-spectra"
+    "enveda-CASMI26-molecule-id-mass-spectra"
   ],
   "description": "PORT berat priors: config 0.328 (canonical + fp-models-v2) com W1_PRIORS (0.55,0.65,0.75) no lugar de (0.30,0.60). Hook: ranker 12 GBMs (3 priors x 4 seeds). | FRESH-SLUG v1 (kernel anterior tainted por ERROR: competition source rejeitada)"
 }

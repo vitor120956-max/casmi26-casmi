@@ -16,7 +16,7 @@
   ],
   "kernel_sources": [],
   "competition_sources": [
-    "envida-CASMI26-molecule-id-mass-spectra"
+    "enveda-CASMI26-molecule-id-mass-spectra"
   ],
   "description": "SEED-SWAP: config 0.328 (canonical + fp-models-v2) com SEEDS (4,5,6,7). Mede sensibilidade a seed do nosso melhor (megayak: 0.017!). Hook: SEED-SWAP."
 }

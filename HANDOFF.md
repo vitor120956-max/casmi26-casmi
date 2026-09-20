@@ -466,3 +466,10 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - harness_data RESTAURADO completo (train.parquet 2.9G, test 4.7M, 4 datasets) — re-download levou ~13 min.
 - ETAs: PAR1 push ~14:42 UTC → COMPLETE ~15:35-15:45 UTC (12:35-12:45 BRT); priors2 ~15:50 push → ~16:45 UTC (13:45 BRT). Tudo pronto bem antes do reset 21:00 BRT. Slots: 1 haideptry, 2 berat, 3 megayak2, 4 seedswap2, 5 priors2 (se completos).
 - git: rebase sobre origin/main recuperou a5daea0 (commit da janela autônoma que o restart#2 do sandbox perdeu localmente). LEMBRETE: restarts restauram snapshot antigo — conferir `git log HEAD vs origin/main` e HANDOFF ao reconectar.
+## 2026-09-20 16:25 UTC — ★ ROOT CAUSE FINAL: TYPO "envida" vs "enveda" ★
+- TODAS as teorias anteriores (CLI, datasets, tainted-slug, capacidade GPU) REFUTADAS. Causa real: `kpush_{megayak,seedswap,priors}{,2}/kernel-metadata.json` tinham competition_sources = **`envida-CASMI26-...`** (typo, i no lugar do e). Slug oficial = **`enveda-CASMI26-molecule-id-mass-spectra`**. O warning do servidor imprimia o slug inválido literalmente — estava na cara desde 09:03.
+- berat/haideptry/hello tinham o slug CERTO → sempre limpos. hello v2 (5 datasets iguais aos do seedswap) provou que datasets/competição/conta estavam ok — o delta era só o typo no metadata.
+- **REGRA: ao clonar kernel-metadata, diffar contra um arquivo sabidamente bom; ler o slug exato que o warning imprime.**
+- Sandbox restartou de novo ~16:19 (3º do dia; factory morreu no buffer sem pushar). Reinstalei kaggle, corrigi sed envida→enveda nos 6 arquivos, **push v3 seedswap2+megayak2 às 16:23:45Z = LIMPO ✓✓** (sem warning).
+- `finish_line.sh` (processo "Linha de chegada") no ar: espera PAR1 → baixa+verifica probeout_seedswap2/megayak2 → push priors2 v3 → baixa+verifica probeout_priors2. ETAs: PAR1 COMPLETE ~17:15-17:25Z (14:15-14:25 BRT); priors2 ~18:15Z (15:15 BRT).
+- Rank atual: 296/944 (LB movendo). PLANO 21:00 BRT inalterado: 5 slots = haideptry, berat, megayak2, seedswap2, priors2.
