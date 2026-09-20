@@ -1,0 +1,22 @@
+{
+  "id": "victor120956/casmi26-berat-sota-probe",
+  "title": "casmi26 berat sota probe",
+  "code_file": "probe.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "prvsiyan/coconut-casmi26-candidates",
+    "prvsiyan/chebi-lipidmaps-casmi26",
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/casmi26-fp-models-v2",
+    "aidensong123/casmi26-offline-rdkit-2026033"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "enveda-CASMI26-molecule-id-mass-spectra"
+  ],
+  "description": "BERAT as-is [0.341+ claim]: quad-channel + RRF + 29 adducts 0.4ppm offset, priors .55/.65/.75, fp-models-v2"
+}
