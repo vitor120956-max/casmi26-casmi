@@ -1,0 +1,56 @@
+=== SWEEP 2026-09-20T21:49:40Z ===
+--- kernels por dateRun (atividade recente) ---
+Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/user/.kaggle/kaggle.json'
+ref                                                               title                                               author                                  lastRunTime                 totalVotes  
+----------------------------------------------------------------  --------------------------------------------------  --------------------------------------  --------------------------  ----------  
+mohammedshammeer/casmi-eda                                        CASMI EDA                                           Mohammed Shammeer                       2026-09-20 19:47:48.870000           0  
+denpugovkin/casmi26-v17-adduct-grouped-merged-fpnet               CASMI26: V17 Adduct-Grouped Merged FPNet            Den Pugovkin                            2026-09-20 19:28:33.650000          23  
+nihilisticneuralnet/casmi-26-baseline                             CASMI 26: Baseline                                  parthenos                               2026-09-20 18:04:16.897000           3  
+alihsan143/research-paper-the-unified-thermodynamic-model-of      Research Paper: The Unified Thermodynamic Model of  علي الخليفاوي                           2026-09-20 17:08:31.597000           0  
+beraterolelk/0-336-sota-enveda-casmi26-analog-ranker              ⚡ [0.336+ SOTA] Enveda CASMI26 Analog Ranker        Berat Erol ÇELİK                        2026-09-20 15:47:08.223000          57  
+dosomethingbetter/notebook7f31570cd4                              notebook7f31570cd4                                  dosomethingbetter                       2026-09-20 14:23:21.100000           0  
+n10705013/casmi26-4ch-tautomer-dedup-chebi-fork                   CASMI26 4ch tautomer-dedup chebi fork               Nina                                    2026-09-20 13:48:58.227000           2  
+xolotlmictlan/casmi339-repro                                      Casmi339 Repro                                      asdf                                    2026-09-20 13:03:46.767000           2  
+kingkiller2164/repro-haideptry-v17-fast-spectral-cosine-baseline  Repro haideptry V17 fast spectral cosine baseline   KiKi                                    2026-09-20 12:35:55.390000           1  
+bagusrafiq/hybrid-mass-spectral-vectorization-and-precursor-f     Hybrid Mass-Spectral Vectorization and Precursor-F  Muhamad Bagus Rafiq                     2026-09-20 11:42:59.617000           0  
+shreyashautomation/casmi26-biopool-recall                         casmi26-biopool-recall                              Shreyash Mishra                         2026-09-20 10:05:13.110000           0  
+datascikhan/enveda-casmi-2026-mass-spectra-molecule-baseline      Enveda CASMI 2026: Mass Spectra Molecule Baseline   Shair Khan                              2026-09-20 09:50:25.890000           8  
+jakomina/extraction-molecular                                     extraction_molecular                                Jacobo Tlacaelel Mina Rodriguez (jako)  2026-09-20 08:51:53.213000           0  
+llccqq624/casmi26-next-direct-w100                                CASMI26 Next Direct W100                            Jiachen Li                              2026-09-20 07:57:12.923000           0  
+llccqq624/casmi26-next-direct-w096                                CASMI26 Next Direct W096                            Jiachen Li                              2026-09-20 07:14:55.017000           0  
+llccqq624/casmi26-next-direct-w092                                CASMI26 Next Direct W092                            Jiachen Li                              2026-09-20 07:13:51.187000           0  
+llccqq624/casmi26-next-direct-w088                                CASMI26 Next Direct W088                            Jiachen Li                              2026-09-20 06:31:13.507000           0  
+llccqq624/casmi26-next-direct-w084                                CASMI26 Next Direct W084                            Jiachen Li                              2026-09-20 06:31:09.130000           0  
+llccqq624/casmi26-20260920-v23-rrf-a75                            CASMI26 20260920 V23 RRF A75                        Jiachen Li                              2026-09-20 06:21:59.187000           0  
+llccqq624/casmi26-20260920-v23-rrf-a50                            CASMI26 20260920 V23 RRF A50                        Jiachen Li                              2026-09-20 06:20:40.400000           0  
+
+--- datasets por updated ---
+Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/user/.kaggle/kaggle.json'
+ref                                           title                                                 size  lastUpdated                 downloadCount  voteCount  usabilityRating  
+--------------------------------------------  ----------------------------------------------  ----------  --------------------------  -------------  ---------  ---------------  
+megayak/casmi26-simulated-ranker-rows         CASMI26 Simulated Ranker Rows                    341319392  2026-09-20 14:03:38.470000            116          0  0.4375           
+rogersjohnson/casmi26-fp-merged-m1b-36k       CASMI26 fp merged model (m1b, step 36k)          133615107  2026-09-20 12:49:44.300000              4          1  0.625            
+kizhowl/casmi26-lotus-extra-fingerprints      CASMI26 LOTUS Novel NP Fingerprints                5306610  2026-09-20 08:51:24.077000              8          0  0.25             
+casua132/casmi26-artifacts                    casmi26-artifacts                                536996072  2026-09-20 08:35:40.937000             76          0  0.3529412        
+xdipzz/casmi26-deep-ms2-transformer-weights   CASMI 2026 Deep MS2 Transformer Weights          700193095  2026-09-20 05:07:13.023000              4          0  0.375            
+pri2si17/casmi26-maccs-fingerprint-models-8k  CASMI26 MACCS Fingerprint Models (8k)             39270414  2026-09-20 00:36:34.743000              4          0  0.375            
+prvsiyan/casmi26-fp-models-late               CASMI26 fp models late merged                    792012775  2026-09-19 17:02:29.523000              7          0  0.375            
+ranjithch/casmi26-pubchem-candidates          casmi26-pubchem-candidates                          156851  2026-09-19 16:05:02.860000              6          1  0.23529412       
+ranjithch/casmi26-stage2-submission           casmi26-stage2-submission                           115386  2026-09-19 14:27:51.010000              4          1  0.23529412       
+ngdminh31/casmi26-pubchem-tier2-fp-public     CASMI26 PubChem tier-2 fingerprints (public)    2307609064  2026-09-19 14:09:23.713000             19          1  0.3125           
+excellencedev/casmi26-reranker                casmi26-reranker                                   1488754  2026-09-19 14:05:50.620000             15          1  0.125            
+ngdminh31/casmi26-pubchemlite-2026-fp-public  CASMI26 PubChemLite 2026 fingerprints (public)    95048447  2026-09-19 14:03:29.783000             16          1  0.3125           
+cosmicbe/casmi26-pubchemlite                  CASMI26 PubChemLite candidates                    11618352  2026-09-19 12:56:29.560000              3          0  0.23529412       
+n10705013/casmi26-coconut-pool                CASMI26 COCONUT candidate pool                    30398957  2026-09-19 11:31:46.670000              4          0  0.23529412       
+hungtrabiz/casmi26-pubchemlite-pool           CASMI26 PubChemLite CC0 Candidate Pool            11618352  2026-09-19 09:17:24.043000              4          0  0.23529412       
+zhangxiangyu12138/casmi26-assets              casmi26-assets                                   296295561  2026-09-19 08:10:30.380000             56          0  0.3529412        
+prvsiyan/casmi26-fp-models-v6                 CASMI26 fingerprint models v6 ensemble          2610421227  2026-09-18 16:52:39.330000             26          1  0.4375           
+prvsiyan/casmi26-fp-models-v4                 CASMI26 fingerprint models v4                   1582670350  2026-09-18 15:55:43.447000             25          2  0.4375           
+prvsiyan/casmi26-fp-models-v3                 CASMI26 fingerprint models v3                   1187265460  2026-09-18 15:32:29.553000              5          1  0.375            
+kaimolbuaa/casmi26-ranker-features-v4         CASMI26 ranker features v4 (pinned)                9548060  2026-09-18 12:08:44.860000              7          0  0.3125           
+
+--- models (busca casmi) ---
+Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/user/.kaggle/kaggle.json'
+    id  ref                                            title                            subtitle  author              
+------  ---------------------------------------------  -------------------------------  --------  ------------------  
+759854  lamtruong1594/casmi-2026-v3-train-fingerprint  casmi-2026-v3-train-fingerprint            Trần Võ Lâm Trường  
