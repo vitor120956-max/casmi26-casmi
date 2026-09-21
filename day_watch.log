@@ -1,0 +1,18 @@
+2026-09-21 10:45 BRT - handoff anterior
+2026-09-21 13:53 BRT - novo agente iniciou, workspace vazio, repo 404
+2026-09-21 14:18 BRT - kaggle.json recebido, user victor120956, rank 184
+2026-09-21 14:20 BRT - recuperados outputs kernels: canonical 0.328, seedswap2 0.332, megayak2 0.323 (+ours+pv), berat 0.236, haideptry 0.290, priors2 0.329 -> wave_backup reconstruído
+2026-09-21 14:20 BRT - baixados: kitopl scoring keys (ik14_map, library_map), fp-models-v2, ranker-features, coconut candidates, harness_data train 2.9G + test 4.7M
+2026-09-21 14:20 BRT - prvsiyan_fork/canon_fpv2.ipynb recuperado via kaggle kernels pull
+2026-09-21 14:21 BRT - arm.sh, precheck.sh, verify_out.sh reconstruídos (minimal)
+2026-09-21 14:23 BRT - PubChemLite store 445k criado e dataset victor120956/casmi26-pubchem-lite-store v1/v2 publicado (47MB)
+2026-09-21 14:24 BRT - kpush_pubchem_lite v1 PUSHED RUNNING (canon+PubChemLite top50)
+2026-09-21 22:06 BRT - repo restaurado via Drive (31.5M), arm.sh OK, harness_data train 2.9G re-baixado
+2026-09-21 22:06 BRT - 2 kernels PubChemLite COMPLETE (445k): top50 e top25, store detectado, aguardando reset 1.9h para submissão (limite diário 5 atingido)
+2026-09-21 22:06 BRT - recon_sweep evening: prvsiyan baseline 95 votos, flexonafft 18 votos, nosso dataset pubchem-lite-store 1 dl
+2026-09-21 22:15 BRT - 2 novos probes PubChem pushed RUNNING: priors40-50 (W1 0.40/0.45/0.50 + 8 seeds) + wincap20k (PC_WINCAP 20000)
+2026-09-21 22:15 BRT - total Onda2: 4 probes (2 COMPLETE top50/top25 + 2 RUNNING), aguardando reset 1.9h (00:00 BRT)
+2026-09-21 19:38 BRT - PADRAO §0 rearmado: git 75a8abf OK, kaggle auth OK, harness 3.3G DL bg, kernels 2 COMPLETE 2 RUNNING
+2026-09-21 19:38 BRT - LB FRESH 21/09 19:27 UTC: top1 Ozy 0.409 (03:36), Randy 0.388, Udam 0.387, DDM 0.381 NEW top4, Aryan 0.373, pikachu 0.371, Alperen 0.367, cutoff top5 0.381
+2026-09-21 19:38 BRT - RECON: prvsiyan baseline REPUBLICADO 95 votos 20:59 UTC (era 403), berat 0.336 SOTA 62 votos 18:04, denpugovkin bio-db-tail 31 votos, flexonafft 18 votos, rubenvr GBDT ranker model 21:12, ISDB spectra 21:56
+2026-09-21 19:38 BRT - NEXT RESET 00:00 UTC 22/09 = 21:00 BRT 21/09 em ~1h22m, numAllowedNow 0, Onda2 4 probes prontas
