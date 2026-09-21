@@ -503,3 +503,10 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 ## 2026-09-20 21:35 UTC — priors2 COMPLETE; FROTA 5/5 VERIFICADA; restart #6 matou wave+watch (religados)
 - priors2 v2 COMPLETE, baixado, VERIFY PASS. **As 5 da onda estão prontas**: haideptry v1, berat v1, megayak2 v3, seedswap2 v3, priors2 v2 (wave já corrigida p/ kver=2). Backups em wave_backup/ (8 CSVs).
 - Wave religada 21:3x → dispara 00:00:30Z (21:00 BRT). Se restart #7 matar de novo: religar `bash submit_wave.sh` (idempotente; pós-00:00Z usar `now`).
+## 2026-09-21 01:20 UTC (22:20 BRT 20/09) — ★★ VEREDITO ONDA 1: CLAIMS PÚBLICOS ALTOS NÃO REPLICAM ★★
+- **haideptry 0.290** (claim 0.339, −0.049) | **berat 0.236** (claim 0.341, −0.105!) | **megayak2 0.323** (claim blend 0.337, −0.014; IDÊNTICO ao 0.323 do starkhushi = 2 leituras independentes concordam: two-ranker é 0.323, "DEAD" confirmado) | **seedswap2 0.332** (+0.004 vs 0.328 base = medida direta do ruído de seed no LB) | **priors2 0.329** (+0.001 = priors 0.55/0.65/0.75 inertes).
+- REGRA REFORÇADA: leituras únicas de LB não valem nada; a disciplina anti-sorte do usuário se pagou (nenhum claim alto sobreviveu).
+- NOSSA FAMÍLIA (canonical+fp-v2): 0.328×3 + 0.332 (seeds4-7) + 0.329 (priors) = banda 0.328–0.332, mediana ~0.329. FINALS-SAFE #1 permanece a linhagem 0.328 (3/3 spread zero).
+- CONCLUSÃO ESTRATÉGICA: nenhum notebook público replica >0.33 → saltos do LB (0.383–0.396) NÃO vêm desses engines. Alavanca = fp-models novos (m1b-36k/merged_26k, já baixados em wave2_assets/ 487MB) + fusão deep-rank (rank-1 convergente; ranks 2-25 decidem).
+- ONDA 2 (segunda 21:00 BRT): (1) testar OFFLINE no harness (train.parquet labels) canonical+fp m1b-36k e canonical+merged_26k (loader globa fp_*.pt — atenção: merged_26k/ours_* não casam com o glob, renomear p/ fp_*.pt no kernel); (2) fusão RRF offline dos 7 rankings em wave_backup/; (3) pushar kernels onda-2 à tarde, submeter 21:00 BRT com gatilho humano (hibernação mata processos).
+- Slots: 5/5 usados (refs 56408390-56408488). Próximo reset: 21/09 21:00 BRT.

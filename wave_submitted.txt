@@ -1,0 +1,5 @@
+PROBE-WAVE1:haideptry|2026-09-21T00:02:16Z|casmi26-haideptry-0339-probe v1|MANUAL
+PROBE-WAVE1:berat|2026-09-21T00:02:38Z|casmi26-berat-sota-probe v1|MANUAL
+PROBE-WAVE1:megayak2|2026-09-21T00:03:00Z|casmi26-megayak-engine-probe2 v3|MANUAL
+PROBE-WAVE1:seedswap2|2026-09-21T00:03:21Z|casmi26-seedswap-probe2 v3|MANUAL
+PROBE-WAVE1:priors2|2026-09-21T00:03:43Z|casmi26-priors-high-probe2 v2|MANUAL
