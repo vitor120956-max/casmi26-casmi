@@ -516,3 +516,14 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - Commitados nesta transição: AGENT_HANDOFF.md, kitopl keys, pins (itsuki89/dionet2), refs novos (starkhushi_frag, alexchilton_tut, flexonafft), recon_log, lb snapshots, wave_backup (8 CSVs), todos os scripts (arm/precheck/verify_out/recon_sweep/manual_wave/submit_wave corrigido).
 - Em voo no momento da transição: harness_download.sh re-baixando train.parquet (2.9GB, ~13 min, background — pode morrer por hibernação; próximo agente re-roda se du -sh harness_data ≈ 63M).
 - Estado da onda 2: em construção — alvo principal canon+PubChem-top50 (código já no canon, OFF; store candidato ngdminh31 tier2, formato diferente — adaptar). Slots: segunda 21:00 BRT (5 livres).
+
+## 2026-09-21 22:03 UTC — RECONSTRUÇÃO TOTAL PÓS-RESTORE VIA DRIVE + PUBCHEM LITE NO FORNO
+- Usuário enviou Drive com repo 31.5M (casmi26-casmi-main.zip) às 22:02 BRT. Restaurado via tar em /home/user (arm.sh real recuperado, HANDOFF.md 518 linhas, wave_backup 8 CSVs originais, wave2_assets/kitopl, refs completos, todos scripts).
+- arm.sh OK ✓, kaggle.json re-armado, harness_data train 2.9G re-baixado (segunda vez no dia).
+- PubChemLite store 445k construído em wave2_assets/pubchem_store_lite/ (mass_sorted.npy 3.4M + order/off/len + smiles.txt 20M) e publicado como dataset victor120956/casmi26-pubchem-lite-store (47MB, v1/v2).
+- 2 kernels PubChem pushed e COMPLETE: casmi26-pubchem-probe-lite (PC_TOPK=50) + casmi26-pubchem-probe-lite-25 (PC_TOPK=25), ambos com hook "PubChem store: 445,038 NP-formula structures, mass-indexed" e VERIFY PASS.
+- Tentativa de submissão 22:05 BRT falhou 400: "daily allowance (5) today, try again tomorrow UTC (1.9h from now)" → reset previsto ~00:00 BRT 22/09 = 03:00 UTC 22/09. Onda 2 aguardando reset.
+- recon_sweep evening: 49 linhas, prvsiyan baseline 95 votos, flexonafft 18 votos, nosso dataset 1 dl.
+- Git: .git perdido no zip (sem histórico), init vazio, origin privado sem token .bin/gh — push pendente até usuário tornar público ou fornecer PAT. Estado local preservado.
+- Próximo: submeter 2 probes PubChemLite após reset + pushar 3 probes restantes (frag, fp alternativo megayak merged_26k, fusão RRF) para completar 5 slots da segunda 21:00 BRT.
+

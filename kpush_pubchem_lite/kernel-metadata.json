@@ -1,0 +1,20 @@
+{
+  "id": "victor120956/casmi26-pubchem-probe-lite",
+  "title": "casmi26 pubchem probe lite",
+  "code_file": "casmi26-pubchem-probe-lite.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "prvsiyan/casmi26-fp-models-v2",
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/coconut-casmi26-candidates",
+    "aidensong123/casmi26-offline-rdkit-2026033",
+    "victor120956/casmi26-pubchem-lite-store"
+  ],
+  "competition_sources": ["enveda-CASMI26-molecule-id-mass-spectra"],
+  "kernel_sources": []
+}
