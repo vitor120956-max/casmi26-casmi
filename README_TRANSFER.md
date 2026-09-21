@@ -1,0 +1,6 @@
+# README_TRANSFER — para o próximo agente (21/09/2026)
+- Este zip = working tree do repo `vitor120956-max/casmi26-casmi` no commit 25e34ef+ (14:0x UTC 21/09), SEM .git. Histórico narrado: AGENT_HANDOFF.md + HANDOFF.md.
+- O repo GitHub EXISTE e está ÍNTEGRO — é PRIVADO (404 para acesso sem autenticação, não foi deletado). Para voltar a pushar: `gh auth login` ou PAT do usuário; ou `git init && git add -A && git commit -m start && git remote add origin <url> && git push -u origin main`.
+- Setup: descompactar em /home/user → `pip install kaggle` → kaggle.json em `~/.kaggle/kaggle.json` + `chmod 600` → `bash arm.sh` (partes git falham sem .git — inofensivo) → `bash harness_download.sh` (background ~13 min; confere `du -sh harness_data` = ~3.6G no fim) → wave2_assets grandes: comandos no AGENT_HANDOFF.md §9 (15s).
+- LER PRIMEIRO: AGENT_HANDOFF.md §0. Protocolos obrigatórios: §11. Erros já cometidos (NÃO repetir): §10. Estado/estratégia: §5-6 e §12.
+- Arquivos críticos conferidos neste zip: wave_backup/*.csv (8), prvsiyan_fork/canon_fpv2.ipynb, prvsiyan_out_v2models/submission.csv, wave2_assets/kitopl/*.csv (4), wave2_assets/pins/*, refs/{alexchilton_tut,flexonafft,starkhushi_frag,berat_sota,haideptry,megayak_nine,megayak_engine}/*, drafts/derivatives_frag_design.md, lb_*.csv, day_watch.log, wave_submitted.txt.
