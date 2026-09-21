@@ -1,0 +1,51 @@
+=== SWEEP 2026-09-21T22:40:29Z ===
+--- kernels por dateRun ---
+ref                                                            title                                               author                       lastRunTime                 totalVotes  
+-------------------------------------------------------------  --------------------------------------------------  ---------------------------  --------------------------  ----------  
+shorooghahmadi/casmi2026-3                                     casmi2026-3                                         Shoroogh Ahmadi              2026-09-21 21:44:34.343000           0  
+prvsiyan/analog-propagation-casmi-2026-baseline                Analog Propagation - CASMI 2026 baseline            prvsiyan                     2026-09-21 20:59:45.720000          95  
+rabbitpeace310/casmi26-two-rankers-one-engine                  CASMI26 Two Rankers One Engine                      k310                         2026-09-21 20:03:48.800000           0  
+manderson240/casmi26-analog-baseline-fork-cohezion             CASMI26 analog baseline fork (Cohezion)             Mike Anderson                2026-09-21 18:48:36.037000           0  
+flexonafft/casmi26-strong-retrieval-clean-ranking              CASMI26: Strong Retrieval, Clean Ranking            Igor Zharov                  2026-09-21 18:18:40.927000          18  
+beraterolelk/0-336-sota-enveda-casmi26-analog-ranker           ⚡ [0.336+ SOTA] Enveda CASMI26 Analog Ranker        Berat Erol ÇELİK             2026-09-21 18:04:33.673000          62  
+denpugovkin/casmi-2026-protected-bio-db-tail                   CASMI 2026: Protected Bio-DB Tail                   Den Pugovkin                 2026-09-21 17:09:58.693000          31  
+ahmedberatozer/casmi26-v2-baseline                             casmi26 v2 : Baseline                               Ahmed Berat Özer             2026-09-21 16:33:52.040000           6  
+busyaprime/casmi26-which-library-each-query-class-matches      CASMI26: which library each query class matches     Akmal Xodarev (Busya PRIME)  2026-09-21 15:47:18.660000           0  
+minedmap/casmi26-baseline-fork                                 CASMI26 baseline fork                               minedmap                     2026-09-21 15:41:30.847000           0  
+kotaroosako/casmi26-baseline-run                               CASMI26 Baseline Run                                vamos_field                  2026-09-21 14:56:31.543000           0  
+shorooghahmadi/not-enveda-casmi-2                              not enveda casmi-2                                  Shoroogh Ahmadi              2026-09-21 13:38:26.867000           0  
+busyaprime/casmi26-a-0-98-cv-of-the-holdout-not-chemistry      CASMI26: a 0.98 CV of the holdout, not chemistry    Akmal Xodarev (Busya PRIME)  2026-09-21 11:42:08.070000           1  
+saurabhkumar234/chem-builder-2026-v3                           Chem Builder 2026 v3                                100rabh                      2026-09-21 11:34:40.597000           0  
+nauvidscience/casmi26-library-search-baseline                  Casmi26 Library Search Baseline                     Fikri Kurnia                 2026-09-21 10:32:32.067000           2  
+amanatar/enveda-casmi-2026                                     Enveda CASMI 2026                                   Aman Atar                    2026-09-21 10:23:34.017000           0  
+alexchilton/casmi26-tutorial-and-glossary-from-a-0-342-scorer  CASMI26 Tutorial and Glossary from a 0 342 Scorer   alex chilton                 2026-09-21 10:20:24.953000           0  
+busyaprime/casmi26-analog-engine-learning-to-rank-blend        CASMI26 Analog Engine + Learning-to-Rank Blend      Akmal Xodarev (Busya PRIME)  2026-09-21 10:16:10.787000           0  
+starkhushi/casmi-2026-fragmentation-check                      CASMI 2026 Fragmentation Check                      starkhushi                   2026-09-21 09:55:14.627000           3  
+alihsan143/research-paper-the-unified-thermodynamic-model-of   Research Paper: The Unified Thermodynamic Model of  علي الخليفاوي                2026-09-21 09:29:07.587000           0  
+--- datasets por updated ---
+ref                                                   title                                                  size  lastUpdated                 downloadCount  voteCount  usabilityRating  
+----------------------------------------------------  -----------------------------------------------  ----------  --------------------------  -------------  ---------  ---------------  
+n10705013/casmi26-isdb-predicted-spectra              CASMI26 ISDB Predicted Spectra                            0  2026-09-21 21:56:25.840000              0          0  0.25             
+rubenvr/casmi26-gbdt-ranker-model                     CASMI26 GBDT Reranker Model                          138304  2026-09-21 21:12:44.363000              2          0  0.25             
+rubenvr/coconut-candidates-casmi26                    COCONUT Natural Product Candidates CASMI26         13145656  2026-09-21 17:27:22.053000              1          0  0.23529412       
+pri2si17/casmi26-maccs-fingerprint-models-8k          CASMI26 MACCS Fingerprint Models (8k)              51051250  2026-09-21 16:48:47.440000              7          0  0.375            
+ranjithch/casmi26-pubchem-candidates                  casmi26-pubchem-candidates                           157654  2026-09-21 16:40:28.780000             11          1  0.23529412       
+ranjithch/casmi26-ms2deepscore-embeddings             casmi26-ms2deepscore-embeddings                   447365008  2026-09-21 15:59:42.390000              1          1  0.23529412       
+ranjithch/casmi26-ms2deepscore-model                  casmi26-ms2deepscore-model                        386042422  2026-09-21 15:01:03.443000              2          1  0.375            
+victor120956/casmi26-pubchem-lite-store               CASMI26 PubChemLite Store - mass sorted             6657164  2026-09-21 14:23:58.863000              1          1  0.125            
+dionet2/casmi26-ranker-features-big                   CASMI26 ranker features (1199-query harness CV)     6872555  2026-09-21 09:36:00.867000              5          0  0.125            
+dionet2/casmi26-ranker-features-harness               CASMI26 ranker features (harness CV)                2959913  2026-09-21 06:21:29.903000              2          0  0.125            
+itsuki89/casmi26-ranker-features-v4-pin               CASMI26 ranker features v4 (version-pin mirror)     9548060  2026-09-21 05:20:40.693000              4          0  0.375            
+kitopl/casmi-2026-scoring-keys-and-contamination-map  CASMI 2026: Scoring Keys & Contamination Map        7928537  2026-09-21 00:10:40.490000             34          0  0.64705884       
+megayak/casmi26-simulated-ranker-rows                 CASMI26 Simulated Ranker Rows                     341319392  2026-09-20 14:03:38.470000            155          0  0.4375           
+rogersjohnson/casmi26-fp-merged-m1b-36k               CASMI26 fp merged model (m1b, step 36k)           133615107  2026-09-20 12:49:44.300000              7          1  0.625            
+kizhowl/casmi26-lotus-extra-fingerprints              CASMI26 LOTUS Novel NP Fingerprints                 5306610  2026-09-20 08:51:24.077000             10          0  0.25             
+casua132/casmi26-artifacts                            casmi26-artifacts                                 536996072  2026-09-20 08:35:40.937000             85          0  0.3529412        
+xdipzz/casmi26-deep-ms2-transformer-weights           CASMI 2026 Deep MS2 Transformer Weights           700193095  2026-09-20 05:07:13.023000              4          0  0.375            
+prvsiyan/casmi26-fp-models-late                       CASMI26 fp models late merged                     792012775  2026-09-19 17:02:29.523000              9          0  0.375            
+ranjithch/casmi26-stage2-submission                   casmi26-stage2-submission                            115386  2026-09-19 14:27:51.010000              5          1  0.23529412       
+ngdminh31/casmi26-pubchem-tier2-fp-public             CASMI26 PubChem tier-2 fingerprints (public)     2307609064  2026-09-19 14:09:23.713000             25          1  0.3125           
+--- models busca casmi ---
+    id  ref                                            title             subtitle  author              
+------  ---------------------------------------------  ----------------  --------  ------------------  
+759854  lamtruong1594/casmi-2026-v3-train-fingerprint  casmi-2026-train            Trần Võ Lâm Trường  
