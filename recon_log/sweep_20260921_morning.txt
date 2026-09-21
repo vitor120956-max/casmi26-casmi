@@ -1,0 +1,51 @@
+=== SWEEP 2026-09-21T13:18:54Z ===
+--- kernels por dateRun ---
+ref                                                            title                                               author                       lastRunTime                 totalVotes  
+-------------------------------------------------------------  --------------------------------------------------  ---------------------------  --------------------------  ----------  
+milosg/casmi2026-spectral-cosine-submission                    casmi2026-spectral-cosine-submission                milos                        2026-09-21 12:45:41.637000           1  
+saurabhkumar234/chem-builder-2026-v3                           Chem Builder 2026 v3                                100rabh                      2026-09-21 11:34:40.597000           0  
+nauvidscience/casmi26-library-search-baseline                  Casmi26 Library Search Baseline                     Fikri Kurnia                 2026-09-21 10:32:32.067000           1  
+flexonafft/casmi26-strong-retrieval-clean-ranking              CASMI26: Strong Retrieval, Clean Ranking            Igor Zharov                  2026-09-21 10:21:13.127000           6  
+alexchilton/casmi26-tutorial-and-glossary-from-a-0-342-scorer  CASMI26 Tutorial and Glossary from a 0 342 Scorer   alex chilton                 2026-09-21 10:20:24.953000           0  
+starkhushi/casmi-2026-fragmentation-check                      CASMI 2026 Fragmentation Check                      starkhushi                   2026-09-21 09:55:14.627000           1  
+alihsan143/research-paper-the-unified-thermodynamic-model-of   Research Paper: The Unified Thermodynamic Model of  علي الخليفاوي                2026-09-21 09:29:07.587000           0  
+dariushafshar/casmi26-your-ppm-window-drops-121-805-spectra    CASMI26: Your ppm Window Drops 121,805 Spectra      Dariush Afshar               2026-09-21 09:04:00.937000           1  
+dariushafshar/casmi26-1-of-31-features-matters-keep-20-anyway  CASMI26: 1 of 31 Features Matters. Keep 20 Anyway   Dariush Afshar               2026-09-21 08:37:10.090000           1  
+hweowe/test-notebook-casmi26                                   Test Notebook CASMI26                               hwe owe                      2026-09-21 07:56:07.947000           1  
+jek1wantaufik/mass-spectra-structure-retrieval                 Mass Spectra Structure Retrieval                    Jeki Wan Taufik              2026-09-21 06:56:41.607000           2  
+xolotlmictlan/casmi26-prvsiyan-repro                           Casmi26 Prvsiyan Repro                              asdf                         2026-09-21 03:49:03.257000           0  
+xolotlmictlan/casmi339-repro                                   Casmi339 Repro                                      asdf                         2026-09-21 02:47:40.933000           2  
+georgeliuxxx/enveda-casmi-2026-fast-spectral-cosine-baseline   Enveda CASMI 2026 – Fast Spectral Cosine Baseline   George Liuxxx                2026-09-21 02:36:10.553000           1  
+xolotlmictlan/casmi26-cats-repro                               Casmi26 Cats Repro                                  asdf                         2026-09-21 01:31:31.703000           0  
+xolotlmictlan/casmi26-bera-repro                               Casmi26 Bera Repro                                  asdf                         2026-09-21 01:09:03.880000           0  
+busyaprime/casmi26-a-0-98-cv-of-the-holdout-not-chemistry      CASMI26: a 0.98 CV of the holdout, not chemistry    Akmal Xodarev (Busya PRIME)  2026-09-21 00:43:41.680000           1  
+kitopl/casmi-2026-data-pitfalls-jp                             CASMI 2026: Data Pitfalls JP — 検証を壊すデータの落とし穴        kito_pl                      2026-09-21 00:10:15.867000           7  
+kitopl/casmi-2026-data-pitfalls-that-break-your-cv             CASMI 2026: Data Pitfalls That Break Your CV        kito_pl                      2026-09-21 00:10:13.677000           6  
+ashwanidhukra/casmi26-by-win-1                                 CASMI26 BY WIN 1                                    Ashwani                      2026-09-20 20:52:15.410000           1  
+--- datasets por updated ---
+ref                                                   title                                                  size  lastUpdated                 downloadCount  voteCount  usabilityRating  
+----------------------------------------------------  -----------------------------------------------  ----------  --------------------------  -------------  ---------  ---------------  
+dionet2/casmi26-ranker-features-big                   CASMI26 ranker features (1199-query harness CV)     6872555  2026-09-21 09:36:00.867000              1          0  0.125            
+dionet2/casmi26-ranker-features-harness               CASMI26 ranker features (harness CV)                2959913  2026-09-21 06:21:29.903000              1          0  0.125            
+itsuki89/casmi26-ranker-features-v4-pin               CASMI26 ranker features v4 (version-pin mirror)     9548060  2026-09-21 05:20:40.693000              2          0  0.375            
+kitopl/casmi-2026-scoring-keys-and-contamination-map  CASMI 2026: Scoring Keys & Contamination Map        7928537  2026-09-21 00:10:40.490000             30          0  0.64705884       
+megayak/casmi26-simulated-ranker-rows                 CASMI26 Simulated Ranker Rows                     341319392  2026-09-20 14:03:38.470000            145          0  0.4375           
+rogersjohnson/casmi26-fp-merged-m1b-36k               CASMI26 fp merged model (m1b, step 36k)           133615107  2026-09-20 12:49:44.300000              6          1  0.625            
+kizhowl/casmi26-lotus-extra-fingerprints              CASMI26 LOTUS Novel NP Fingerprints                 5306610  2026-09-20 08:51:24.077000             10          0  0.25             
+casua132/casmi26-artifacts                            casmi26-artifacts                                 536996072  2026-09-20 08:35:40.937000             84          0  0.3529412        
+xdipzz/casmi26-deep-ms2-transformer-weights           CASMI 2026 Deep MS2 Transformer Weights           700193095  2026-09-20 05:07:13.023000              4          0  0.375            
+pri2si17/casmi26-maccs-fingerprint-models-8k          CASMI26 MACCS Fingerprint Models (8k)              39270414  2026-09-20 00:36:34.743000              4          0  0.375            
+prvsiyan/casmi26-fp-models-late                       CASMI26 fp models late merged                     792012775  2026-09-19 17:02:29.523000              9          0  0.375            
+ranjithch/casmi26-pubchem-candidates                  casmi26-pubchem-candidates                           156851  2026-09-19 16:05:02.860000              7          1  0.23529412       
+ranjithch/casmi26-stage2-submission                   casmi26-stage2-submission                            115386  2026-09-19 14:27:51.010000              5          1  0.23529412       
+ngdminh31/casmi26-pubchem-tier2-fp-public             CASMI26 PubChem tier-2 fingerprints (public)     2307609064  2026-09-19 14:09:23.713000             23          1  0.3125           
+excellencedev/casmi26-reranker                        casmi26-reranker                                    1488754  2026-09-19 14:05:50.620000             18          1  0.125            
+ngdminh31/casmi26-pubchemlite-2026-fp-public          CASMI26 PubChemLite 2026 fingerprints (public)     95048447  2026-09-19 14:03:29.783000             16          1  0.3125           
+cosmicbe/casmi26-pubchemlite                          CASMI26 PubChemLite candidates                     11618352  2026-09-19 12:56:29.560000              5          0  0.23529412       
+n10705013/casmi26-coconut-pool                        CASMI26 COCONUT candidate pool                     30398957  2026-09-19 11:31:46.670000              5          0  0.23529412       
+hungtrabiz/casmi26-pubchemlite-pool                   CASMI26 PubChemLite CC0 Candidate Pool             11618352  2026-09-19 09:17:24.043000              4          0  0.23529412       
+zhangxiangyu12138/casmi26-assets                      casmi26-assets                                    296295561  2026-09-19 08:10:30.380000             59          0  0.3529412        
+--- models busca casmi ---
+    id  ref                                            title             subtitle  author              
+------  ---------------------------------------------  ----------------  --------  ------------------  
+759854  lamtruong1594/casmi-2026-v3-train-fingerprint  casmi-2026-train            Trần Võ Lâm Trường  

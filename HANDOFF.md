@@ -510,3 +510,9 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - CONCLUSÃO ESTRATÉGICA: nenhum notebook público replica >0.33 → saltos do LB (0.383–0.396) NÃO vêm desses engines. Alavanca = fp-models novos (m1b-36k/merged_26k, já baixados em wave2_assets/ 487MB) + fusão deep-rank (rank-1 convergente; ranks 2-25 decidem).
 - ONDA 2 (segunda 21:00 BRT): (1) testar OFFLINE no harness (train.parquet labels) canonical+fp m1b-36k e canonical+merged_26k (loader globa fp_*.pt — atenção: merged_26k/ours_* não casam com o glob, renomear p/ fp_*.pt no kernel); (2) fusão RRF offline dos 7 rankings em wave_backup/; (3) pushar kernels onda-2 à tarde, submeter 21:00 BRT com gatilho humano (hibernação mata processos).
 - Slots: 5/5 usados (refs 56408390-56408488). Próximo reset: 21/09 21:00 BRT.
+## 2026-09-21 13:50 UTC — ★ TRANSIÇÃO DE AGENTE ★
+- Usuário vai continuar com OUTRO agente. Documento mestre de transferência: **AGENT_HANDOFF.md** (missão, ordens permanentes do usuário, estado completo, descobertas rank-1/PubChem, LB, erros COMPLETOS, protocolos, TODO passo-a-passo, inteligência externa, kernels, checklist). LER PRIMEIRO.
+- Este HANDOFF.md segue como histórico cronológico. Repo = fonte de verdade: https://github.com/vitor120956-max/casmi26-casmi.git
+- Commitados nesta transição: AGENT_HANDOFF.md, kitopl keys, pins (itsuki89/dionet2), refs novos (starkhushi_frag, alexchilton_tut, flexonafft), recon_log, lb snapshots, wave_backup (8 CSVs), todos os scripts (arm/precheck/verify_out/recon_sweep/manual_wave/submit_wave corrigido).
+- Em voo no momento da transição: harness_download.sh re-baixando train.parquet (2.9GB, ~13 min, background — pode morrer por hibernação; próximo agente re-roda se du -sh harness_data ≈ 63M).
+- Estado da onda 2: em construção — alvo principal canon+PubChem-top50 (código já no canon, OFF; store candidato ngdminh31 tier2, formato diferente — adaptar). Slots: segunda 21:00 BRT (5 livres).

@@ -23,3 +23,12 @@ probeout_*/
 day_watch.log
 harness_download.log
 *.parquet
+
+# wave2_assets: só kitopl+pins persistem (grandes = re-download)
+wave2_assets/*.pt
+wave2_assets/*.npz
+wave2_assets/*.npy
+wave2_assets/*.pkl
+wave2_assets/README.md
+/tmp/
+*.zip
