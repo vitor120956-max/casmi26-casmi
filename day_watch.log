@@ -18,3 +18,4 @@
 2026-09-21 19:38 BRT - NEXT RESET 00:00 UTC 22/09 = 21:00 BRT 21/09 em ~1h22m, numAllowedNow 0, Onda2 4 probes prontas
 2026-09-21 20:31 BRT - ONDA2 COMPLETE 4/4 VERIFY PASS 445k store OK, aguardando reset 00:00 UTC 22/09 (21:00 BRT) em 29min, numAllowedNow 0
 2026-09-21 21:02 BRT - ONDA2 SUBMETIDA 4/5 slots: lite-50 v1 PENDING 00:02:36, lite-25 v1 PENDING 00:02:42, wincap20k v1 PENDING 00:02:45, priors40-50 v1 PENDING 00:02:48, 1 slot restante
+2026-09-21 22:11 BRT - ONDA2 RESULTADOS: lite-50 0.330 TIE, lite-25 0.324 TIE, wincap20k 0.330 TIE, priors40-50 0.327 TIE vs baseline 0.328-0.332. PubChemLite 445k NEUTRO (nao pagou, nao diluiu). Proximo: analog200 N=200 + frag + tier2 full
