@@ -1,0 +1,37 @@
+name: Recon Noturno CASMI26
+on:
+  schedule:
+    - cron: '0 1 * * *'  # 22:00 BRT = 01:00 UTC
+  workflow_dispatch:
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install Kaggle CLI
+        run: pip install kaggle
+      - name: Setup Kaggle auth
+        env:
+          KAGGLE_JSON: ${{ secrets.KAGGLE_JSON }}
+        run: |
+          mkdir -p ~/.kaggle
+          echo "$KAGGLE_JSON" > ~/.kaggle/kaggle.json
+          chmod 600 ~/.kaggle/kaggle.json
+      - name: Recon sweep + LB
+        run: |
+          bash recon_sweep.sh auto_github 2>&1 | tail -n 100
+          mkdir -p /tmp/lb
+          kaggle competitions leaderboard -c enveda-CASMI26-molecule-id-mass-spectra -p /tmp/lb --show 2>&1 | tail -n 50 || true
+          ls -lh /tmp/lb || true
+          cat recon_log/sweep_*.txt | tail -n 100 || true
+      - name: Commit recon
+        run: |
+          git config user.name "recon-bot"
+          git config user.email "recon@users.noreply.github.com"
+          git add recon_log/ lb_*.csv day_watch.log -f 2>&1 || true
+          git commit -m "AUTO RECON $(date -u +%F_%T) - LB + sweep" 2>&1 || echo "nothing to commit"
+          git push origin main 2>&1 || echo "push fail"
