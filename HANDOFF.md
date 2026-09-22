@@ -527,3 +527,12 @@ Tabela pública de variantes dele (LB): pipeline próprio: lib search 0.158 → 
 - Git: .git perdido no zip (sem histórico), init vazio, origin privado sem token .bin/gh — push pendente até usuário tornar público ou fornecer PAT. Estado local preservado.
 - Próximo: submeter 2 probes PubChemLite após reset + pushar 3 probes restantes (frag, fp alternativo megayak merged_26k, fusão RRF) para completar 5 slots da segunda 21:00 BRT.
 
+### ERRO TIER2 FULL 22/09 20:14 BRT - FP DIMENSION MISMATCH
+- Kernel: casmi26-tier2-full-probe v1/v2 ERROR
+- Dataset: ngdminh31/casmi26-pubchem-tier2-fp-public 2.15G zip (tier2_fp.npy 6.26G 7231264x867, tier2_mass.npy 57MB, tier2_meta.pkl 618MB)
+- Erro: ValueError matmul Input operand 1 mismatch core dimension 0 size 6930 vs 867
+- Causa: tier2_fp.npy tem 867 bits (provavelmente ECFP4 1024 truncado ou MACCS), nosso modelo zlog espera 6930 bits (ECFP4 2048 + ECFP6 2048 + RDKit 2048 + MACCS 167 + etc = 6930). Tentamos usar fp pre-computado direto sem converter.
+- Fix: NAO usar tier2_fp.npy direto. Usar tier2_meta.pkl para pegar SMILES e fingerprint via RDKit para 6930 bits (igual fizemos com pubchem-lite 445k). Ou usar tier2_fp com modelo proprio que espera 867.
+- Lecao: Sempre verificar shape do fp antes de matmul, e sempre inspecionar meta.pkl primeiro via kernel inspect (criamos casmi26-inspect-tier2).
+- Status: 2 probes tier2 ERROR, analog200 N200 COMPLETE 0.329, 5/5 ontem 0.324-0.330 NEUTRO
+
