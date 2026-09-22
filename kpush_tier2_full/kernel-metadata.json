@@ -1,0 +1,22 @@
+{
+  "id": "victor120956/casmi26-tier2-full-probe",
+  "title": "casmi26 tier2 full probe",
+  "code_file": "casmi26-tier2-full-probe.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "prvsiyan/casmi26-fp-models-v2",
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/coconut-casmi26-candidates",
+    "aidensong123/casmi26-offline-rdkit-2026033",
+    "ngdminh31/casmi26-pubchem-tier2-fp-public"
+  ],
+  "competition_sources": [
+    "enveda-CASMI26-molecule-id-mass-spectra"
+  ],
+  "kernel_sources": []
+}
