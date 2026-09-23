@@ -21,3 +21,4 @@
 2026-09-21 22:11 BRT - ONDA2 RESULTADOS: lite-50 0.330 TIE, lite-25 0.324 TIE, wincap20k 0.330 TIE, priors40-50 0.327 TIE vs baseline 0.328-0.332. PubChemLite 445k NEUTRO (nao pagou, nao diluiu). Proximo: analog200 N=200 + frag + tier2 full
 2026-09-21 22:50 BRT - 5/5 FECHADO: analog200 N=200 v1 PENDING 01:50:54, Onda2 4/4 COMPLETE 0.324-0.330 NEUTRO, 2x analog200 COMPLETE VERIFY PASS, workflow recon.yml push OK 1a3bee0
 2026-09-22 20:14 BRT - ERRO TIER2 FULL: matmul 6930 vs 867, tier2_fp 867 bits vs modelo 6930, fix usar SMILES+RDKit
+2026-09-22 21:02 BRT - VAI 5/5 DISPARADO: analog200 N200 v1 PENDING, analog200-wincap20k v1 PENDING, lite-50 v1 PENDING, wincap20k v1 PENDING, priors40-50 v1 PENDING - reset 00:02 UTC 23/09, tier2 v2 ERROR fix 867->6930
