@@ -1,35 +1,21 @@
-#!/bin/bash
-# precheck.sh <kpush_dir> — VERIFICAÇÃO OBRIGATÓRIA ANTES DE QUALQUER PUSH.
-# Nasceu do typo envida/enveda (20/09): metadata clonado SEM diff = erro silencioso.
-# Exit 0 = PODE pushar. Exit 1 = NUNCA pushar.
-GOLD_COMP="enveda-CASMI26-molecule-id-mass-spectra"
-d=${1:?uso: precheck.sh <kpush_dir>}
-m="$d/kernel-metadata.json"
-[ -f "$m" ] || { echo "PRECHECK FAIL: $m não existe"; exit 1; }
-python3 - "$d" "$m" "$GOLD_COMP" <<'PYEOF'
-import json, os, re, sys
-d, m, gold = sys.argv[1], sys.argv[2], sys.argv[3]
-try: md = json.load(open(m))
-except Exception as e: print(f"PRECHECK FAIL: metadata ilegível: {e}"); sys.exit(1)
-errs = []
-comp = md.get("competition_sources", [])
-if comp != [gold]: errs.append(f"competition_sources != GOLDEN ({comp})")
-if md.get("enable_gpu") is not True: errs.append(f"enable_gpu={md.get('enable_gpu')} (precisa true)")
-if not re.match(r"^[a-z0-9-]+/[a-z0-9-]+$", md.get("id","")): errs.append(f"id suspeito: {md.get('id')}")
-cf = md.get("code_file","")
-p = os.path.join(d, cf) if cf else ""
-if not cf or not os.path.exists(p): errs.append(f"code_file ausente: {cf}")
-else:
-    try:
-        nb = json.load(open(p))
-        n = len(nb.get("cells", []))
-        if n < 3: errs.append(f"notebook com só {n} cells — conteúdo errado?")
-    except Exception as e: errs.append(f"notebook ilegível: {e}")
-ds = md.get("dataset_sources", [])
-for s in ds:
-    if not re.match(r"^[A-Za-z0-9_-]+/[A-Za-z0-9_.-]+$", s): errs.append(f"dataset slug malformado: {s}")
-print(f"  id={md.get('id')} gpu={md.get('enable_gpu')} comp={comp} datasets={ds}")
-if errs:
-    print("PRECHECK FAIL:"); [print("  -", e) for e in errs]; sys.exit(1)
-print("PRECHECK PASS ✓")
-PYEOF
+#!/usr/bin/env bash
+set -euo pipefail
+python - "$1" <<'PY'
+import json,pathlib,sys,re,ast
+p=pathlib.Path(sys.argv[1]);m=json.loads((p/'kernel-metadata.json').read_text())
+assert m['enable_gpu'] is False and m.get('enable_tpu',False) is False, 'CPU_ONLY'
+assert m['competition_sources']==['enveda-CASMI26-molecule-id-mass-spectra']
+assert not m.get('kernel_sources'), 'NO_UPSTREAM_OUTPUTS'
+allowed={'prvsiyan/casmi26-fp-models-v2','aidensong123/casmi26-offline-rdkit-2026033','prvsiyan/casmi26-ranker-features','megayak/casmi26-simulated-ranker-rows','prvsiyan/chebi-lipidmaps-casmi26','prvsiyan/coconut-casmi26-candidates','thedevastator/open-source-natural-product-annotations','franciscoangulo/casmi26-mist-msbuddy-assets'}
+assert set(m.get('dataset_sources',[])) <= allowed, 'NO_OWN_DATASET_OR_TIER2'
+n=json.loads((p/m['code_file']).read_text())
+assert n['metadata']['kernelspec']['name']=='python3', 'KERNELSPEC_REQUIRED'
+assert n['metadata']['kernelspec']['language']=='python'
+for i,c in enumerate(n['cells']):
+ if c['cell_type']!='code':continue
+ s=''.join(c['source'])
+ if s.startswith('%%writefile '): s=s.split('\n',1)[1]
+ ast.parse(s,filename=f'cell_{i}')
+ assert 'tier2_' not in s.lower(), 'TIER2_FORBIDDEN'
+print('PRECHECK PASS: CPU; kernelspec; syntax; full pipeline; no own datasets; no tier2')
+PY

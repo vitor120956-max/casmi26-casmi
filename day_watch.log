@@ -22,3 +22,11 @@
 2026-09-21 22:50 BRT - 5/5 FECHADO: analog200 N=200 v1 PENDING 01:50:54, Onda2 4/4 COMPLETE 0.324-0.330 NEUTRO, 2x analog200 COMPLETE VERIFY PASS, workflow recon.yml push OK 1a3bee0
 2026-09-22 20:14 BRT - ERRO TIER2 FULL: matmul 6930 vs 867, tier2_fp 867 bits vs modelo 6930, fix usar SMILES+RDKit
 2026-09-22 21:02 BRT - VAI 5/5 DISPARADO: analog200 N200 v1 PENDING, analog200-wincap20k v1 PENDING, lite-50 v1 PENDING, wincap20k v1 PENDING, priors40-50 v1 PENDING - reset 00:02 UTC 23/09, tier2 v2 ERROR fix 867->6930
+
+2026-09-26 19:20 BRT - RESTAURACAO: repo remoto aa560bd (diario para em 22/09); periodo posterior consta em uploads/TRANSFER_26SEP.md, não no Git. arm.sh recriado e auth restaurada. Quota API 0 disponiveis / 5 usados / 50 total.
+2026-09-26 19:20 BRT - W088 v1 COMPLETE; 3 hashes MD5 coincidem transferencia; 400 IDs sample exatos; 25 SMILES validos por linha; 392 placeholders CCO em 34 moleculas. Sem match entre 38 outputs historicos recuperados.
+2026-09-26 19:20 BRT - CPU Wave7 formula+dedup full pipeline PUSH v1 RUNNING: victor120956/casmi26-wave7-w088-formula-dedup-cpu. URL real conferida, GPU/TPU false remotos, kernelspec presente. Baseline reprodutivel por hashes obrigatorios; variantes no-op bloqueadas.
+2026-09-26T19:20:41-03:00 LIMITS {"numToday": 5, "numTotal": 50, "numAllowedNow": 0, "limitedByTotal": false}
+2026-09-26T19:20:41-03:00 DRY_RUN: CPU output not fetched while job runs; submission API will NOT be called
+2026-09-26T19:20:43-03:00 DRY_RUN_PASS ['w088-blend', 'w088-ours', 'w088-pv']
+2026-09-26T19:21:57-03:00 TIMER_ARMED process=wave7-disparo-pontual-s-21h-brt-b6de68a9; submit 21:00:05 BRT; score-check once 23:30 BRT; best-effort while environment active. No new submissions yet.

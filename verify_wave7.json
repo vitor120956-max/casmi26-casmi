@@ -1,0 +1,32 @@
+{
+  "submission.csv": {
+    "rows": 400,
+    "md5": "74dd3e23f5c4d6941239708cf20260e3",
+    "sha256": "7d29205d84c03095972e5354e46f968dd60ca276c8d91aea604d11cb9d875127",
+    "placeholder_slots": 392,
+    "rows_with_CCO": 34,
+    "rows_duplicate_smiles": 33,
+    "invalid_smiles": 0,
+    "rows_diff_vs_blend": 0
+  },
+  "submission_ours.csv": {
+    "rows": 400,
+    "md5": "71dc98afa17a950e01d6dadd48c69f49",
+    "sha256": "5d22093b0cac4224e39d730b2bfca60cbdc08ebeff2ba3a2f6825780e91effdb",
+    "placeholder_slots": 392,
+    "rows_with_CCO": 34,
+    "rows_duplicate_smiles": 33,
+    "invalid_smiles": 0,
+    "rows_diff_vs_blend": 396
+  },
+  "submission_pv.csv": {
+    "rows": 400,
+    "md5": "5364114d02f583ac518ffad28a8e1ca2",
+    "sha256": "527d9c09f20578c97bc3713cd5bd2976890b7703dd347a35ebff01585a76bd44",
+    "placeholder_slots": 392,
+    "rows_with_CCO": 34,
+    "rows_duplicate_smiles": 33,
+    "invalid_smiles": 0,
+    "rows_diff_vs_blend": 383
+  }
+}
