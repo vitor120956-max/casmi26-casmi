@@ -67,3 +67,5 @@ Runner: rearma auth; consulta quota; checa CPU uma vez; baixa/valida apenas outp
 - Ainda não há nota W088 medida nem garantia de 5/5 novos ranqueados.
 - GPU segue proibida; Gemma não foi acionado, `GEMMA_RECON.md` não veio no workspace/repo recuperado.
 - Git push continua pendente, sem token. Nenhuma credencial incluída no commit local.
+
+Git local: commits `2f08873` + outputs de recuperação; push não executado (sem token).
