@@ -30,3 +30,4 @@
 2026-09-26T19:20:41-03:00 DRY_RUN: CPU output not fetched while job runs; submission API will NOT be called
 2026-09-26T19:20:43-03:00 DRY_RUN_PASS ['w088-blend', 'w088-ours', 'w088-pv']
 2026-09-26T19:21:57-03:00 TIMER_ARMED process=wave7-disparo-pontual-s-21h-brt-b6de68a9; submit 21:00:05 BRT; score-check once 23:30 BRT; best-effort while environment active. No new submissions yet.
+2026-09-26T19:34:38-03:00 GitHub PUSH_CONFIRMED origin/main=4e983561b844ce38fcf3421c707f77c3ca42f082 sem force-push; OAuth public_repo, segredo excluído de snapshots.

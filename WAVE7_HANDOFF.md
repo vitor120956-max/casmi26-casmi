@@ -66,6 +66,6 @@ Runner: rearma auth; consulta quota; checa CPU uma vez; baixa/valida apenas outp
 ## Pendências
 - Ainda não há nota W088 medida nem garantia de 5/5 novos ranqueados.
 - GPU segue proibida; Gemma não foi acionado, `GEMMA_RECON.md` não veio no workspace/repo recuperado.
-- Git push continua pendente, sem token. Nenhuma credencial incluída no commit local.
+- GitHub autorizado via navegador (cliente oficial GitHub CLI, escopo public_repo). Push dos 3 commits confirmado em origin/main=4e983561b844ce38fcf3421c707f77c3ca42f082. Nenhuma credencial incluída nos commits.
 
-Git local: commits `2f08873` + outputs de recuperação; push não executado (sem token).
+Git: commits `2f08873`, `0e9c0a1`, `4e98356` enviados e HEAD remoto verificado. Credencial temporária em .cache (excluída do snapshot), não no repo. Este registro acrescenta um commit documental.
