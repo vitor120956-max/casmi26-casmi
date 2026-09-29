@@ -1,0 +1,21 @@
+REGRA PERMANENTE DE ARMAZENAMENTO (Victor, 29/09): NÃO salvar nada no workspace — ele é efêmero e já estourou o limite uma vez (E039). Persistência só no GitHub (branch export-clean de vitor120956-max/casmi26-casmi) ou no Drive do Victor. Início de toda conversa: (1) git clone -b export-clean https://github.com/vitor120956-max/casmi26-casmi.git recovered; (2) se houver ZIP Drive anexado, extrair e mesclar (arquivos atuais prevalecem); (3) bash arm.sh; (4) ler TRANSFERENCIA_ATUAL_CASMI.md, WAVE7_HANDOFF.md, PROJECT_PRIORITY.md, ERROR_REGISTRY.md. Para salvar: bash rebuild_export.sh "msg" + python github_device_export.py begin/complete (push sanitizado: sem gemma/official, sem credenciais, sem harness_data/probeout/outputs). Conferir du -sh antes de encerrar.
+
+Continue meu projeto CASMI a partir dos arquivos anexados. Não comece outro projeto e não repita envios antigos.
+
+Extraia CASMI_CONTINUAR.zip em /home/user, se o workspace não estiver disponível. Leia TRANSFERENCIA_ATUAL_CASMI.md inteiro; ele prevalece sobre o estado antigo de uploads/TRANSFER_26SEP.md. Depois execute bash arm.sh. Se faltar a credencial Kaggle, peça o JSON por anexo privado — nunca a chave colada no chat.
+
+Meu pedido atual é SÓ PREPARAR os próximos envios. Não submeta nada sem concluir a revisão e minha confirmação. Não use GPU, não use sleep/poll e registre todos os erros.
+
+Estado confirmado em 28/09/2026 às 22h09 BRT:
+- Melhor referência CASMI: 0.341.
+- Os cinco Wave8 falharam na reexecução e ficaram sem nota. A causa exata ainda não foi confirmada; não atribua a falha a uma hipótese como se fosse certeza.
+- Cinco Wave9 CPU/privados, versão 1, foram recuperados do Kaggle. top1_dedup terminou e seu arquivo passou nas verificações técnicas; os outros quatro ainda estavam RUNNING. Isso pode ter mudado: faça uma consulta pontual.
+- Havia 5 envios disponíveis e 60 totais. Nenhum Wave9 foi enviado por esta preparação. Não existe timer.
+- 100 testes locais passaram; isso NÃO garante sucesso no teste oculto.
+- Há diferença entre os Wave9 remotos e os rascunhos estritos locais. Leia essa diferença antes de liberar qualquer um.
+
+Primeira ação operacional: python check_next_batch_once.py --check-once. Leia next_batch_preparation/readiness.json, STATUS.md, plan.json e release_review.json. O envio permanece bloqueado. Prepare primeiro um envio corrigido; confira seu resultado antes de liberar os outros quatro.
+
+Atenção: o Git local estava em 272b189 apesar de a conversa citar commits posteriores. Use os arquivos do backup e seu manifesto como referência; não sobrescreva tudo com clone antigo. Não publique o backup, que contém materiais de competição. Quero respostas curtas em português, com o estado real e o próximo passo, sem prometer vitória ou inventar causa de erro.
+
+ATUALIZAÇÃO 29/09 ~00:00 UTC (sessão Arena): os cinco Wave9 foram verificados (5/5 COMPLETE, degraded=[], hashes == expectativas locais) e ENVIADOS 5/5 com autorização explícita do Victor ("veja se ta td certo se tiver faça 5 de 5"): refs 56659089 adduct, 56659090 adduct_dedup, 56659093 formula_dedup, 56659094 top1, 56659096 top1_dedup. Aceite não é nota: próxima ação é UMA consulta de notas (sem polling). Estado completo no GitHub export-clean e em WAVE7_HANDOFF.md.

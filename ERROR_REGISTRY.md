@@ -271,3 +271,10 @@ Cinco candidatos Wave8 passaram nos testes/outputs de preview e foram aceitos pa
 - **Impacto:** Git local deixa de ser depósito durável neste ambiente; push remoto de 3c0974b permanece a única cópia histórica remota.
 - **Correção:** repositório será reconstruído a partir dos arquivos atuais (backup + manifesto como referência, conforme E037) e exportado ao GitHub em branch limpa; commit local sozinho não é mais tratado como preservação.
 - **Trava:** não prometer preservação por commit local; confirmar push remoto (ls-remote) para declarar algo salvo.
+
+## E039 — Workspace estourou o orçamento de persistência
+- **Evidência:** aviso da plataforma: 148,9 MB / 1.582 arquivos criados na sessão, acima do limite 128 MB / 10.000; 449 arquivos NÃO salvos no snapshot.
+- **Causa:** espelho Git local (recovered/, 73 MB) duplicando o workspace + gemma/official (11 MB) + saídas e pulls regeneráveis acumulados.
+- **Impacto:** parte dos arquivos da sessão não persistiu; nenhum dado crítico perdido (estado essencial estava no GitHub export-clean 4b689dc e nos JSONs de journal, íntegros).
+- **Correção (regra permanente do Victor, 29/09):** workspace é área de trabalho EFÊMERA — nada é "salvo" nele. Persistência somente GitHub (branch export-clean, fluxo rebuild_export.sh + github_device_export.py) e/ou Drive do Victor. Início de conversa: clonar export-clean + extrair backup Drive anexado, depois arm.sh.
+- **Trava:** conferir `du -sh /home/user` antes de encerrar turno; apagar artefatos regeneráveis (pulls remotos, outputs baixados, espelhos) logo após o uso; nunca manter duas cópias grandes do mesmo conteúdo.

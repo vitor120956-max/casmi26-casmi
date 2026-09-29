@@ -1,3 +1,9 @@
+# ATUALIZAÇÃO — 29/09 (regra de armazenamento + limpeza)
+
+**Workspace limpo: 120 MB → 24 MB, 448 arquivos.** Regra permanente do Victor: nada é salvo no workspace; persistência = GitHub `export-clean` (rebuild_export.sh clona o espelho se ausente) + Drive do Victor. Início de conversa: clonar export-clean, mesclar ZIP Drive se houver, arm.sh, ler docs. E039 registrado. Estado CASMI inalterado: Wave9 5/5 enviada (refs 56659089-90-93/94/96), aguardando UMA consulta de notas quando Victor chamar; quota 0 livres até reset 29/09 21h BRT.
+
+---
+
 # ATUALIZAÇÃO — 28/09 22:49 BRT (lote Wave9 enviado)
 
 **Estado: WAVE9 5/5 ENVIADA com autorização explícita do Victor; refs 56659089-90-93/94/96; quota 0 livres. Aceite não é nota — próxima ação é UMA consulta de notas quando ele chamar.** Pré-envio: verify 5/5 PASS; release_review com autorização verbatim e sobreposição de lote documentada. Causa do E029 segue desconhecida; se o erro genérico se repetir, plano B = rascunho estrito (POLICY_REVIEW.md). (Merge das duas sessões concluído antes do envio: E036 resolvido, 128 testes PASS.) E036 resolvido: kernels Wave9 remotos originados desta retomada (código byte-idêntico, evidência no ERROR_REGISTRY). Backup CASMI_CONTINUAR mesclado (128 testes PASS). Revisão de política em next_batch_preparation/POLICY_REVIEW.md: canário = top1 remoto; rascunho estrito = plano B se o canário falhar. Git local perdido na ressincronização (E038); exportação limpa pronta em recovered/ (commit 4d5e568 sobre base 3c0974b), push pendente de OAuth do Victor. Próximo: com autorização — send_next_batch.py --execute --variant top1; consulta única de nota depois.
