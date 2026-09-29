@@ -1,0 +1,65 @@
+{
+  "source_sha256": "e4b3fd60f69dbc2b9213e54eeb9636db78aefe92c1d06269d73d9f5f8f3c8ad6",
+  "tasks": 129,
+  "repositories": {
+    "fastapi/fastapi": 67,
+    "psf/requests": 13,
+    "Textualize/rich": 48,
+    "encode/httpx": 1
+  },
+  "unique_repository_commits": 127,
+  "duplicate_commit_groups": [
+    [
+      "rich_3882",
+      "rich_3894"
+    ],
+    [
+      "requests_6629",
+      "requests_6589"
+    ]
+  ],
+  "date_min": "2023-07-29T07:06:41Z",
+  "date_max": "2026-06-20T00:20:49Z",
+  "nonempty_hints": 0,
+  "reference_patch_chars": {
+    "min": 176,
+    "median": 1159,
+    "p90_nearest_rank": 8089,
+    "max": 308489
+  },
+  "problem_statement_chars": {
+    "min": 42,
+    "median": 418,
+    "p90_nearest_rank": 1891,
+    "max": 10095
+  },
+  "changed_files": {
+    "min": 1,
+    "median": 1,
+    "p90_nearest_rank": 4,
+    "max": 26
+  },
+  "one_file_reference_patches": 91,
+  "added_lines": {
+    "min": 0,
+    "median": 8,
+    "p90_nearest_rank": 102,
+    "max": 12170
+  },
+  "removed_lines": {
+    "min": 0,
+    "median": 3,
+    "p90_nearest_rank": 26,
+    "max": 1874
+  },
+  "patches_mentioning_docs_src": 15,
+  "patches_with_changed_async_definition_line": 13,
+  "interpretation": "Changed async definition line is a narrow textual feature, NOT count of fixes inside async functions.",
+  "proposed_split_counts": {
+    "dev": 80,
+    "validation": 24,
+    "test_frozen": 24,
+    "smoke_httpx": 1
+  },
+  "warning": "Public labels already available; this is an engineering holdout, not a truly unseen benchmark. Hidden test uses private repositories. Leave-repository-out evaluation is still required."
+}

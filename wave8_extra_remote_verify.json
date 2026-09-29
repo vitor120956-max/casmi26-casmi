@@ -1,0 +1,42 @@
+[
+  {
+    "tag": "top1",
+    "kernel": "victor120956/casmi26-wave8-atomic-top1-cpu",
+    "cpu_confirmed": true,
+    "code_matches": true,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    }
+  },
+  {
+    "tag": "top1_dedup",
+    "kernel": "victor120956/casmi26-wave8-atomic-top1-dedup-cpu",
+    "cpu_confirmed": true,
+    "code_matches": true,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    }
+  },
+  {
+    "tag": "adduct",
+    "kernel": "victor120956/casmi26-wave8-atomic-adduct-cpu",
+    "cpu_confirmed": true,
+    "code_matches": true,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    }
+  },
+  {
+    "tag": "adduct_dedup",
+    "kernel": "victor120956/casmi26-wave8-atomic-adduct-dedup-cpu",
+    "cpu_confirmed": true,
+    "code_matches": true,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    }
+  }
+]

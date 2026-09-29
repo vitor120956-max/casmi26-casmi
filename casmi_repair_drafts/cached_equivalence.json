@@ -1,0 +1,30 @@
+{
+  "scope": "Postprocessing only. Cached base/dedup/formulas, not a full model rerun.",
+  "variants": {
+    "formula_dedup": {
+      "rows": 400,
+      "same_ordered_records_as_wave8_preview": true,
+      "changed_rows": 217
+    },
+    "top1": {
+      "rows": 400,
+      "same_ordered_records_as_wave8_preview": true,
+      "changed_rows": 148
+    },
+    "top1_dedup": {
+      "rows": 400,
+      "same_ordered_records_as_wave8_preview": true,
+      "changed_rows": 169
+    },
+    "adduct": {
+      "rows": 400,
+      "same_ordered_records_as_wave8_preview": true,
+      "changed_rows": 234
+    },
+    "adduct_dedup": {
+      "rows": 400,
+      "same_ordered_records_as_wave8_preview": true,
+      "changed_rows": 247
+    }
+  }
+}

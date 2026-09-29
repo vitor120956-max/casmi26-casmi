@@ -1,0 +1,117 @@
+{
+  "at": "2026-09-27T23:04:00-03:00",
+  "gemma-4-developer-agent": {
+    "teams": 687,
+    "top5": [
+      {
+        "Rank": "1",
+        "TeamId": "16953627",
+        "TeamName": "Makus",
+        "LastSubmissionDate": "2026-09-26 13:58:20",
+        "Score": "0.15",
+        "SubmissionCount": "2",
+        "TeamMemberUserNames": "alexmartinez75"
+      },
+      {
+        "Rank": "2",
+        "TeamId": "16955462",
+        "TeamName": "Chandan Ranjan",
+        "LastSubmissionDate": "2026-09-26 14:51:29",
+        "Score": "0.13",
+        "SubmissionCount": "2",
+        "TeamMemberUserNames": "chandanranjan"
+      },
+      {
+        "Rank": "3",
+        "TeamId": "16951513",
+        "TeamName": "\u6697\u9ed1AGI",
+        "LastSubmissionDate": "2026-09-27 00:42:13",
+        "Score": "0.13",
+        "SubmissionCount": "4",
+        "TeamMemberUserNames": "boristown"
+      },
+      {
+        "Rank": "4",
+        "TeamId": "16956299",
+        "TeamName": "Alperen \u00d6Z",
+        "LastSubmissionDate": "2026-09-27 08:05:36",
+        "Score": "0.13",
+        "SubmissionCount": "4",
+        "TeamMemberUserNames": "alperenzfddg"
+      },
+      {
+        "Rank": "5",
+        "TeamId": "16958231",
+        "TeamName": "Daniel Olajide",
+        "LastSubmissionDate": "2026-09-27 00:25:17",
+        "Score": "0.13",
+        "SubmissionCount": "3",
+        "TeamMemberUserNames": "danielolajide"
+      }
+    ],
+    "ours": [],
+    "positive_scores": 573
+  },
+  "enveda-CASMI26-molecule-id-mass-spectra": {
+    "teams": 1684,
+    "top5": [
+      {
+        "Rank": "1",
+        "TeamId": "16898640",
+        "TeamName": "Ozymandias31415",
+        "LastSubmissionDate": "2026-09-25 00:00:57",
+        "Score": "0.425",
+        "SubmissionCount": "50",
+        "TeamMemberUserNames": "ozymandias31415"
+      },
+      {
+        "Rank": "2",
+        "TeamId": "16893685",
+        "TeamName": "pikachu",
+        "LastSubmissionDate": "2026-09-27 15:41:06",
+        "Score": "0.421",
+        "SubmissionCount": "43",
+        "TeamMemberUserNames": "jzhpfn"
+      },
+      {
+        "Rank": "3",
+        "TeamId": "16898387",
+        "TeamName": "Udam Liyanage",
+        "LastSubmissionDate": "2026-09-27 07:51:01",
+        "Score": "0.414",
+        "SubmissionCount": "36",
+        "TeamMemberUserNames": "udamliyanage"
+      },
+      {
+        "Rank": "4",
+        "TeamId": "16897131",
+        "TeamName": "Randy",
+        "LastSubmissionDate": "2026-09-28 00:01:33",
+        "Score": "0.411",
+        "SubmissionCount": "34",
+        "TeamMemberUserNames": "rvndyerwin"
+      },
+      {
+        "Rank": "5",
+        "TeamId": "16926646",
+        "TeamName": "Shehab Alshehabi",
+        "LastSubmissionDate": "2026-09-27 14:59:57",
+        "Score": "0.404",
+        "SubmissionCount": "27",
+        "TeamMemberUserNames": "shehabalshehabi"
+      }
+    ],
+    "ours": [
+      {
+        "Rank": "337",
+        "TeamId": "16909525",
+        "TeamName": "Victor alexandre ",
+        "LastSubmissionDate": "2026-09-27 01:39:46",
+        "Score": "0.341",
+        "SubmissionCount": "55",
+        "TeamMemberUserNames": "victor120956"
+      }
+    ],
+    "positive_scores": 1595
+  }
+}

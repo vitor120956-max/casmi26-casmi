@@ -1,0 +1,1016 @@
+{
+  "competitions": [
+    {
+      "id": 163111,
+      "ref": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper",
+      "title": "Google - The Gemma 4 Developer Agent Paper Track",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent-paper",
+      "description": "Submit a Research Paper advancing the state-of-the-art for agentic software engineering",
+      "organizationName": "Google DeepMind",
+      "category": "Featured",
+      "reward": "35,000 Usd",
+      "tags": [
+        {
+          "ref": "artificial intelligence",
+          "name": "artificial intelligence",
+          "description": "This tag has datasets and kernels where people come together and use cutting-edge research to train models on pictures of cats.",
+          "fullPath": "subject > science and technology > computer science > artificial intelligence",
+          "competitionCount": 118,
+          "datasetCount": 5542,
+          "scriptCount": 4291,
+          "totalCount": 9951
+        },
+        {
+          "ref": "coding",
+          "name": "coding",
+          "description": "",
+          "fullPath": "task > evaluation > coding",
+          "competitionCount": 11,
+          "datasetCount": 152,
+          "scriptCount": 130,
+          "totalCount": 293
+        }
+      ],
+      "deadline": "2026-11-12T23:59:00.807Z",
+      "teamCount": 60,
+      "mergerDeadline": "2026-11-12T23:59:00.000Z",
+      "newEntrantDeadline": "2026-11-12T23:59:00.000Z",
+      "enabledDate": "2026-09-23T15:15:22.937Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "hostName": "Google DeepMind",
+      "dateCreated": "2026-08-27T23:32:17.762Z"
+    },
+    {
+      "id": 149921,
+      "ref": "https://www.kaggle.com/competitions/gemma-4-developer-agent",
+      "title": "Google - The Gemma 4 Developer Agent Competition",
+      "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent",
+      "description": "Accelerate research in autonomous coding agents",
+      "organizationName": "Google DeepMind",
+      "category": "Featured",
+      "reward": "65,000 Usd",
+      "tags": [
+        {
+          "ref": "artificial intelligence",
+          "name": "artificial intelligence",
+          "description": "This tag has datasets and kernels where people come together and use cutting-edge research to train models on pictures of cats.",
+          "fullPath": "subject > science and technology > computer science > artificial intelligence",
+          "competitionCount": 118,
+          "datasetCount": 5542,
+          "scriptCount": 4291,
+          "totalCount": 9951
+        },
+        {
+          "ref": "coding",
+          "name": "coding",
+          "description": "",
+          "fullPath": "task > evaluation > coding",
+          "competitionCount": 11,
+          "datasetCount": 152,
+          "scriptCount": 130,
+          "totalCount": 293
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2026-12-02T23:59:00.000Z",
+      "teamCount": 740,
+      "userHasEntered": true,
+      "mergerDeadline": "2026-11-25T23:59:00.000Z",
+      "newEntrantDeadline": "2026-11-25T23:59:00.000Z",
+      "enabledDate": "2026-09-23T14:05:47.363Z",
+      "maxDailySubmissions": 1,
+      "maxTeamSize": 5,
+      "evaluationMetric": "Gemma 4 Developer Agent (149921)",
+      "awardsPoints": true,
+      "hostName": "Google DeepMind",
+      "dateCreated": "2026-06-16T18:24:03.200Z"
+    },
+    {
+      "id": 143318,
+      "ref": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra",
+      "title": "Enveda CASMI 2026 - Molecule ID From Mass Spectra",
+      "url": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra",
+      "description": "Predict 2D chemical structures of small molecules detected in complex biological extracts",
+      "organizationName": "Enveda",
+      "category": "Featured",
+      "reward": "50,000 Usd",
+      "tags": [
+        {
+          "ref": "biology",
+          "name": "biology",
+          "description": "Explore datasets and kernels about gene expressions, transcriptomics, and even the works of Charles Darwin.",
+          "fullPath": "subject > earth and nature > biology",
+          "competitionCount": 47,
+          "datasetCount": 18159,
+          "scriptCount": 6303,
+          "totalCount": 24509
+        },
+        {
+          "ref": "chemistry",
+          "name": "chemistry",
+          "description": "Chemistry addresses topics such as how atoms and molecules interact via chemical bonds to form new chemical compounds.",
+          "fullPath": "subject > earth and nature > physical science > chemistry",
+          "competitionCount": 16,
+          "datasetCount": 1176,
+          "scriptCount": 1785,
+          "totalCount": 2977
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2026-12-14T23:59:00.000Z",
+      "teamCount": 1709,
+      "userHasEntered": true,
+      "userRank": 348,
+      "mergerDeadline": "2026-12-07T23:59:00.000Z",
+      "newEntrantDeadline": "2026-12-07T23:59:00.000Z",
+      "enabledDate": "2026-09-14T22:57:37.417Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "evaluationMetric": "CASMI: Mean Average Precision",
+      "awardsPoints": true,
+      "isKernelsSubmissionsOnly": true,
+      "hostName": "Enveda",
+      "dateCreated": "2026-05-18T20:41:21.563Z"
+    },
+    {
+      "id": 125219,
+      "ref": "https://www.kaggle.com/competitions/playground-series-s6e9",
+      "title": "Predicting Electric Vehicle Purchases",
+      "url": "https://www.kaggle.com/competitions/playground-series-s6e9",
+      "description": "Playground Series - Season 6 Episode 9",
+      "organizationName": "Kaggle",
+      "category": "Playground",
+      "reward": "Swag",
+      "tags": [
+        {
+          "ref": "beginner",
+          "name": "beginner",
+          "description": "New to data science? Explore tips, tricks, and beginner friendly work from other Kagglers.",
+          "fullPath": "audience > beginner",
+          "competitionCount": 15047,
+          "datasetCount": 11944,
+          "scriptCount": 46196,
+          "totalCount": 73187
+        },
+        {
+          "ref": "tabular",
+          "name": "tabular",
+          "description": "",
+          "fullPath": "data type > tabular",
+          "competitionCount": 15865,
+          "datasetCount": 18163,
+          "scriptCount": 8366,
+          "totalCount": 42394
+        },
+        {
+          "ref": "roc auc score",
+          "name": "roc auc score",
+          "description": "Compute Area Under the Receiver Operating Characteristic Curve (ROC AUC)     from prediction scores. See https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2026-09-30T23:59:00.000Z",
+      "teamCount": 3291,
+      "mergerDeadline": "2026-09-30T23:59:00.000Z",
+      "enabledDate": "2026-09-01T00:00:00.000Z",
+      "maxDailySubmissions": 10,
+      "maxTeamSize": 3,
+      "evaluationMetric": "Roc Auc Score",
+      "hostName": "Kaggle",
+      "dateCreated": "2025-12-03T22:08:31.815Z"
+    },
+    {
+      "id": 154281,
+      "ref": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection",
+      "title": "RSNA Knee Abnormality Detection",
+      "url": "https://www.kaggle.com/competitions/rsna-knee-abnormality-detection",
+      "description": "Create a model that can detect knee abnormalities based on multimodal imaging data",
+      "organizationName": "Radiological Society of North America",
+      "category": "Research",
+      "reward": "77,000 Usd",
+      "tags": [
+        {
+          "ref": "medicine",
+          "name": "medicine",
+          "description": "Medicine is the science and practice of the diagnosis, treatment, and prevention of disease. We recommend you take two datasets and analyze them in the morning. If that doesn't work, analyze one dataset every four hours.",
+          "fullPath": "subject > health and fitness > health > medicine",
+          "competitionCount": 28,
+          "datasetCount": 1636,
+          "scriptCount": 1693,
+          "totalCount": 3357
+        },
+        {
+          "ref": "computer vision",
+          "name": "computer vision",
+          "description": "Teaching a machine to interpret real-world images and videos. Applications include detecting objects, capturing motion, and restoring images.",
+          "fullPath": "technique > computer vision",
+          "competitionCount": 154,
+          "datasetCount": 7743,
+          "scriptCount": 6539,
+          "totalCount": 14436
+        },
+        {
+          "ref": "image",
+          "name": "image",
+          "description": "",
+          "fullPath": "data type > image",
+          "competitionCount": 706,
+          "datasetCount": 63298,
+          "scriptCount": 7128,
+          "totalCount": 71132
+        },
+        {
+          "ref": "text",
+          "name": "text",
+          "description": "",
+          "fullPath": "data type > text",
+          "competitionCount": 198,
+          "datasetCount": 11351,
+          "scriptCount": 5116,
+          "totalCount": 16665
+        },
+        {
+          "ref": "image classification",
+          "name": "image classification",
+          "description": "",
+          "fullPath": "task > image-classification",
+          "competitionCount": 84,
+          "datasetCount": 3044,
+          "scriptCount": 2351,
+          "totalCount": 5479
+        },
+        {
+          "ref": "roc auc score",
+          "name": "roc auc score",
+          "description": "Compute Area Under the Receiver Operating Characteristic Curve (ROC AUC)     from prediction scores. See https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2026-10-22T23:59:00.000Z",
+      "teamCount": 4501,
+      "mergerDeadline": "2026-10-15T23:59:00.000Z",
+      "newEntrantDeadline": "2026-10-15T23:59:00.000Z",
+      "enabledDate": "2026-08-05T15:51:31.833Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "evaluationMetric": "Roc Auc Score",
+      "awardsPoints": true,
+      "isKernelsSubmissionsOnly": true,
+      "hostName": "Radiological Society of North America",
+      "dateCreated": "2026-07-13T23:48:20.713Z"
+    },
+    {
+      "id": 147734,
+      "ref": "https://www.kaggle.com/competitions/kaggriculture",
+      "title": "Kaggriculture",
+      "url": "https://www.kaggle.com/competitions/kaggriculture",
+      "description": "Create an agent to play in this farming simulation and compete with others to maximize your income",
+      "organizationName": "Kaggle",
+      "category": "Featured",
+      "reward": "50,000 Usd",
+      "tags": [
+        {
+          "ref": "simulations",
+          "name": "simulations",
+          "description": "",
+          "fullPath": "subject > culture and humanities > games > video games > simulations",
+          "competitionCount": 102,
+          "datasetCount": 933,
+          "scriptCount": 333,
+          "totalCount": 1368
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2026-09-30T23:59:00.000Z",
+      "teamCount": 10117,
+      "mergerDeadline": "2026-09-23T23:59:00.000Z",
+      "newEntrantDeadline": "2026-09-23T23:59:00.000Z",
+      "enabledDate": "2026-07-30T16:15:52.123Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "evaluationMetric": "kaggriculture",
+      "awardsPoints": true,
+      "hostName": "Kaggle",
+      "dateCreated": "2026-06-09T23:19:05.594Z"
+    },
+    {
+      "id": 136605,
+      "ref": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
+      "title": "Biohub - Cell Tracking During Development",
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
+      "description": "Detect and track zebrafish cells through 3D space and time",
+      "organizationName": "Biohub",
+      "category": "Research",
+      "reward": "60,000 Usd",
+      "tags": [
+        {
+          "ref": "biology",
+          "name": "biology",
+          "description": "Explore datasets and kernels about gene expressions, transcriptomics, and even the works of Charles Darwin.",
+          "fullPath": "subject > earth and nature > biology",
+          "competitionCount": 47,
+          "datasetCount": 18159,
+          "scriptCount": 6303,
+          "totalCount": 24509
+        },
+        {
+          "ref": "computer vision",
+          "name": "computer vision",
+          "description": "Teaching a machine to interpret real-world images and videos. Applications include detecting objects, capturing motion, and restoring images.",
+          "fullPath": "technique > computer vision",
+          "competitionCount": 154,
+          "datasetCount": 7743,
+          "scriptCount": 6539,
+          "totalCount": 14436
+        },
+        {
+          "ref": "image",
+          "name": "image",
+          "description": "",
+          "fullPath": "data type > image",
+          "competitionCount": 706,
+          "datasetCount": 63298,
+          "scriptCount": 7128,
+          "totalCount": 71132
+        },
+        {
+          "ref": "video",
+          "name": "video",
+          "description": "",
+          "fullPath": "data type > video data",
+          "competitionCount": 22,
+          "datasetCount": 1594,
+          "scriptCount": 325,
+          "totalCount": 1941
+        },
+        {
+          "ref": "object detection",
+          "name": "object detection",
+          "description": "",
+          "fullPath": "task > object-detection",
+          "competitionCount": 46,
+          "datasetCount": 1669,
+          "scriptCount": 894,
+          "totalCount": 2609
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2026-09-29T23:59:00.000Z",
+      "teamCount": 3966,
+      "mergerDeadline": "2026-09-22T23:59:00.000Z",
+      "newEntrantDeadline": "2026-09-22T23:59:00.000Z",
+      "enabledDate": "2026-06-29T19:01:13.613Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "evaluationMetric": "CZI Biohub Zebrafish 133605",
+      "awardsPoints": true,
+      "isKernelsSubmissionsOnly": true,
+      "hostName": "Biohub",
+      "dateCreated": "2026-04-01T21:58:55.077Z"
+    },
+    {
+      "id": 133468,
+      "ref": "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3",
+      "title": "ARC Prize 2026 - ARC-AGI-3",
+      "url": "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3",
+      "description": "Create an AI capable of fluid intelligence",
+      "organizationName": "Abstraction and Reasoning Corpus",
+      "category": "Featured",
+      "reward": "850,000 Usd",
+      "tags": [
+        {
+          "ref": "artificial intelligence",
+          "name": "artificial intelligence",
+          "description": "This tag has datasets and kernels where people come together and use cutting-edge research to train models on pictures of cats.",
+          "fullPath": "subject > science and technology > computer science > artificial intelligence",
+          "competitionCount": 118,
+          "datasetCount": 5542,
+          "scriptCount": 4291,
+          "totalCount": 9951
+        },
+        {
+          "ref": "general knowledge and reasoning",
+          "name": "general knowledge and reasoning",
+          "description": "",
+          "fullPath": "task > evaluation > general-knowledge-and-reasoning",
+          "competitionCount": 4,
+          "datasetCount": 136,
+          "scriptCount": 78,
+          "totalCount": 218
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2026-11-02T23:59:00.000Z",
+      "teamCount": 3433,
+      "mergerDeadline": "2026-10-26T23:59:00.000Z",
+      "newEntrantDeadline": "2026-10-26T11:59:00.000Z",
+      "enabledDate": "2026-03-25T17:38:23.913Z",
+      "maxDailySubmissions": 1,
+      "maxTeamSize": 8,
+      "evaluationMetric": "ARC-AGI-3 Metric",
+      "awardsPoints": true,
+      "isKernelsSubmissionsOnly": true,
+      "hostName": "Abstraction and Reasoning Corpus",
+      "dateCreated": "2026-03-10T16:14:08.940Z"
+    },
+    {
+      "id": 133469,
+      "ref": "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2",
+      "title": "ARC Prize 2026 - ARC-AGI-2",
+      "url": "https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2",
+      "description": "Create an AI capable of novel reasoning",
+      "organizationName": "Abstraction and Reasoning Corpus",
+      "category": "Featured",
+      "reward": "700,000 Usd",
+      "tags": [
+        {
+          "ref": "artificial intelligence",
+          "name": "artificial intelligence",
+          "description": "This tag has datasets and kernels where people come together and use cutting-edge research to train models on pictures of cats.",
+          "fullPath": "subject > science and technology > computer science > artificial intelligence",
+          "competitionCount": 118,
+          "datasetCount": 5542,
+          "scriptCount": 4291,
+          "totalCount": 9951
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2026-11-02T23:59:00.000Z",
+      "teamCount": 2231,
+      "mergerDeadline": "2026-10-26T23:59:00.000Z",
+      "newEntrantDeadline": "2026-10-26T23:59:00.000Z",
+      "enabledDate": "2026-03-25T17:38:19.547Z",
+      "maxDailySubmissions": 1,
+      "maxTeamSize": 5,
+      "evaluationMetric": "Abstraction and Reasoning Challenge",
+      "awardsPoints": true,
+      "isKernelsSubmissionsOnly": true,
+      "hostName": "Abstraction and Reasoning Corpus",
+      "dateCreated": "2026-03-10T16:17:00.992Z"
+    },
+    {
+      "id": 133724,
+      "ref": "https://www.kaggle.com/competitions/arc-prize-2026-paper-track",
+      "title": "ARC Prize 2026 - Paper Track",
+      "url": "https://www.kaggle.com/competitions/arc-prize-2026-paper-track",
+      "description": "Document your conceptual approach for the ARC Prize 2026",
+      "organizationName": "Abstraction and Reasoning Corpus",
+      "category": "Featured",
+      "reward": "450,000 Usd",
+      "tags": [
+        {
+          "ref": "artificial intelligence",
+          "name": "artificial intelligence",
+          "description": "This tag has datasets and kernels where people come together and use cutting-edge research to train models on pictures of cats.",
+          "fullPath": "subject > science and technology > computer science > artificial intelligence",
+          "competitionCount": 118,
+          "datasetCount": 5542,
+          "scriptCount": 4291,
+          "totalCount": 9951
+        },
+        {
+          "ref": "general knowledge and reasoning",
+          "name": "general knowledge and reasoning",
+          "description": "",
+          "fullPath": "task > evaluation > general-knowledge-and-reasoning",
+          "competitionCount": 4,
+          "datasetCount": 136,
+          "scriptCount": 78,
+          "totalCount": 218
+        }
+      ],
+      "deadline": "2026-11-09T23:59:00.000Z",
+      "teamCount": 209,
+      "mergerDeadline": "2026-11-09T23:59:00.000Z",
+      "enabledDate": "2026-03-25T17:38:13.097Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 8,
+      "hostName": "Abstraction and Reasoning Corpus",
+      "dateCreated": "2026-03-11T19:28:29.012Z"
+    },
+    {
+      "id": 86518,
+      "ref": "https://www.kaggle.com/competitions/llm-classification-finetuning",
+      "title": "LLM Classification Finetuning",
+      "url": "https://www.kaggle.com/competitions/llm-classification-finetuning",
+      "description": "Finetune LLMs to Predict Human Preference using Chatbot Arena conversations",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "languages",
+          "name": "languages",
+          "description": "Language is a method of communication that consists of using words arranged into meaningful patterns. This is a good place to find natural language processing datasets and kernels to study languages and train your chat bots.",
+          "fullPath": "subject > culture and humanities > languages",
+          "competitionCount": 10,
+          "datasetCount": 1116,
+          "scriptCount": 384,
+          "totalCount": 1510
+        },
+        {
+          "ref": "text conversation",
+          "name": "text conversation",
+          "description": "",
+          "fullPath": "task > text-conversation",
+          "competitionCount": 5,
+          "datasetCount": 121,
+          "scriptCount": 50,
+          "totalCount": 176
+        },
+        {
+          "ref": "log loss",
+          "name": "log loss",
+          "description": "Log loss, aka logistic loss or cross-entropy loss. See https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-07-01T23:59:00.000Z",
+      "teamCount": 239,
+      "mergerDeadline": "2030-07-01T23:59:00.000Z",
+      "enabledDate": "2024-10-16T19:00:30.487Z",
+      "maxDailySubmissions": 10,
+      "maxTeamSize": 10,
+      "evaluationMetric": "Log Loss",
+      "isKernelsSubmissionsOnly": true,
+      "hostName": "Kaggle",
+      "dateCreated": "2024-10-09T19:28:08.664Z"
+    },
+    {
+      "id": 34377,
+      "ref": "https://www.kaggle.com/competitions/spaceship-titanic",
+      "title": "Spaceship Titanic",
+      "url": "https://www.kaggle.com/competitions/spaceship-titanic",
+      "description": "Predict which passengers are transported to an alternate dimension",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "beginner",
+          "name": "beginner",
+          "description": "New to data science? Explore tips, tricks, and beginner friendly work from other Kagglers.",
+          "fullPath": "audience > beginner",
+          "competitionCount": 15047,
+          "datasetCount": 11944,
+          "scriptCount": 46196,
+          "totalCount": 73187
+        },
+        {
+          "ref": "tabular",
+          "name": "tabular",
+          "description": "",
+          "fullPath": "data type > tabular",
+          "competitionCount": 15865,
+          "datasetCount": 18163,
+          "scriptCount": 8366,
+          "totalCount": 42394
+        },
+        {
+          "ref": "binary classification",
+          "name": "binary classification",
+          "description": "",
+          "fullPath": "task > binary-classification",
+          "competitionCount": 11847,
+          "datasetCount": 2164,
+          "scriptCount": 8389,
+          "totalCount": 22400
+        },
+        {
+          "ref": "categorizationaccuracy",
+          "name": "categorizationaccuracy",
+          "description": "Percentage of correctly categorized items",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-01-01T00:00:00.000Z",
+      "teamCount": 1632,
+      "mergerDeadline": "2030-01-01T00:00:00.000Z",
+      "enabledDate": "2022-02-23T19:33:28.377Z",
+      "maxDailySubmissions": 10,
+      "maxTeamSize": 10,
+      "evaluationMetric": "Categorization Accuracy",
+      "hostName": "Kaggle",
+      "dateCreated": "2022-02-10T01:28:07.206Z"
+    },
+    {
+      "id": 29781,
+      "ref": "https://www.kaggle.com/competitions/store-sales-time-series-forecasting",
+      "title": "Store Sales - Time Series Forecasting",
+      "url": "https://www.kaggle.com/competitions/store-sales-time-series-forecasting",
+      "description": "Use machine learning to predict grocery sales",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "beginner",
+          "name": "beginner",
+          "description": "New to data science? Explore tips, tricks, and beginner friendly work from other Kagglers.",
+          "fullPath": "audience > beginner",
+          "competitionCount": 15047,
+          "datasetCount": 11944,
+          "scriptCount": 46196,
+          "totalCount": 73187
+        },
+        {
+          "ref": "time series analysis",
+          "name": "time series analysis",
+          "description": "",
+          "fullPath": "technique > time series analysis",
+          "competitionCount": 902,
+          "datasetCount": 5215,
+          "scriptCount": 4480,
+          "totalCount": 10597
+        },
+        {
+          "ref": "tabular",
+          "name": "tabular",
+          "description": "",
+          "fullPath": "data type > tabular",
+          "competitionCount": 15865,
+          "datasetCount": 18163,
+          "scriptCount": 8366,
+          "totalCount": 42394
+        },
+        {
+          "ref": "rmsle",
+          "name": "rmsle",
+          "description": "Square root of the average of the squared natural logarithm (plus one) error. Useful when it's more important to accurately predict lower magnitude values rather than precisely predicting higher magnitude values.",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-06-30T23:59:00.000Z",
+      "teamCount": 560,
+      "mergerDeadline": "2030-06-30T23:59:00.000Z",
+      "enabledDate": "2021-10-06T17:45:52.597Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "evaluationMetric": "Root Mean Squared Logarithmic Error",
+      "hostName": "Kaggle",
+      "dateCreated": "2021-07-01T18:20:34.170Z"
+    },
+    {
+      "id": 21733,
+      "ref": "https://www.kaggle.com/competitions/contradictory-my-dear-watson",
+      "title": "Contradictory, My Dear Watson",
+      "url": "https://www.kaggle.com/competitions/contradictory-my-dear-watson",
+      "description": "Detecting contradiction and entailment in multilingual text using TPUs",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "nlp",
+          "name": "nlp",
+          "description": "Natural Language Processing gives a computer program the ability to extract meaning human language. Applications include sentiment analysis, translation, and speech recognition.",
+          "fullPath": "analysis > nlp",
+          "competitionCount": 140,
+          "datasetCount": 8306,
+          "scriptCount": 10913,
+          "totalCount": 19359
+        },
+        {
+          "ref": "text",
+          "name": "text",
+          "description": "",
+          "fullPath": "data type > text",
+          "competitionCount": 198,
+          "datasetCount": 11351,
+          "scriptCount": 5116,
+          "totalCount": 16665
+        },
+        {
+          "ref": "multiclass classification",
+          "name": "multiclass classification",
+          "description": "",
+          "fullPath": "task > multiclass classification",
+          "competitionCount": 1062,
+          "datasetCount": 1842,
+          "scriptCount": 4159,
+          "totalCount": 7063
+        },
+        {
+          "ref": "categorizationaccuracy",
+          "name": "categorizationaccuracy",
+          "description": "Percentage of correctly categorized items",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-07-01T23:59:00.000Z",
+      "teamCount": 43,
+      "mergerDeadline": "2030-07-01T23:59:00.000Z",
+      "enabledDate": "2020-07-30T21:03:15.780Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "evaluationMetric": "Categorization Accuracy",
+      "isKernelsSubmissionsOnly": true,
+      "hostName": "Kaggle",
+      "dateCreated": "2020-07-14T14:56:40.986Z"
+    },
+    {
+      "id": 21154,
+      "ref": "https://www.kaggle.com/competitions/tpu-getting-started",
+      "title": "Petals to the Metal - Flower Classification on TPU",
+      "url": "https://www.kaggle.com/competitions/tpu-getting-started",
+      "description": "Getting Started with TPUs on Kaggle!",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "image",
+          "name": "image",
+          "description": "",
+          "fullPath": "data type > image",
+          "competitionCount": 706,
+          "datasetCount": 63298,
+          "scriptCount": 7128,
+          "totalCount": 71132
+        },
+        {
+          "ref": "multiclass classification",
+          "name": "multiclass classification",
+          "description": "",
+          "fullPath": "task > multiclass classification",
+          "competitionCount": 1062,
+          "datasetCount": 1842,
+          "scriptCount": 4159,
+          "totalCount": 7063
+        },
+        {
+          "ref": "fscoremacro",
+          "name": "fscoremacro",
+          "description": "Macro F-Score",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-06-03T23:59:00.000Z",
+      "teamCount": 46,
+      "mergerDeadline": "2030-06-03T23:59:00.000Z",
+      "enabledDate": "2020-06-18T23:27:53.083Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "evaluationMetric": "F-Score (Macro)",
+      "isKernelsSubmissionsOnly": true,
+      "hostName": "Kaggle",
+      "dateCreated": "2020-06-04T00:07:34.715Z"
+    },
+    {
+      "id": 17592,
+      "ref": "https://www.kaggle.com/competitions/connectx",
+      "title": "Connect X",
+      "url": "https://www.kaggle.com/competitions/connectx",
+      "description": "Connect your checkers in a row before your opponent!",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "simulations",
+          "name": "simulations",
+          "description": "",
+          "fullPath": "subject > culture and humanities > games > video games > simulations",
+          "competitionCount": 102,
+          "datasetCount": 933,
+          "scriptCount": 333,
+          "totalCount": 1368
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-01-01T00:00:00.000Z",
+      "teamCount": 184,
+      "mergerDeadline": "2030-01-01T00:00:00.000Z",
+      "enabledDate": "2020-01-03T21:25:59.000Z",
+      "maxDailySubmissions": 2,
+      "maxTeamSize": 5,
+      "evaluationMetric": "Connect X",
+      "hostName": "Kaggle",
+      "dateCreated": "2019-11-25T19:05:56.292Z"
+    },
+    {
+      "id": 17777,
+      "ref": "https://www.kaggle.com/competitions/nlp-getting-started",
+      "title": "Natural Language Processing with Disaster Tweets",
+      "url": "https://www.kaggle.com/competitions/nlp-getting-started",
+      "description": "Predict which Tweets are about real disasters and which ones are not",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "nlp",
+          "name": "nlp",
+          "description": "Natural Language Processing gives a computer program the ability to extract meaning human language. Applications include sentiment analysis, translation, and speech recognition.",
+          "fullPath": "analysis > nlp",
+          "competitionCount": 140,
+          "datasetCount": 8306,
+          "scriptCount": 10913,
+          "totalCount": 19359
+        },
+        {
+          "ref": "text",
+          "name": "text",
+          "description": "",
+          "fullPath": "data type > text",
+          "competitionCount": 198,
+          "datasetCount": 11351,
+          "scriptCount": 5116,
+          "totalCount": 16665
+        },
+        {
+          "ref": "binary classification",
+          "name": "binary classification",
+          "description": "",
+          "fullPath": "task > binary-classification",
+          "competitionCount": 11847,
+          "datasetCount": 2164,
+          "scriptCount": 8389,
+          "totalCount": 22400
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-01-01T00:00:00.000Z",
+      "teamCount": 432,
+      "mergerDeadline": "2030-01-01T00:00:00.000Z",
+      "enabledDate": "2019-12-23T22:02:26.193Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 5,
+      "evaluationMetric": "F-Score (Micro)",
+      "hostName": "Kaggle",
+      "dateCreated": "2019-12-03T16:33:35.089Z"
+    },
+    {
+      "id": 10211,
+      "ref": "https://www.kaggle.com/competitions/home-data-for-ml-course",
+      "title": "Housing Prices Competition for Kaggle Learn Users",
+      "url": "https://www.kaggle.com/competitions/home-data-for-ml-course",
+      "description": "Apply what you learned in the Machine Learning course on Kaggle Learn alongside others in the course.",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "mae",
+          "name": "mae",
+          "description": "Average of the absolute value of each individual error.",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-01-01T23:59:00.000Z",
+      "teamCount": 3909,
+      "mergerDeadline": "2030-01-01T23:59:00.000Z",
+      "enabledDate": "2018-07-18T19:25:27.107Z",
+      "maxDailySubmissions": 40,
+      "maxTeamSize": 20,
+      "evaluationMetric": "Mean Absolute Error",
+      "hostName": "Kaggle",
+      "dateCreated": "2018-07-18T17:04:00.971Z"
+    },
+    {
+      "id": 5407,
+      "ref": "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques",
+      "title": "House Prices - Advanced Regression Techniques",
+      "url": "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques",
+      "description": "Predict sales prices and practice feature engineering, RFs, and gradient boosting",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "tabular",
+          "name": "tabular",
+          "description": "",
+          "fullPath": "data type > tabular",
+          "competitionCount": 15865,
+          "datasetCount": 18163,
+          "scriptCount": 8366,
+          "totalCount": 42394
+        },
+        {
+          "ref": "regression",
+          "name": "regression",
+          "description": "",
+          "fullPath": "task > regression",
+          "competitionCount": 1660,
+          "datasetCount": 3128,
+          "scriptCount": 9226,
+          "totalCount": 14014
+        },
+        {
+          "ref": "rmsle",
+          "name": "rmsle",
+          "description": "Square root of the average of the squared natural logarithm (plus one) error. Useful when it's more important to accurately predict lower magnitude values rather than precisely predicting higher magnitude values.",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-01-01T00:00:00.000Z",
+      "teamCount": 3793,
+      "mergerDeadline": "2030-01-01T00:00:00.000Z",
+      "enabledDate": "2016-08-30T01:08:56.763Z",
+      "maxDailySubmissions": 10,
+      "maxTeamSize": 10,
+      "evaluationMetric": "Root Mean Squared Logarithmic Error",
+      "hostName": "Kaggle",
+      "dateCreated": "2016-08-25T18:46:54.722Z"
+    },
+    {
+      "id": 3136,
+      "ref": "https://www.kaggle.com/competitions/titanic",
+      "title": "Titanic - Machine Learning from Disaster",
+      "url": "https://www.kaggle.com/competitions/titanic",
+      "description": "Start here! Predict survival on the Titanic and get familiar with ML basics",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "beginner",
+          "name": "beginner",
+          "description": "New to data science? Explore tips, tricks, and beginner friendly work from other Kagglers.",
+          "fullPath": "audience > beginner",
+          "competitionCount": 15047,
+          "datasetCount": 11944,
+          "scriptCount": 46196,
+          "totalCount": 73187
+        },
+        {
+          "ref": "tabular",
+          "name": "tabular",
+          "description": "",
+          "fullPath": "data type > tabular",
+          "competitionCount": 15865,
+          "datasetCount": 18163,
+          "scriptCount": 8366,
+          "totalCount": 42394
+        },
+        {
+          "ref": "binary classification",
+          "name": "binary classification",
+          "description": "",
+          "fullPath": "task > binary-classification",
+          "competitionCount": 11847,
+          "datasetCount": 2164,
+          "scriptCount": 8389,
+          "totalCount": 22400
+        },
+        {
+          "ref": "categorizationaccuracy",
+          "name": "categorizationaccuracy",
+          "description": "Percentage of correctly categorized items",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-01-01T00:00:00.000Z",
+      "teamCount": 10264,
+      "mergerDeadline": "2030-01-01T00:00:00.000Z",
+      "enabledDate": "2012-09-28T21:13:33.550Z",
+      "maxDailySubmissions": 10,
+      "maxTeamSize": 10,
+      "evaluationMetric": "Categorization Accuracy",
+      "hostName": "Kaggle",
+      "dateCreated": "2012-09-14T16:40:22.604Z"
+    }
+  ]
+}

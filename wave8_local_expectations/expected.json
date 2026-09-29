@@ -1,0 +1,10 @@
+{
+  "formula_regression_matches": true,
+  "formula_changed_rows": 201,
+  "combo_changed_vs_dedup": 201,
+  "combo_changed_vs_blend": 217,
+  "combo_sha256": "e46a74a79a5ddd594486f3f9dc7449c6735cbcaf8278da2c40135a4786b9ebb3",
+  "combo_bytes": 409897,
+  "combo_semantic_sha256": "5ef14a5bb17e37e43e1d3b71ce31d7c166a74ce1cbbe3fb9debc99fa5fef1cd0",
+  "duplicate_vs_known_history": false
+}

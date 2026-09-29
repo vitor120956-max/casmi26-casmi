@@ -1,0 +1,30 @@
+{
+  "id": "victor120956/casmi26-wave9-isolated-top1-cpu",
+  "id_no": 136324805,
+  "title": "casmi26 wave9 isolated top1 cpu",
+  "code_file": "casmi26-wave9-isolated-top1-cpu.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "prvsiyan/casmi26-fp-models-v2",
+    "franciscoangulo/casmi26-mist-msbuddy-assets",
+    "aidensong123/casmi26-offline-rdkit-2026033",
+    "prvsiyan/casmi26-ranker-features",
+    "megayak/casmi26-simulated-ranker-rows",
+    "prvsiyan/chebi-lipidmaps-casmi26",
+    "prvsiyan/coconut-casmi26-candidates",
+    "thedevastator/open-source-natural-product-annotations"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "enveda-CASMI26-molecule-id-mass-spectra"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machine_shape": "None"
+}

@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-28T21:27:05-03:00",
+  "intent": "single CPU preview, never competition submission",
+  "question": "Does selected-only repaired top1 pipeline finish end-to-end on Kaggle public inputs and match the cached preview?",
+  "decision_if_pass": "Inspect lineage and stress-test remaining boundaries before considering any competition submission; public success is not proof of hidden compatibility.",
+  "variant": "top1",
+  "kernel_requested": "victor120956/casmi26-repair-v1-top1-cpu",
+  "source_sha256": "a689136155e56eca79bae041abd58b82af45532fb0cab7263e22442dc2f5da17",
+  "expected_public_csv_sha256": "6bad69c74a785a54c4af4980a8d4481062bcfa6d6b6e12c6ba9217fd1f279e2c",
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "is_private": true,
+  "submitted_to_competition": false,
+  "push_attempted": true,
+  "status": "BLOCKED_CPU_SESSION_LIMIT",
+  "rejected_refs_unchanged": true,
+  "push_response": {
+    "error": "Maximum batch CPU session count of 5 reached."
+  },
+  "preview_started_confirmed": false,
+  "automatic_retry": false,
+  "actual_version": null
+}

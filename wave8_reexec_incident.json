@@ -1,0 +1,21 @@
+{
+  "code": "E029",
+  "at": "2026-09-28T09:16:58.146949-03:00",
+  "refs": [
+    56624675,
+    56624674,
+    56624673,
+    56624671,
+    56624670
+  ],
+  "cause": "unknown",
+  "hypotheses": [
+    "MSBUDDY coverage threshold 0.975 under changed input distribution",
+    "ID type/order contracts",
+    "shared computation or validation of unused variants",
+    "other shared runtime, resource or environment failure"
+  ],
+  "resubmit_identical": false,
+  "scored_comparisons": 0,
+  "reference": 0.341
+}

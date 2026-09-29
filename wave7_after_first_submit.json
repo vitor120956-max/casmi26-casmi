@@ -1,0 +1,25 @@
+{
+  "quota": {
+    "numToday": 1,
+    "numTotal": 51,
+    "numAllowedNow": 4,
+    "limitedByTotal": false
+  },
+  "wave7": [
+    {
+      "ref": 56592387,
+      "totalBytes": 0,
+      "date": "2026-09-27T00:06:19.943Z",
+      "description": "PROBE-WAVE7:w088-blend VERIFY PASS",
+      "errorDescription": null,
+      "fileName": "submission.csv",
+      "publicScore": null,
+      "privateScore": null,
+      "status": "PENDING",
+      "submittedBy": "victor120956",
+      "submittedByRef": "victor120956",
+      "teamName": "Victor alexandre ",
+      "url": "/code/victor120956/casmi26-w088-replica-llccqq624-apache-2-0?scriptVersionId=352845416"
+    }
+  ]
+}

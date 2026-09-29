@@ -1,0 +1,15 @@
+{
+  "tag": "w088-formula-dedup-atomic",
+  "kernel": "victor120956/casmi26-wave8-atomic-formula-dedup-cpu",
+  "version": 1,
+  "file": "submission.csv",
+  "path": "/home/user/probeout_wave8_atomic/submission.csv",
+  "sha256": "e46a74a79a5ddd594486f3f9dc7449c6735cbcaf8278da2c40135a4786b9ebb3",
+  "semantic_sha256": "5ef14a5bb17e37e43e1d3b71ce31d7c166a74ce1cbbe3fb9debc99fa5fef1cd0",
+  "preview_verified": true,
+  "controls_regression_pass": true,
+  "causal_scoring_audit_resolved": false,
+  "question": "Fórmula top5 aplicada após dedup/refill melhora W088 blend 0.341?",
+  "decision": "Promover combinação apenas com ganho medido e atribuição de arquivo confiável; caso contrário não promover.",
+  "no_automatic_submission": true
+}

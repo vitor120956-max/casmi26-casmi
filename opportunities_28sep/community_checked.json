@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Solar Filament Segmentation Challenge 2026",
+    "ref": "https://www.kaggle.com/competitions/filament-segmentation-2026",
+    "deadline": "2026-11-15T06:00:00.000Z",
+    "newEntrantDeadline": null,
+    "enabledDate": "2026-07-08T18:29:04.320Z",
+    "reward": "3,000 Usd",
+    "category": "Community",
+    "teamCount": 750,
+    "userHasEntered": null
+  },
+  {
+    "title": "IEEE Bigdata Cup 2026: AI Emulation Challenge (Awards Avail)",
+    "ref": "https://www.kaggle.com/competitions/ieee-bigdata-cup-2026-ai-emulation-challenge",
+    "deadline": "2026-11-16T05:00:00.000Z",
+    "newEntrantDeadline": null,
+    "enabledDate": "2026-07-02T03:27:38.143Z",
+    "reward": "Kudos",
+    "category": "Community",
+    "teamCount": 96,
+    "userHasEntered": null
+  },
+  {
+    "title": "Battlesnake Blackout 2026",
+    "ref": "https://www.kaggle.com/competitions/battlesnake-blackout-2026",
+    "deadline": "2026-08-10T13:00:00.000Z",
+    "newEntrantDeadline": null,
+    "enabledDate": "2026-04-30T10:08:04.873Z",
+    "reward": "1,000 Usd",
+    "category": "Community",
+    "teamCount": 11,
+    "userHasEntered": null
+  }
+]

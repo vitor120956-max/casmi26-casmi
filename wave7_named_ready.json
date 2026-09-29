@@ -1,0 +1,58 @@
+[
+  {
+    "tag": "w088-formula",
+    "kernel": "victor120956/casmi26-wave7-w088-formula-submit-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "sha256": "a67f6bf63078049744cb4ded8e520c37bd7067bbc40f30056ccfe1b5d7ab0965",
+    "folder": "/home/user/kpush_wave7_submit_formula",
+    "output_dir": "/home/user/probeout_wave7_submit_formula",
+    "source_file": "submission_formula.csv",
+    "decision": "Promover fórmula só com delta positivo vs W088 blend.",
+    "message": "PROBE-WAVE7:w088-formula VERIFY PASS",
+    "path": "/home/user/probeout_wave7_submit_formula/submission.csv",
+    "semantic_sha256": "da6c71510daf68e6f28ab1daeb2814e0cf20456efa3cfdbb2913c995f0449c97"
+  },
+  {
+    "tag": "w088-dedup",
+    "kernel": "victor120956/casmi26-wave7-w088-dedup-submit-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "sha256": "b3bef37a9e79c163b57631a67bef39f835e32098c8087338c03905fc7cbca37f",
+    "folder": "/home/user/kpush_wave7_submit_dedup",
+    "output_dir": "/home/user/probeout_wave7_submit_dedup",
+    "source_file": "submission_dedup.csv",
+    "decision": "Promover refill só com delta positivo vs W088 blend.",
+    "message": "PROBE-WAVE7:w088-dedup VERIFY PASS",
+    "path": "/home/user/probeout_wave7_submit_dedup/submission.csv",
+    "semantic_sha256": "7abeb8f2694e41af95158d4c1346fb493ef8e3984c3c747bb1bafb8851c31f86"
+  },
+  {
+    "tag": "w088-ours",
+    "kernel": "victor120956/casmi26-wave7-w088-ours-submit-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "sha256": "5d22093b0cac4224e39d730b2bfca60cbdc08ebeff2ba3a2f6825780e91effdb",
+    "folder": "/home/user/kpush_wave7_submit_ours",
+    "output_dir": "/home/user/probeout_wave7_submit_ours",
+    "source_file": "submission_ours.csv",
+    "decision": "Identificar se ranker simulado deve ser referência do próximo build.",
+    "message": "PROBE-WAVE7:w088-ours VERIFY PASS",
+    "path": "/home/user/probeout_wave7_submit_ours/submission.csv",
+    "semantic_sha256": "c2bbc66e23d3d6323a657df64daa9bb6375357cf9211747a7d1bc7d80a62efe2"
+  },
+  {
+    "tag": "w088-pv",
+    "kernel": "victor120956/casmi26-wave7-w088-pv-submit-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "sha256": "527d9c09f20578c97bc3713cd5bd2976890b7703dd347a35ebff01585a76bd44",
+    "folder": "/home/user/kpush_wave7_submit_pv",
+    "output_dir": "/home/user/probeout_wave7_submit_pv",
+    "source_file": "submission_pv.csv",
+    "decision": "Identificar se ranker público dispensa mistura no próximo build.",
+    "message": "PROBE-WAVE7:w088-pv VERIFY PASS",
+    "path": "/home/user/probeout_wave7_submit_pv/submission.csv",
+    "semantic_sha256": "6fbb49d254da5ec22d2f3950765dca76c2253b93efb2c4c5501844a9d8197a77"
+  }
+]

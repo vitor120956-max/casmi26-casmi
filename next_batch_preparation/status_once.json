@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-28T21:44:13.299749-03:00",
+  "statuses": [
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-top1-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    }
+  ],
+  "quota": {
+    "numTotal": 60,
+    "numAllowedNow": 5
+  }
+}

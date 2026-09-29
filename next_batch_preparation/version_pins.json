@@ -1,0 +1,185 @@
+{
+  "at": "2026-09-29T00:50:58.293189+00:00",
+  "pins": [
+    {
+      "kernel": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+      "version": 1,
+      "source_sha256": "6c6f9a633afd8fa89f60ac55036119d4c4262a716b3759402925c02a26044342",
+      "matches_recovered_source": true,
+      "metadata": {
+        "id": 136324807,
+        "ref": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+        "title": "casmi26 wave9 isolated top1 dedup cpu",
+        "author": "Victor alexandre ",
+        "slug": "casmi26-wave9-isolated-top1-dedup-cpu",
+        "lastRunTime": "2026-09-26T00:50:56.036Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": false,
+        "enableInternet": false,
+        "datasetDataSources": [
+          "prvsiyan/casmi26-fp-models-v2",
+          "franciscoangulo/casmi26-mist-msbuddy-assets",
+          "aidensong123/casmi26-offline-rdkit-2026033",
+          "prvsiyan/casmi26-ranker-features",
+          "megayak/casmi26-simulated-ranker-rows",
+          "prvsiyan/chebi-lipidmaps-casmi26",
+          "prvsiyan/coconut-casmi26-candidates",
+          "thedevastator/open-source-natural-product-annotations"
+        ],
+        "competitionDataSources": [
+          "enveda-CASMI26-molecule-id-mass-spectra"
+        ],
+        "enableTpu": false,
+        "currentVersionNumber": 1,
+        "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machineShape": "None"
+      }
+    },
+    {
+      "kernel": "victor120956/casmi26-wave9-isolated-top1-cpu",
+      "version": 1,
+      "source_sha256": "463a3d13ba004c80f048697c676ed17c802ec213f8a5b617f2e52cda150e9aca",
+      "matches_recovered_source": true,
+      "metadata": {
+        "id": 136324805,
+        "ref": "victor120956/casmi26-wave9-isolated-top1-cpu",
+        "title": "casmi26 wave9 isolated top1 cpu",
+        "author": "Victor alexandre ",
+        "slug": "casmi26-wave9-isolated-top1-cpu",
+        "lastRunTime": "2026-09-26T00:50:56.544Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": false,
+        "enableInternet": false,
+        "datasetDataSources": [
+          "prvsiyan/casmi26-fp-models-v2",
+          "franciscoangulo/casmi26-mist-msbuddy-assets",
+          "aidensong123/casmi26-offline-rdkit-2026033",
+          "prvsiyan/casmi26-ranker-features",
+          "megayak/casmi26-simulated-ranker-rows",
+          "prvsiyan/chebi-lipidmaps-casmi26",
+          "prvsiyan/coconut-casmi26-candidates",
+          "thedevastator/open-source-natural-product-annotations"
+        ],
+        "competitionDataSources": [
+          "enveda-CASMI26-molecule-id-mass-spectra"
+        ],
+        "enableTpu": false,
+        "currentVersionNumber": 1,
+        "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machineShape": "None"
+      }
+    },
+    {
+      "kernel": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+      "version": 1,
+      "source_sha256": "69332bf0450da7cc4850801b7c61f58b26a0ea2222a367f0243d93f97e67620e",
+      "matches_recovered_source": true,
+      "metadata": {
+        "id": 136324801,
+        "ref": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+        "title": "casmi26 wave9 isolated formula dedup cpu",
+        "author": "Victor alexandre ",
+        "slug": "casmi26-wave9-isolated-formula-dedup-cpu",
+        "lastRunTime": "2026-09-26T00:50:56.992Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": false,
+        "enableInternet": false,
+        "datasetDataSources": [
+          "prvsiyan/casmi26-fp-models-v2",
+          "franciscoangulo/casmi26-mist-msbuddy-assets",
+          "aidensong123/casmi26-offline-rdkit-2026033",
+          "prvsiyan/casmi26-ranker-features",
+          "megayak/casmi26-simulated-ranker-rows",
+          "prvsiyan/chebi-lipidmaps-casmi26",
+          "prvsiyan/coconut-casmi26-candidates",
+          "thedevastator/open-source-natural-product-annotations"
+        ],
+        "competitionDataSources": [
+          "enveda-CASMI26-molecule-id-mass-spectra"
+        ],
+        "enableTpu": false,
+        "currentVersionNumber": 1,
+        "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machineShape": "None"
+      }
+    },
+    {
+      "kernel": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "version": 1,
+      "source_sha256": "84e21511ebab674b075f0ef4317b9a4c6a7a70321c99d82741104066c7a709ea",
+      "matches_recovered_source": true,
+      "metadata": {
+        "id": 136324798,
+        "ref": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+        "title": "casmi26 wave9 isolated adduct dedup cpu",
+        "author": "Victor alexandre ",
+        "slug": "casmi26-wave9-isolated-adduct-dedup-cpu",
+        "lastRunTime": "2026-09-26T00:50:57.428Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": false,
+        "enableInternet": false,
+        "datasetDataSources": [
+          "prvsiyan/casmi26-fp-models-v2",
+          "franciscoangulo/casmi26-mist-msbuddy-assets",
+          "aidensong123/casmi26-offline-rdkit-2026033",
+          "prvsiyan/casmi26-ranker-features",
+          "megayak/casmi26-simulated-ranker-rows",
+          "prvsiyan/chebi-lipidmaps-casmi26",
+          "prvsiyan/coconut-casmi26-candidates",
+          "thedevastator/open-source-natural-product-annotations"
+        ],
+        "competitionDataSources": [
+          "enveda-CASMI26-molecule-id-mass-spectra"
+        ],
+        "enableTpu": false,
+        "currentVersionNumber": 1,
+        "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machineShape": "None"
+      }
+    },
+    {
+      "kernel": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "version": 1,
+      "source_sha256": "247615fa053491f18dac69b6842ba53ee23cb0c33e56d202d4e8a252852ca86b",
+      "matches_recovered_source": true,
+      "metadata": {
+        "id": 136324795,
+        "ref": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+        "title": "casmi26 wave9 isolated adduct cpu",
+        "author": "Victor alexandre ",
+        "slug": "casmi26-wave9-isolated-adduct-cpu",
+        "lastRunTime": "2026-09-26T00:50:57.913Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": false,
+        "enableInternet": false,
+        "datasetDataSources": [
+          "prvsiyan/casmi26-fp-models-v2",
+          "franciscoangulo/casmi26-mist-msbuddy-assets",
+          "aidensong123/casmi26-offline-rdkit-2026033",
+          "prvsiyan/casmi26-ranker-features",
+          "megayak/casmi26-simulated-ranker-rows",
+          "prvsiyan/chebi-lipidmaps-casmi26",
+          "prvsiyan/coconut-casmi26-candidates",
+          "thedevastator/open-source-natural-product-annotations"
+        ],
+        "competitionDataSources": [
+          "enveda-CASMI26-molecule-id-mass-spectra"
+        ],
+        "enableTpu": false,
+        "currentVersionNumber": 1,
+        "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machineShape": "None"
+      }
+    }
+  ]
+}

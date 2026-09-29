@@ -1,0 +1,50 @@
+{
+  "status": "LOCAL_ONLY_NOT_READY_FOR_SUBMISSION",
+  "drafts": [
+    {
+      "variant": "formula_dedup",
+      "source_sha256": "40744e4eb0278c14ef27864619c712115b218dea66742d8d4cd52dc775fd0b81",
+      "folder": "/home/user/casmi_repair_drafts/formula_dedup",
+      "static_check": "PASS",
+      "full_cpu_preview": false,
+      "remote_version": null,
+      "submission_allowed": false
+    },
+    {
+      "variant": "top1",
+      "source_sha256": "a689136155e56eca79bae041abd58b82af45532fb0cab7263e22442dc2f5da17",
+      "folder": "/home/user/casmi_repair_drafts/top1",
+      "static_check": "PASS",
+      "full_cpu_preview": false,
+      "remote_version": null,
+      "submission_allowed": false
+    },
+    {
+      "variant": "top1_dedup",
+      "source_sha256": "cec1e592929061785cab5007ed6ad58a12039daf53458c99b14275fc6852013e",
+      "folder": "/home/user/casmi_repair_drafts/top1_dedup",
+      "static_check": "PASS",
+      "full_cpu_preview": false,
+      "remote_version": null,
+      "submission_allowed": false
+    },
+    {
+      "variant": "adduct",
+      "source_sha256": "ed57aa200c19e48d8017dc5e5c399370ced208cfb6d2a514baf4f97dbdf72ae5",
+      "folder": "/home/user/casmi_repair_drafts/adduct",
+      "static_check": "PASS",
+      "full_cpu_preview": false,
+      "remote_version": null,
+      "submission_allowed": false
+    },
+    {
+      "variant": "adduct_dedup",
+      "source_sha256": "b926e18aa951892611b4acf1bf2f930fc7716e055f373d1152e3a099beacd481",
+      "folder": "/home/user/casmi_repair_drafts/adduct_dedup",
+      "static_check": "PASS",
+      "full_cpu_preview": false,
+      "remote_version": null,
+      "submission_allowed": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "competitions": [
+    {
+      "id": 3004,
+      "ref": "https://www.kaggle.com/competitions/digit-recognizer",
+      "title": "Digit Recognizer",
+      "url": "https://www.kaggle.com/competitions/digit-recognizer",
+      "description": "Learn computer vision fundamentals with the famous MNIST data",
+      "organizationName": "Kaggle",
+      "category": "Getting Started",
+      "reward": "Knowledge",
+      "tags": [
+        {
+          "ref": "tabular",
+          "name": "tabular",
+          "description": "",
+          "fullPath": "data type > tabular",
+          "competitionCount": 15865,
+          "datasetCount": 18163,
+          "scriptCount": 8366,
+          "totalCount": 42394
+        },
+        {
+          "ref": "image",
+          "name": "image",
+          "description": "",
+          "fullPath": "data type > image",
+          "competitionCount": 706,
+          "datasetCount": 63298,
+          "scriptCount": 7128,
+          "totalCount": 71132
+        },
+        {
+          "ref": "multiclass classification",
+          "name": "multiclass classification",
+          "description": "",
+          "fullPath": "task > multiclass classification",
+          "competitionCount": 1062,
+          "datasetCount": 1842,
+          "scriptCount": 4159,
+          "totalCount": 7063
+        },
+        {
+          "ref": "categorizationaccuracy",
+          "name": "categorizationaccuracy",
+          "description": "Percentage of correctly categorized items",
+          "fullPath": ""
+        }
+      ],
+      "deadline": "2030-01-01T00:00:00.000Z",
+      "teamCount": 864,
+      "mergerDeadline": "2030-01-01T00:00:00.000Z",
+      "enabledDate": "2012-07-25T20:43:30.087Z",
+      "maxDailySubmissions": 5,
+      "maxTeamSize": 1,
+      "evaluationMetric": "Categorization Accuracy",
+      "hostName": "Kaggle",
+      "dateCreated": "2012-07-17T21:13:59.553Z"
+    }
+  ]
+}

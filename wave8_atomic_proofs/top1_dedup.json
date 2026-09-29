@@ -1,0 +1,72 @@
+{
+  "variant": "top1_dedup",
+  "cpu_only": true,
+  "full_pipeline": true,
+  "own_dataset_inputs": false,
+  "expected_rows": 400,
+  "formula_coverage": 0.9975,
+  "formula_changed_rows": 201,
+  "dedup_changed_rows": 34,
+  "dedup_replaced_slots": 392,
+  "combo_formula_changed_rows": 201,
+  "test_sha256": "2fa29c4aa06e93b48e0cd6619fd2de3f4e956f0019d242141678b7287f2b43e0",
+  "sample_sha256": "34c45718efeb03b9d130c7f1ed5a1a72f92c8818479a49d5feef08b5a9f18e04",
+  "rdkit_version": "2026.03.3",
+  "artifacts": {
+    "blend": {
+      "file": "audit_blend.csv",
+      "sha256": "7d29205d84c03095972e5354e46f968dd60ca276c8d91aea604d11cb9d875127",
+      "bytes": 394868,
+      "rows": 400
+    },
+    "ours": {
+      "file": "audit_ours.csv",
+      "sha256": "5d22093b0cac4224e39d730b2bfca60cbdc08ebeff2ba3a2f6825780e91effdb",
+      "bytes": 393760,
+      "rows": 400
+    },
+    "pv": {
+      "file": "audit_pv.csv",
+      "sha256": "527d9c09f20578c97bc3713cd5bd2976890b7703dd347a35ebff01585a76bd44",
+      "bytes": 395252,
+      "rows": 400
+    },
+    "formula": {
+      "file": "audit_formula.csv",
+      "sha256": "a67f6bf63078049744cb4ded8e520c37bd7067bbc40f30056ccfe1b5d7ab0965",
+      "bytes": 394868,
+      "rows": 400
+    },
+    "dedup": {
+      "file": "audit_dedup.csv",
+      "sha256": "b3bef37a9e79c163b57631a67bef39f835e32098c8087338c03905fc7cbca37f",
+      "bytes": 409897,
+      "rows": 400
+    },
+    "formula_dedup": {
+      "file": "audit_formula_dedup.csv",
+      "sha256": "e46a74a79a5ddd594486f3f9dc7449c6735cbcaf8278da2c40135a4786b9ebb3",
+      "bytes": 409897,
+      "rows": 400
+    },
+    "top1": {
+      "file": "audit_top1.csv",
+      "sha256": "6bad69c74a785a54c4af4980a8d4481062bcfa6d6b6e12c6ba9217fd1f279e2c",
+      "bytes": 394868,
+      "rows": 400
+    },
+    "top1_dedup": {
+      "file": "audit_top1_dedup.csv",
+      "sha256": "200764676509f414dd418c66a28c181fbc3daa1bb2716ac6ebb81a06b8566d43",
+      "bytes": 409897,
+      "rows": 400
+    }
+  },
+  "selected_vs_blend_changed_rows": 169,
+  "publication_contract": "atomic-final-only-v1",
+  "file": "submission.csv",
+  "rows": 400,
+  "bytes": 409897,
+  "sha256": "200764676509f414dd418c66a28c181fbc3daa1bb2716ac6ebb81a06b8566d43",
+  "sample_ids_sha256": "3fb6612fa6af13dfbaba24fe05f705b86627ec3451a17130ef53a44d5328a04c"
+}

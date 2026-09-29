@@ -1,0 +1,122 @@
+{
+  "adduct": {
+    "phase": "accepted",
+    "at": "2026-09-27T22:03:24.638646-03:00",
+    "plan": {
+      "tag": "adduct",
+      "kernel": "victor120956/casmi26-wave8-atomic-adduct-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "folder": "/home/user/kpush_wave8_adduct",
+      "question": "Separar espectros por aduto/polaridade melhora a fórmula e o ranking?",
+      "decision": "Se ganhar, adotar evidência por grupo; sem ganho, não promover.",
+      "preview_verified": true,
+      "no_automatic_submission": true,
+      "path": "/home/user/probeout_wave8_extra/adduct/submission.csv",
+      "sha256": "429ccaec7ae230798f0b9d6b4d08c508e3a4fd9229b62b71bf9fe47f99dc28ef",
+      "semantic_sha256": "cd7c96c2eba8c6e78d079a4eea54838e7d9dc22344c0c1c972f5b056b5314c79",
+      "controls_regression_pass": true,
+      "message": "PROBE-WAVE8:adduct VERIFY PASS"
+    },
+    "response": {
+      "message": "",
+      "ref": 56624670
+    }
+  },
+  "adduct_dedup": {
+    "phase": "accepted",
+    "at": "2026-09-27T22:03:26.601355-03:00",
+    "plan": {
+      "tag": "adduct_dedup",
+      "kernel": "victor120956/casmi26-wave8-atomic-adduct-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "folder": "/home/user/kpush_wave8_adduct_dedup",
+      "question": "Evidência por aduto também melhora a combinação com refill?",
+      "decision": "Comparar com adduct sem refill e combinado top5 legado; escolher mecanismo demonstrado.",
+      "preview_verified": true,
+      "no_automatic_submission": true,
+      "path": "/home/user/probeout_wave8_extra/adduct_dedup/submission.csv",
+      "sha256": "c5fd29e0d88d215c4c6ccc8bd281257b2be1f1555653f2100773efac51007e4d",
+      "semantic_sha256": "7ccc51c30f41ff49c7b454a3787301853b10f54b9e1d677afb4be66329294bc9",
+      "controls_regression_pass": true,
+      "message": "PROBE-WAVE8:adduct_dedup VERIFY PASS"
+    },
+    "response": {
+      "message": "",
+      "ref": 56624671
+    }
+  },
+  "formula_dedup": {
+    "phase": "accepted",
+    "at": "2026-09-27T22:03:28.592188-03:00",
+    "plan": {
+      "tag": "formula_dedup",
+      "kernel": "victor120956/casmi26-wave8-atomic-formula-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "path": "/home/user/probeout_wave8_atomic/submission.csv",
+      "sha256": "e46a74a79a5ddd594486f3f9dc7449c6735cbcaf8278da2c40135a4786b9ebb3",
+      "semantic_sha256": "5ef14a5bb17e37e43e1d3b71ce31d7c166a74ce1cbbe3fb9debc99fa5fef1cd0",
+      "preview_verified": true,
+      "controls_regression_pass": true,
+      "causal_scoring_audit_resolved": false,
+      "question": "Fórmula top5 aplicada após dedup/refill melhora W088 blend 0.341?",
+      "decision": "Promover combinação apenas com ganho medido e atribuição de arquivo confiável; caso contrário não promover.",
+      "no_automatic_submission": true,
+      "message": "PROBE-WAVE8:formula_dedup VERIFY PASS"
+    },
+    "response": {
+      "message": "",
+      "ref": 56624673
+    }
+  },
+  "top1": {
+    "phase": "accepted",
+    "at": "2026-09-27T22:03:30.631089-03:00",
+    "plan": {
+      "tag": "top1",
+      "kernel": "victor120956/casmi26-wave8-atomic-top1-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "folder": "/home/user/kpush_wave8_top1",
+      "question": "Top1 msbuddy reduz promoções espúrias em relação à evidência top5?",
+      "decision": "Comparar ao W088 blend e ao top1+dedup; promover somente ganho confiável.",
+      "preview_verified": true,
+      "no_automatic_submission": true,
+      "path": "/home/user/probeout_wave8_extra/top1/submission.csv",
+      "sha256": "6bad69c74a785a54c4af4980a8d4481062bcfa6d6b6e12c6ba9217fd1f279e2c",
+      "semantic_sha256": "e493d04c21114ed0cd65477d2cc82b68bb4a87876db7ad45281c7bd7d8ea86e0",
+      "controls_regression_pass": true,
+      "message": "PROBE-WAVE8:top1 VERIFY PASS"
+    },
+    "response": {
+      "message": "",
+      "ref": 56624674
+    }
+  },
+  "top1_dedup": {
+    "phase": "accepted",
+    "at": "2026-09-27T22:03:32.605422-03:00",
+    "plan": {
+      "tag": "top1_dedup",
+      "kernel": "victor120956/casmi26-wave8-atomic-top1-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "folder": "/home/user/kpush_wave8_top1_dedup",
+      "question": "Top1 aplicado após refill supera o combinado top5+dedup?",
+      "decision": "Escolher política top1/top5 após notas atribuíveis, sem varrer pesos.",
+      "preview_verified": true,
+      "no_automatic_submission": true,
+      "path": "/home/user/probeout_wave8_extra/top1_dedup/submission.csv",
+      "sha256": "200764676509f414dd418c66a28c181fbc3daa1bb2716ac6ebb81a06b8566d43",
+      "semantic_sha256": "a663cf143c008b946a548d6f70301dfe44bb4dcad4e7b10139a0237cef02f94d",
+      "controls_regression_pass": true,
+      "message": "PROBE-WAVE8:top1_dedup VERIFY PASS"
+    },
+    "response": {
+      "message": "",
+      "ref": 56624675
+    }
+  }
+}

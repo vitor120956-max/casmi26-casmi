@@ -1,0 +1,188 @@
+{
+  "at": "2026-09-28T22:40:21.854116-03:00",
+  "mode": "live_once",
+  "submissions_made": 0,
+  "automatic_dispatch": false,
+  "candidates": [
+    {
+      "variant": "top1",
+      "kernel": "victor120956/casmi26-wave9-isolated-top1-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "463a3d13ba004c80f048697c676ed17c802ec213f8a5b617f2e52cda150e9aca",
+      "question": "Primeiro reteste operacional: fonte corrigida consegue nota v\u00e1lida? Cient\u00edfico: promo\u00e7\u00e3o top1 vs refer\u00eancia W088.",
+      "role": "first_corrected_control",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false,
+      "release_ready": false,
+      "artifact_verified": true,
+      "blockers": [
+        "SOURCE_RUNTIME_POLICY_REVIEW_REQUIRED",
+        "REPAIR_RETEST_REQUIRES_EXPLICIT_REVIEW"
+      ],
+      "execution_status": {
+        "status": "COMPLETE"
+      },
+      "sha256": "6bad69c74a785a54c4af4980a8d4481062bcfa6d6b6e12c6ba9217fd1f279e2c",
+      "semantic_sha256": "e493d04c21114ed0cd65477d2cc82b68bb4a87876db7ad45281c7bd7d8ea86e0",
+      "same_public_predictions_as_rejected_wave8": true,
+      "degraded": [],
+      "formula_coverage": 0.9975
+    },
+    {
+      "variant": "adduct",
+      "kernel": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "247615fa053491f18dac69b6842ba53ee23cb0c33e56d202d4e8a252852ca86b",
+      "question": "Separar evid\u00eancia por aduto/polaridade melhora a ordena\u00e7\u00e3o sem refill?",
+      "role": "conditional_after_control_review",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false,
+      "release_ready": false,
+      "artifact_verified": true,
+      "blockers": [
+        "SOURCE_RUNTIME_POLICY_REVIEW_REQUIRED",
+        "REPAIR_RETEST_REQUIRES_EXPLICIT_REVIEW",
+        "WAIT_FOR_CANARY_RESULT_REVIEW"
+      ],
+      "execution_status": {
+        "status": "COMPLETE"
+      },
+      "sha256": "429ccaec7ae230798f0b9d6b4d08c508e3a4fd9229b62b71bf9fe47f99dc28ef",
+      "semantic_sha256": "cd7c96c2eba8c6e78d079a4eea54838e7d9dc22344c0c1c972f5b056b5314c79",
+      "same_public_predictions_as_rejected_wave8": true,
+      "degraded": [],
+      "formula_coverage": 0.9975
+    },
+    {
+      "variant": "adduct_dedup",
+      "kernel": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "84e21511ebab674b075f0ef4317b9a4c6a7a70321c99d82741104066c7a709ea",
+      "question": "Agrupamento por aduto mant\u00e9m benef\u00edcio com dedup/refill?",
+      "role": "conditional_after_control_review",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false,
+      "release_ready": false,
+      "artifact_verified": true,
+      "blockers": [
+        "SOURCE_RUNTIME_POLICY_REVIEW_REQUIRED",
+        "REPAIR_RETEST_REQUIRES_EXPLICIT_REVIEW",
+        "WAIT_FOR_CANARY_RESULT_REVIEW"
+      ],
+      "execution_status": {
+        "status": "COMPLETE"
+      },
+      "sha256": "c5fd29e0d88d215c4c6ccc8bd281257b2be1f1555653f2100773efac51007e4d",
+      "semantic_sha256": "7ccc51c30f41ff49c7b454a3787301853b10f54b9e1d677afb4be66329294bc9",
+      "same_public_predictions_as_rejected_wave8": true,
+      "degraded": [],
+      "formula_coverage": 0.9975
+    },
+    {
+      "variant": "formula_dedup",
+      "kernel": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "69332bf0450da7cc4850801b7c61f58b26a0ea2222a367f0243d93f97e67620e",
+      "question": "Top5 de f\u00f3rmula combinado com dedup/refill supera refer\u00eancia?",
+      "role": "conditional_after_control_review",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false,
+      "release_ready": false,
+      "artifact_verified": true,
+      "blockers": [
+        "SOURCE_RUNTIME_POLICY_REVIEW_REQUIRED",
+        "REPAIR_RETEST_REQUIRES_EXPLICIT_REVIEW",
+        "WAIT_FOR_CANARY_RESULT_REVIEW"
+      ],
+      "execution_status": {
+        "status": "COMPLETE"
+      },
+      "sha256": "e46a74a79a5ddd594486f3f9dc7449c6735cbcaf8278da2c40135a4786b9ebb3",
+      "semantic_sha256": "5ef14a5bb17e37e43e1d3b71ce31d7c166a74ce1cbbe3fb9debc99fa5fef1cd0",
+      "same_public_predictions_as_rejected_wave8": true,
+      "degraded": [],
+      "formula_coverage": 0.9975
+    },
+    {
+      "variant": "top1_dedup",
+      "kernel": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "6c6f9a633afd8fa89f60ac55036119d4c4262a716b3759402925c02a26044342",
+      "question": "Top1 supera top5 com a mesma pol\u00edtica de dedup/refill?",
+      "role": "conditional_after_control_review",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false,
+      "release_ready": false,
+      "artifact_verified": true,
+      "blockers": [
+        "SOURCE_RUNTIME_POLICY_REVIEW_REQUIRED",
+        "REPAIR_RETEST_REQUIRES_EXPLICIT_REVIEW",
+        "WAIT_FOR_CANARY_RESULT_REVIEW"
+      ],
+      "execution_status": {
+        "status": "COMPLETE"
+      },
+      "sha256": "200764676509f414dd418c66a28c181fbc3daa1bb2716ac6ebb81a06b8566d43",
+      "semantic_sha256": "a663cf143c008b946a548d6f70301dfe44bb4dcad4e7b10139a0237cef02f94d",
+      "same_public_predictions_as_rejected_wave8": true,
+      "degraded": [],
+      "formula_coverage": 0.9975
+    }
+  ],
+  "quota": {
+    "numTotal": 60,
+    "numAllowedNow": 5
+  },
+  "artifact_verified_count": 5,
+  "release_ready_count": 0
+}

@@ -1,0 +1,95 @@
+{
+  "scope": "Remote source downloaded read-only after discovering running jobs absent from local journal; no modification or cancellation. Latest source, no scored-artifact attribution.",
+  "kernels": [
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+      "code_file": "casmi26-wave9-isolated-top1-dedup-cpu.ipynb",
+      "metadata_id": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+      "sha256": "6c6f9a633afd8fa89f60ac55036119d4c4262a716b3759402925c02a26044342",
+      "cpu_only": true,
+      "private": true,
+      "contains_0975_literal": false,
+      "contains_all_variants_validation_loop": false,
+      "source_bytes": 76078,
+      "engine_output_branches": [
+        "blend",
+        "pv",
+        "ours"
+      ],
+      "declares_msbuddy_degraded_fallback": true,
+      "approved_for_competition_submission": false
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-top1-cpu",
+      "code_file": "casmi26-wave9-isolated-top1-cpu.ipynb",
+      "metadata_id": "victor120956/casmi26-wave9-isolated-top1-cpu",
+      "sha256": "463a3d13ba004c80f048697c676ed17c802ec213f8a5b617f2e52cda150e9aca",
+      "cpu_only": true,
+      "private": true,
+      "contains_0975_literal": false,
+      "contains_all_variants_validation_loop": false,
+      "source_bytes": 75682,
+      "engine_output_branches": [
+        "blend",
+        "pv",
+        "ours"
+      ],
+      "declares_msbuddy_degraded_fallback": true,
+      "approved_for_competition_submission": false
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+      "code_file": "casmi26-wave9-isolated-formula-dedup-cpu.ipynb",
+      "metadata_id": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+      "sha256": "69332bf0450da7cc4850801b7c61f58b26a0ea2222a367f0243d93f97e67620e",
+      "cpu_only": true,
+      "private": true,
+      "contains_0975_literal": false,
+      "contains_all_variants_validation_loop": false,
+      "source_bytes": 76085,
+      "engine_output_branches": [
+        "blend",
+        "pv",
+        "ours"
+      ],
+      "declares_msbuddy_degraded_fallback": true,
+      "approved_for_competition_submission": false
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "code_file": "casmi26-wave9-isolated-adduct-dedup-cpu.ipynb",
+      "metadata_id": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "sha256": "84e21511ebab674b075f0ef4317b9a4c6a7a70321c99d82741104066c7a709ea",
+      "cpu_only": true,
+      "private": true,
+      "contains_0975_literal": false,
+      "contains_all_variants_validation_loop": false,
+      "source_bytes": 83652,
+      "engine_output_branches": [
+        "blend",
+        "pv",
+        "ours"
+      ],
+      "declares_msbuddy_degraded_fallback": true,
+      "approved_for_competition_submission": false
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "code_file": "casmi26-wave9-isolated-adduct-cpu.ipynb",
+      "metadata_id": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "sha256": "247615fa053491f18dac69b6842ba53ee23cb0c33e56d202d4e8a252852ca86b",
+      "cpu_only": true,
+      "private": true,
+      "contains_0975_literal": false,
+      "contains_all_variants_validation_loop": false,
+      "source_bytes": 83223,
+      "engine_output_branches": [
+        "blend",
+        "pv",
+        "ours"
+      ],
+      "declares_msbuddy_degraded_fallback": true,
+      "approved_for_competition_submission": false
+    }
+  ]
+}

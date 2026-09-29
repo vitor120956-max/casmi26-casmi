@@ -1,0 +1,61 @@
+{
+  "scope": "Synthetic tests of exact guard/validation loop extracted from submitted notebook source. Hidden rerun logs unavailable; actual cause remains unknown.",
+  "kernels": [
+    {
+      "slug": "victor120956/casmi26-wave8-atomic-formula-dedup-cpu",
+      "source_sha256": "6512cb34fd030939f7b1a0dcf3ff7a592f28f6eab44f95b71fc2366f47593636",
+      "coverage_results": {
+        "0.97": "('MSBUDDY_COVERAGE_FAILED', 0.97)",
+        "0.975": "PASS",
+        "1.0": "PASS"
+      },
+      "selected_contract_independently_valid": true,
+      "unused_branch_blocks_loop": "INVALID_SMILES"
+    },
+    {
+      "slug": "victor120956/casmi26-wave8-atomic-top1-cpu",
+      "source_sha256": "134f0a1af61633e1350b7dab959773060a114db70b71a0569f84efc6154007ff",
+      "coverage_results": {
+        "0.97": "('MSBUDDY_COVERAGE_FAILED', 0.97)",
+        "0.975": "PASS",
+        "1.0": "PASS"
+      },
+      "selected_contract_independently_valid": true,
+      "unused_branch_blocks_loop": "INVALID_SMILES"
+    },
+    {
+      "slug": "victor120956/casmi26-wave8-atomic-top1-dedup-cpu",
+      "source_sha256": "fcbfaa86ee8f29c3b8a1bc21c29bdf42f2b47fc0eae6b2a08076691f4555ced2",
+      "coverage_results": {
+        "0.97": "('MSBUDDY_COVERAGE_FAILED', 0.97)",
+        "0.975": "PASS",
+        "1.0": "PASS"
+      },
+      "selected_contract_independently_valid": true,
+      "unused_branch_blocks_loop": "INVALID_SMILES"
+    },
+    {
+      "slug": "victor120956/casmi26-wave8-atomic-adduct-cpu",
+      "source_sha256": "b194f451c082e39fef35d9b03d0ec65bc713948678f352b11695e0d10d01ea0a",
+      "coverage_results": {
+        "0.97": "('MSBUDDY_COVERAGE_FAILED', 0.97)",
+        "0.975": "PASS",
+        "1.0": "PASS"
+      },
+      "selected_contract_independently_valid": true,
+      "unused_branch_blocks_loop": "INVALID_SMILES"
+    },
+    {
+      "slug": "victor120956/casmi26-wave8-atomic-adduct-dedup-cpu",
+      "source_sha256": "d7040430db3f104c9ef23ae4d0d60eb7810c37f3643deeb47864acf5a7f9edaa",
+      "coverage_results": {
+        "0.97": "('MSBUDDY_COVERAGE_FAILED', 0.97)",
+        "0.975": "PASS",
+        "1.0": "PASS"
+      },
+      "selected_contract_independently_valid": true,
+      "unused_branch_blocks_loop": "INVALID_SMILES"
+    }
+  ],
+  "checks_passed": 25
+}

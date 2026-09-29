@@ -1,0 +1,506 @@
+[
+  {
+    "ref": "ryanholbrook/getting-started-gemma-4-developer-agent",
+    "title": "Getting Started - Gemma 4 Developer Agent",
+    "author": "Ryan Holbrook",
+    "total_votes": 224,
+    "last_run_time": "2026-09-27 19:50:58.393000",
+    "url": null
+  },
+  {
+    "ref": "romanrozen/gemma-eda-baseline-for-a-start-lb-top-1",
+    "title": "GEMMA: EDA, Baseline for a start | LB TOP 1",
+    "author": "Roman Rozen",
+    "total_votes": 131,
+    "last_run_time": "2026-09-23 19:14:08.027000",
+    "url": null
+  },
+  {
+    "ref": "lucifer19/black-cat-swe-agent-pack-instinct",
+    "title": "\ud83d\udc08\u200d\u2b1b Black Cat SWE Agent | Pack Instinct",
+    "author": "Agent Trainer",
+    "total_votes": 57,
+    "last_run_time": "2026-09-27 23:31:54.697000",
+    "url": null
+  },
+  {
+    "ref": "zhukovoleksiy/gemma-4-walkthrough-first-submission",
+    "title": "Gemma 4 | Walkthrough & First Submission",
+    "author": "Oleksii Zhukov",
+    "total_votes": 48,
+    "last_run_time": "2026-09-26 17:39:01.923000",
+    "url": null
+  },
+  {
+    "ref": "nursrijan/gemma-4-swe-agent-complete-eda-adk-starter-kit",
+    "title": "Gemma 4 SWE Agent: Complete EDA & ADK Starter Kit",
+    "author": "Nur Srijan",
+    "total_votes": 37,
+    "last_run_time": "2026-09-23 16:47:59.803000",
+    "url": null
+  },
+  {
+    "ref": "manuelgagofernandez/google-the-gemma-4-developer-agent-competition",
+    "title": "Google - The Gemma 4 Developer Agent Competition",
+    "author": "Manuel Gago Fernandez",
+    "total_votes": 25,
+    "last_run_time": "2026-09-24 23:08:43.890000",
+    "url": null
+  },
+  {
+    "ref": "prvsiyan/gemma-and-the-shape-of-doubt",
+    "title": "Gemma and the Shape of Doubt",
+    "author": "prvsiyan",
+    "total_votes": 17,
+    "last_run_time": "2026-09-26 13:12:00.903000",
+    "url": null
+  },
+  {
+    "ref": "haideptry/gemma-develop-first-try",
+    "title": "Gemma develop first try",
+    "author": "haideptry",
+    "total_votes": 17,
+    "last_run_time": "2026-09-28 02:04:34.120000",
+    "url": null
+  },
+  {
+    "ref": "avikdas567/dual-space-spectral-graph-swe-agent-for-gemma-4",
+    "title": "Dual-Space Spectral Graph SWE Agent for Gemma 4",
+    "author": "Avik Das",
+    "total_votes": 16,
+    "last_run_time": "2026-09-24 09:04:08.407000",
+    "url": null
+  },
+  {
+    "ref": "proamari/anatomy-of-a-fix",
+    "title": "\ud83e\uddec Anatomy of a Fix",
+    "author": "Marina Afanaseva",
+    "total_votes": 15,
+    "last_run_time": "2026-09-25 02:25:34.260000",
+    "url": null
+  },
+  {
+    "ref": "nihilisticneuralnet/0-10-gemma-4-developer-agent-submission",
+    "title": "[0.10]: Gemma 4 Developer Agent Submission",
+    "author": "parthenos",
+    "total_votes": 15,
+    "last_run_time": "2026-09-25 14:51:49.003000",
+    "url": null
+  },
+  {
+    "ref": "avikdas567/gemma-4-ast-graph-augmented-swe-multi-agent-system",
+    "title": "Gemma 4 AST Graph-Augmented SWE Multi-Agent System",
+    "author": "Avik Das",
+    "total_votes": 11,
+    "last_run_time": "2026-09-26 15:46:26.540000",
+    "url": null
+  },
+  {
+    "ref": "leoprovorov/gemma-4-starter-inside-the-harness-eda",
+    "title": "\ud83d\udd2c Gemma 4 Starter | Inside the Harness + EDA",
+    "author": "AlekseiProvorov",
+    "total_votes": 11,
+    "last_run_time": "2026-09-26 17:09:17.627000",
+    "url": null
+  },
+  {
+    "ref": "evgendvorkin/google-the-gemma-4",
+    "title": "Google - The Gemma 4",
+    "author": "\u0414\u0432\u043e\u0440\u043a\u0438\u043d \u0415\u0432\u0433\u0435\u043d\u0438\u0439 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447",
+    "total_votes": 11,
+    "last_run_time": "2026-09-25 10:35:43.397000",
+    "url": null
+  },
+  {
+    "ref": "mizeroluckygall/pathfinder-gemma-4-agent-eda-baseline",
+    "title": "Pathfinder  | Gemma 4 Agent: EDA + Baseline+",
+    "author": "Mizero Lucky Gall",
+    "total_votes": 9,
+    "last_run_time": "2026-09-25 19:41:46.330000",
+    "url": null
+  },
+  {
+    "ref": "leoprovorov/gemma-4-the-complete-guide-expanded",
+    "title": "\ud83d\udcd8Gemma-4 | The Complete Guide. Expanded",
+    "author": "AlekseiProvorov",
+    "total_votes": 9,
+    "last_run_time": "2026-09-26 21:48:54.837000",
+    "url": null
+  },
+  {
+    "ref": "leoprovorov/gemma-4-agent-working-baseline",
+    "title": "Gemma 4 Agent Working Baseline",
+    "author": "AlekseiProvorov",
+    "total_votes": 9,
+    "last_run_time": "2026-09-26 17:08:52.740000",
+    "url": null
+  },
+  {
+    "ref": "msama01/gemma-4-developer-agent-eda",
+    "title": "GEMMA 4 developer agent EDA",
+    "author": "Maram Ali",
+    "total_votes": 7,
+    "last_run_time": "2026-09-26 13:57:42.033000",
+    "url": null
+  },
+  {
+    "ref": "chaitanyajamble/google-the-gemma-4-developer-11",
+    "title": "Google - The Gemma 4 Developer -11",
+    "author": "Chaitanya Jamble",
+    "total_votes": 6,
+    "last_run_time": "2026-09-25 10:34:59.827000",
+    "url": null
+  },
+  {
+    "ref": "tuyennguyen21pt/mainmainmain",
+    "title": "mainmainmain",
+    "author": "Tuy\u00ean Nguy\u1ec5n",
+    "total_votes": 6,
+    "last_run_time": "2026-09-26 01:13:07.857000",
+    "url": null
+  },
+  {
+    "ref": "chaitanyajamble/the-gemma-4-developer-agent-google",
+    "title": "The Gemma 4 Developer Agent- Google",
+    "author": "Chaitanya Jamble",
+    "total_votes": 6,
+    "last_run_time": "2026-09-24 12:17:05.513000",
+    "url": null
+  },
+  {
+    "ref": "chaitanyajamble/google-the-gemma-4-developer",
+    "title": "Google - The Gemma 4 Developer/",
+    "author": "Chaitanya Jamble",
+    "total_votes": 4,
+    "last_run_time": "2026-09-25 03:31:22.240000",
+    "url": null
+  },
+  {
+    "ref": "twangygarlic449/gemma-super-basic",
+    "title": "Gemma | Super Basic",
+    "author": "TwangyGarlic449",
+    "total_votes": 4,
+    "last_run_time": "2026-09-24 16:46:32.393000",
+    "url": null
+  },
+  {
+    "ref": "chaitanyajamble/google-the-gemma-4-developer-agent-2",
+    "title": "Google - The Gemma 4 Developer Agent 2",
+    "author": "Chaitanya Jamble",
+    "total_votes": 4,
+    "last_run_time": "2026-09-24 06:56:02.227000",
+    "url": null
+  },
+  {
+    "ref": "cocoyachi/gemma-4-dev-agent-zero-to-first-valid-submission",
+    "title": "Gemma 4 Dev Agent: Zero to First Valid Submission",
+    "author": "TildAlice",
+    "total_votes": 3,
+    "last_run_time": "2026-09-27 12:44:00.570000",
+    "url": null
+  },
+  {
+    "ref": "nilanjansaha123/gemma-4-agent-eda-adk-starter",
+    "title": "\ud83d\udc08\u200d\u2b1b Gemma 4 Agent: EDA & ADK Starter",
+    "author": "Nilanjan_Saha123",
+    "total_votes": 3,
+    "last_run_time": "2026-09-25 09:23:42.003000",
+    "url": null
+  },
+  {
+    "ref": "pilkwang/gemma-4-repair-quality-under-a-fixed-budget",
+    "title": "Gemma 4: Repair Quality Under a Fixed Budget",
+    "author": "Pilkwang Kim",
+    "total_votes": 3,
+    "last_run_time": "2026-09-27 09:11:02.863000",
+    "url": null
+  },
+  {
+    "ref": "woldywei/gemma4-localization-repaired",
+    "title": "Gemma4 Localization Repaired",
+    "author": "woldy",
+    "total_votes": 3,
+    "last_run_time": "2026-09-24 16:10:12.040000",
+    "url": null
+  },
+  {
+    "ref": "busyaprime/119-of-129-sound-the-gemma-4-grader-rebuilt",
+    "title": "119 of 129 sound: the Gemma 4 grader, rebuilt",
+    "author": "Akmal Xodarev (Busya PRIME)",
+    "total_votes": 3,
+    "last_run_time": "2026-09-26 15:40:46.413000",
+    "url": null
+  },
+  {
+    "ref": "rishavae/gemma4",
+    "title": "Gemma4",
+    "author": "Rishav Yadav",
+    "total_votes": 3,
+    "last_run_time": "2026-09-24 06:26:53.450000",
+    "url": null
+  },
+  {
+    "ref": "foysalemonshanto/gemma4-agent-advanced-eda",
+    "title": "Gemma4 Agent Advanced EDA",
+    "author": "FOYSAL",
+    "total_votes": 3,
+    "last_run_time": "2026-09-23 17:22:12.210000",
+    "url": null
+  },
+  {
+    "ref": "tomaszszyrowski/gemma4-day1-baseline",
+    "title": "Gemma4 Day1 Baseline",
+    "author": "tomasz szyrowski",
+    "total_votes": 2,
+    "last_run_time": "2026-09-27 14:39:27.153000",
+    "url": null
+  },
+  {
+    "ref": "hitarthjain0/gemma-4-dev-agent-what-moves-the-leaderboard",
+    "title": "Gemma 4 Dev Agent: What Moves the Leaderboard",
+    "author": "Hitarth Jain",
+    "total_votes": 2,
+    "last_run_time": "2026-09-26 18:27:04.770000",
+    "url": null
+  },
+  {
+    "ref": "nitish5236goel/gemma-4-developer-agent-cpu-audit-tables",
+    "title": "Gemma 4 Developer Agent CPU Audit Tables",
+    "author": "NITISH5236GOEL",
+    "total_votes": 2,
+    "last_run_time": "2026-09-26 13:37:07.177000",
+    "url": null
+  },
+  {
+    "ref": "nursrijan/gemma-4-devagent-kerashub-lora-training-on-tpu",
+    "title": "Gemma 4 DevAgent - KerasHub LoRA Training on TPU",
+    "author": "Nur Srijan",
+    "total_votes": 2,
+    "last_run_time": "2026-09-25 19:53:36.197000",
+    "url": null
+  },
+  {
+    "ref": "azouzibillel/black-cat-swe-agent-second-strike",
+    "title": "\ud83d\udc08\u200d\u2b1b Black Cat SWE Agent | Second Strike",
+    "author": "Azouzi Billel",
+    "total_votes": 2,
+    "last_run_time": "2026-09-26 07:04:25.453000",
+    "url": null
+  },
+  {
+    "ref": "salvapiol/gemmaforge-agent",
+    "title": "GemmaForge Agent",
+    "author": "Salva Piol",
+    "total_votes": 2,
+    "last_run_time": "2026-09-25 13:58:08.040000",
+    "url": null
+  },
+  {
+    "ref": "harishyadav0506/gemma-4-developer-agent",
+    "title": "Gemma 4 Developer Agent",
+    "author": "Harish Yadav",
+    "total_votes": 2,
+    "last_run_time": "2026-09-25 09:28:20.970000",
+    "url": null
+  },
+  {
+    "ref": "zzgtylors/graphloc-auditing-gemma-4-agent-code-graphs",
+    "title": "GraphLoc: auditing Gemma 4 agent code graphs",
+    "author": "zzgtylors",
+    "total_votes": 2,
+    "last_run_time": "2026-09-25 07:34:30.767000",
+    "url": null
+  },
+  {
+    "ref": "manuelgagofernandez/notebook13918923cc",
+    "title": "notebook13918923cc",
+    "author": "Manuel Gago Fernandez",
+    "total_votes": 2,
+    "last_run_time": "2026-09-25 02:17:08.510000",
+    "url": null
+  },
+  {
+    "ref": "sayandeepghosh/gemma-4-paper-track-async-codegraph-resource",
+    "title": "Gemma 4 Paper Track Async Codegraph Resource",
+    "author": "Sayandeep Ghosh",
+    "total_votes": 2,
+    "last_run_time": "2026-09-24 19:08:21.560000",
+    "url": null
+  },
+  {
+    "ref": "woldywei/gemma4-rq4-query-encoding",
+    "title": "Gemma4 RQ4 Query Encoding",
+    "author": "woldy",
+    "total_votes": 2,
+    "last_run_time": "2026-09-24 16:47:45.510000",
+    "url": null
+  },
+  {
+    "ref": "woldywei/gemma4-repaired-graphs-regen",
+    "title": "Gemma4 Repaired Graphs Regen",
+    "author": "woldy",
+    "total_votes": 2,
+    "last_run_time": "2026-09-24 15:14:07.853000",
+    "url": null
+  },
+  {
+    "ref": "woldywei/gemma4-graph-localization-bench",
+    "title": "Gemma4 Graph Localization Bench",
+    "author": "woldy",
+    "total_votes": 2,
+    "last_run_time": "2026-09-24 14:59:36.310000",
+    "url": null
+  },
+  {
+    "ref": "woldywei/gemma4-graph-coverage-audit",
+    "title": "Gemma4 Graph Coverage Audit",
+    "author": "woldy",
+    "total_votes": 2,
+    "last_run_time": "2026-09-24 14:53:33.253000",
+    "url": null
+  },
+  {
+    "ref": "tuynnguynee/notebook057a67b5a8",
+    "title": "notebook057a67b5a8",
+    "author": "Tuy\u00ean Nguy\u1ec5n ",
+    "total_votes": 2,
+    "last_run_time": "2026-09-24 11:21:40.967000",
+    "url": null
+  },
+  {
+    "ref": "nursrijan/gemma-4-devagent-graph-reasoning-and-swe-engine",
+    "title": "Gemma 4 DevAgent - Graph Reasoning and SWE Engine",
+    "author": "Nur Srijan",
+    "total_votes": 2,
+    "last_run_time": "2026-09-24 16:07:13.263000",
+    "url": null
+  },
+  {
+    "ref": "yuki16/gemma4-devagent-graphtools-submission-v2",
+    "title": "Gemma4_DevAgent_GraphTools_Submission_v2",
+    "author": "yuki16",
+    "total_votes": 2,
+    "last_run_time": "2026-09-24 02:46:54.463000",
+    "url": null
+  },
+  {
+    "ref": "koushikkumardinda/gemma-4-developer-agent-end-to-end-adk-starter",
+    "title": "Gemma 4 Developer Agent: End-to-End ADK Starter",
+    "author": "KOUSHIK KUMAR DINDA",
+    "total_votes": 1,
+    "last_run_time": "2026-09-26 04:36:21.523000",
+    "url": null
+  },
+  {
+    "ref": "alfira17/the-gemma-4-developer-agent-competition",
+    "title": "The Gemma 4 Developer Agent Competition",
+    "author": "AILEFEIRE MUHATI",
+    "total_votes": 1,
+    "last_run_time": "2026-09-26 07:09:19.597000",
+    "url": null
+  },
+  {
+    "ref": "zzgtylors/graphloc-end-to-end-gemma-4-agent-skill",
+    "title": "GraphLoc end-to-end: Gemma 4 agent + skill",
+    "author": "zzgtylors",
+    "total_votes": 1,
+    "last_run_time": "2026-09-26 02:14:50.627000",
+    "url": null
+  },
+  {
+    "ref": "harishyadav0506/black-cat-swe-agent",
+    "title": "Black Cat SWE Agent ",
+    "author": "Harish Yadav",
+    "total_votes": 1,
+    "last_run_time": "2026-09-26 07:48:14.240000",
+    "url": null
+  },
+  {
+    "ref": "bang1850/notebook67dada2eb5",
+    "title": "notebook67dada2eb5",
+    "author": "\u0e18\u0e19\u0e32\u0e01\u0e23 \u0e2b\u0e32\u0e0d\u0e27\u0e07\u0e04\u0e4c",
+    "total_votes": 1,
+    "last_run_time": "2026-09-25 13:13:28.087000",
+    "url": null
+  },
+  {
+    "ref": "zzgtylors/graphloc-can-gemma-4-pick-the-code-to-change",
+    "title": "GraphLoc: can Gemma 4 pick the code to change?",
+    "author": "zzgtylors",
+    "total_votes": 1,
+    "last_run_time": "2026-09-25 14:19:52.043000",
+    "url": null
+  },
+  {
+    "ref": "mizeroluckygall/gemma-4-agent-eda-agent-validator",
+    "title": "Gemma 4 Agent \ud83c\udf1fEDA + Agent + Validator",
+    "author": "Mizero Lucky Gall",
+    "total_votes": 1,
+    "last_run_time": "2026-09-25 06:24:30.270000",
+    "url": null
+  },
+  {
+    "ref": "osama133/gemma-4-dev-agent-task-anatomy-survival-kit",
+    "title": "Gemma 4 Dev Agent: task anatomy + survival kit",
+    "author": "Osama Abdelaal",
+    "total_votes": 0,
+    "last_run_time": "2026-09-28 00:00:52.637000",
+    "url": null
+  },
+  {
+    "ref": "ahmadagbaria/gemma-4-baseline-reproduction",
+    "title": "Gemma 4 Baseline Reproduction",
+    "author": "Ahmad Agbaria",
+    "total_votes": 0,
+    "last_run_time": "2026-09-27 19:36:03.370000",
+    "url": null
+  },
+  {
+    "ref": "tharunkumar369/gemma-4-developer-agent-top-1-master-baseline",
+    "title": "Gemma 4 Developer Agent Top 1 Master Baseline",
+    "author": "K.THARUN KUMAR",
+    "total_votes": 0,
+    "last_run_time": "2026-09-27 15:26:51.663000",
+    "url": null
+  },
+  {
+    "ref": "norikazuhaji/gtua-graph-tool-utility-audit",
+    "title": "GTUA - Graph-Tool Utility Audit",
+    "author": "Norikazu\u3000Haji",
+    "total_votes": 0,
+    "last_run_time": "2026-09-27 12:24:00.177000",
+    "url": null
+  },
+  {
+    "ref": "zzgtylors/graphloc-end-to-end-failure-analysis-resource",
+    "title": "GraphLoc end-to-end: failure analysis + resource",
+    "author": "zzgtylors",
+    "total_votes": 0,
+    "last_run_time": "2026-09-27 04:57:59.730000",
+    "url": null
+  },
+  {
+    "ref": "zzgtylors/graphloc-end-to-end-repeat-run-3",
+    "title": "GraphLoc end-to-end: repeat run 3",
+    "author": "zzgtylors",
+    "total_votes": 0,
+    "last_run_time": "2026-09-26 21:59:41.897000",
+    "url": null
+  },
+  {
+    "ref": "zzgtylors/graphloc-end-to-end-repeat-run-2",
+    "title": "GraphLoc end-to-end: repeat run 2",
+    "author": "zzgtylors",
+    "total_votes": 0,
+    "last_run_time": "2026-09-26 21:43:58.803000",
+    "url": null
+  },
+  {
+    "ref": "denpugovkin/can-gemma-4-fix-an-unseen-repo-31b-qlora-study",
+    "title": "Can Gemma 4 Fix an Unseen Repo? | 31B QLoRA Study",
+    "author": "Den Pugovkin",
+    "total_votes": 0,
+    "last_run_time": "2026-09-26 17:43:39.070000",
+    "url": null
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "adk_submission-0.2.11-py3-none-any.whl",
+    "bytes": 62404,
+    "sha256": "d14f7d31e724f507322c763bc7c1ed56ac603085b3709afed954e50006b494a8"
+  },
+  {
+    "file": "adk_eval_core-0.1.0-py3-none-any.whl",
+    "bytes": 89306,
+    "sha256": "b1608c4471a2739eca6469735e4e118ff33a20823ce9430719238ea843aa9d1a"
+  },
+  {
+    "file": "swegemma-0.2.7-py3-none-any.whl",
+    "bytes": 111548,
+    "sha256": "2b74d402dc95a615f3b36c56fd3f9ba11ddbfb7db8a5a32ec259369a0f559d98"
+  }
+]

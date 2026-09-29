@@ -1,33 +1,144 @@
+
 2026-09-21 10:45 BRT - handoff anterior
 2026-09-21 13:53 BRT - novo agente iniciou, workspace vazio, repo 404
 2026-09-21 14:18 BRT - kaggle.json recebido, user victor120956, rank 184
-2026-09-21 14:20 BRT - recuperados outputs kernels: canonical 0.328, seedswap2 0.332, megayak2 0.323 (+ours+pv), berat 0.236, haideptry 0.290, priors2 0.329 -> wave_backup reconstruído
 2026-09-21 14:20 BRT - baixados: kitopl scoring keys (ik14_map, library_map), fp-models-v2, ranker-features, coconut candidates, harness_data train 2.9G + test 4.7M
 2026-09-21 14:20 BRT - prvsiyan_fork/canon_fpv2.ipynb recuperado via kaggle kernels pull
+2026-09-21 14:20 BRT - recuperados outputs kernels: canonical 0.328, seedswap2 0.332, megayak2 0.323 (+ours+pv), berat 0.236, haideptry 0.290, priors2 0.329 -> wave_backup reconstruído
 2026-09-21 14:21 BRT - arm.sh, precheck.sh, verify_out.sh reconstruídos (minimal)
 2026-09-21 14:23 BRT - PubChemLite store 445k criado e dataset victor120956/casmi26-pubchem-lite-store v1/v2 publicado (47MB)
 2026-09-21 14:24 BRT - kpush_pubchem_lite v1 PUSHED RUNNING (canon+PubChemLite top50)
-2026-09-21 22:06 BRT - repo restaurado via Drive (31.5M), arm.sh OK, harness_data train 2.9G re-baixado
-2026-09-21 22:06 BRT - 2 kernels PubChemLite COMPLETE (445k): top50 e top25, store detectado, aguardando reset 1.9h para submissão (limite diário 5 atingido)
-2026-09-21 22:06 BRT - recon_sweep evening: prvsiyan baseline 95 votos, flexonafft 18 votos, nosso dataset pubchem-lite-store 1 dl
-2026-09-21 22:15 BRT - 2 novos probes PubChem pushed RUNNING: priors40-50 (W1 0.40/0.45/0.50 + 8 seeds) + wincap20k (PC_WINCAP 20000)
-2026-09-21 22:15 BRT - total Onda2: 4 probes (2 COMPLETE top50/top25 + 2 RUNNING), aguardando reset 1.9h (00:00 BRT)
-2026-09-21 19:38 BRT - PADRAO §0 rearmado: git 75a8abf OK, kaggle auth OK, harness 3.3G DL bg, kernels 2 COMPLETE 2 RUNNING
 2026-09-21 19:38 BRT - LB FRESH 21/09 19:27 UTC: top1 Ozy 0.409 (03:36), Randy 0.388, Udam 0.387, DDM 0.381 NEW top4, Aryan 0.373, pikachu 0.371, Alperen 0.367, cutoff top5 0.381
-2026-09-21 19:38 BRT - RECON: prvsiyan baseline REPUBLICADO 95 votos 20:59 UTC (era 403), berat 0.336 SOTA 62 votos 18:04, denpugovkin bio-db-tail 31 votos, flexonafft 18 votos, rubenvr GBDT ranker model 21:12, ISDB spectra 21:56
 2026-09-21 19:38 BRT - NEXT RESET 00:00 UTC 22/09 = 21:00 BRT 21/09 em ~1h22m, numAllowedNow 0, Onda2 4 probes prontas
+2026-09-21 19:38 BRT - PADRAO §0 rearmado: git 75a8abf OK, kaggle auth OK, harness 3.3G DL bg, kernels 2 COMPLETE 2 RUNNING
+2026-09-21 19:38 BRT - RECON: prvsiyan baseline REPUBLICADO 95 votos 20:59 UTC (era 403), berat 0.336 SOTA 62 votos 18:04, denpugovkin bio-db-tail 31 votos, flexonafft 18 votos, rubenvr GBDT ranker model 21:12, ISDB spectra 21:56
 2026-09-21 20:31 BRT - ONDA2 COMPLETE 4/4 VERIFY PASS 445k store OK, aguardando reset 00:00 UTC 22/09 (21:00 BRT) em 29min, numAllowedNow 0
 2026-09-21 21:02 BRT - ONDA2 SUBMETIDA 4/5 slots: lite-50 v1 PENDING 00:02:36, lite-25 v1 PENDING 00:02:42, wincap20k v1 PENDING 00:02:45, priors40-50 v1 PENDING 00:02:48, 1 slot restante
+2026-09-21 22:06 BRT - 2 kernels PubChemLite COMPLETE (445k): top50 e top25, store detectado, aguardando reset 1.9h para submissão (limite diário 5 atingido)
+2026-09-21 22:06 BRT - recon_sweep evening: prvsiyan baseline 95 votos, flexonafft 18 votos, nosso dataset pubchem-lite-store 1 dl
+2026-09-21 22:06 BRT - repo restaurado via Drive (31.5M), arm.sh OK, harness_data train 2.9G re-baixado
 2026-09-21 22:11 BRT - ONDA2 RESULTADOS: lite-50 0.330 TIE, lite-25 0.324 TIE, wincap20k 0.330 TIE, priors40-50 0.327 TIE vs baseline 0.328-0.332. PubChemLite 445k NEUTRO (nao pagou, nao diluiu). Proximo: analog200 N=200 + frag + tier2 full
+2026-09-21 22:15 BRT - 2 novos probes PubChem pushed RUNNING: priors40-50 (W1 0.40/0.45/0.50 + 8 seeds) + wincap20k (PC_WINCAP 20000)
+2026-09-21 22:15 BRT - total Onda2: 4 probes (2 COMPLETE top50/top25 + 2 RUNNING), aguardando reset 1.9h (00:00 BRT)
 2026-09-21 22:50 BRT - 5/5 FECHADO: analog200 N=200 v1 PENDING 01:50:54, Onda2 4/4 COMPLETE 0.324-0.330 NEUTRO, 2x analog200 COMPLETE VERIFY PASS, workflow recon.yml push OK 1a3bee0
 2026-09-22 20:14 BRT - ERRO TIER2 FULL: matmul 6930 vs 867, tier2_fp 867 bits vs modelo 6930, fix usar SMILES+RDKit
 2026-09-22 21:02 BRT - VAI 5/5 DISPARADO: analog200 N200 v1 PENDING, analog200-wincap20k v1 PENDING, lite-50 v1 PENDING, wincap20k v1 PENDING, priors40-50 v1 PENDING - reset 00:02 UTC 23/09, tier2 v2 ERROR fix 867->6930
-
+2026-09-26 19:20 BRT - CPU Wave7 formula+dedup full pipeline PUSH v1 RUNNING: victor120956/casmi26-wave7-w088-formula-dedup-cpu. URL real conferida, GPU/TPU false remotos, kernelspec presente. Baseline reprodutivel por hashes obrigatorios; variantes no-op bloqueadas.
 2026-09-26 19:20 BRT - RESTAURACAO: repo remoto aa560bd (diario para em 22/09); periodo posterior consta em uploads/TRANSFER_26SEP.md, não no Git. arm.sh recriado e auth restaurada. Quota API 0 disponiveis / 5 usados / 50 total.
 2026-09-26 19:20 BRT - W088 v1 COMPLETE; 3 hashes MD5 coincidem transferencia; 400 IDs sample exatos; 25 SMILES validos por linha; 392 placeholders CCO em 34 moleculas. Sem match entre 38 outputs historicos recuperados.
-2026-09-26 19:20 BRT - CPU Wave7 formula+dedup full pipeline PUSH v1 RUNNING: victor120956/casmi26-wave7-w088-formula-dedup-cpu. URL real conferida, GPU/TPU false remotos, kernelspec presente. Baseline reprodutivel por hashes obrigatorios; variantes no-op bloqueadas.
-2026-09-26T19:20:41-03:00 LIMITS {"numToday": 5, "numTotal": 50, "numAllowedNow": 0, "limitedByTotal": false}
 2026-09-26T19:20:41-03:00 DRY_RUN: CPU output not fetched while job runs; submission API will NOT be called
+2026-09-26T19:20:41-03:00 LIMITS {"numToday": 5, "numTotal": 50, "numAllowedNow": 0, "limitedByTotal": false}
 2026-09-26T19:20:43-03:00 DRY_RUN_PASS ['w088-blend', 'w088-ours', 'w088-pv']
 2026-09-26T19:21:57-03:00 TIMER_ARMED process=wave7-disparo-pontual-s-21h-brt-b6de68a9; submit 21:00:05 BRT; score-check once 23:30 BRT; best-effort while environment active. No new submissions yet.
 2026-09-26T19:34:38-03:00 GitHub PUSH_CONFIRMED origin/main=4e983561b844ce38fcf3421c707f77c3ca42f082 sem force-push; OAuth public_repo, segredo excluído de snapshots.
+2026-09-26T21:05:21-03:00 LIMITS {"numToday": 0, "numTotal": 50, "numAllowedNow": 5, "limitedByTotal": false}
+2026-09-26T21:05:21-03:00 CPU_CHECK_ONCE {"status": "COMPLETE", "failureMessage": null}
+2026-09-26T21:05:32-03:00 STOP_SUBMIT_ERROR HTTPError('400 Client Error: Bad Request for url: https://api.kaggle.com/v1/competitions.CompetitionApiService/CreateCodeSubmission')
+2026-09-26T21:05:33-03:00 LIMITS_AFTER {"numToday": 0, "numTotal": 50, "numAllowedNow": 5, "limitedByTotal": false}
+2026-09-26T21:05:33-03:00 DONE accepted_now=0; acceptance is NOT a ranked score
+2026-09-26T21:06:15-03:00 ONE_SHOT_LIMITS {"numToday": 0, "numTotal": 50, "numAllowedNow": 5, "limitedByTotal": false}
+2026-09-26T21:06:21-03:00 LIMITS_AFTER {"numToday": 1, "numTotal": 51, "numAllowedNow": 4, "limitedByTotal": false}
+2026-09-26T21:06:21-03:00 SUBMIT_ERROR w088-ours {"error": "HTTPError('400 Client Error: Bad Request for url: https://api.kaggle.com/v1/competitions.CompetitionApiService/CreateCodeSubmission')", "http_status": 400, "response_body": "{\"error\":{\"code\":400,\"message\":\"Submission not allowed:  Submission files must be named \\u0022submission.csv\\u0022 for this Competition.\",\"status\":\"FAILED_PRECONDITION\"}}"}
+2026-09-26T21:06:21-03:00 SUBMITTED w088-blend {"message": "", "ref": 56592387}
+2026-09-26T21:09:06-03:00 CONFIRM_FINAL {"quota": {"numToday": 1, "numTotal": 51, "numAllowedNow": 4, "limitedByTotal": false}, "wave7": [{"ref": 56592387, "totalBytes": 0, "date": "2026-09-27T00:06:19.943Z", "description": "PROBE-WAVE7:w088-blend VERIFY PASS", "errorDescription": null, "fileName": "submission.csv", "publicScore": null, "privateScore": null, "status": "PENDING", "submittedBy": "victor120956", "submittedByRef": "victor120956", "teamName": "Victor alexandre ", "url": "/code/victor120956/casmi26-w088-replica-llccqq624-apache-2-0?scriptVersionId=352845416"}]}
+2026-09-26T21:09:06-03:00 TIMER best-effort named-submit 22:15 BRT, single score check 23:30; process=wave7-concluir-quatro-variantes--a92f174f. Resume: bash arm.sh && python wave7_run.py.
+2026-09-26T21:09:06-03:00 CPU initial 2nd wave VERIFY PASS: baseline hashes identical; formula changes 201 rows; dedup changes 34 rows, replaces 392 CCO slots. Four standalone full-pipeline CPU kernels pushed v1 (formula/dedup/ours/pv), real URLs+remote code+GPU false confirmed, RUNNING. No data-output reuse.
+2026-09-26T21:09:06-03:00 WAVE7 named-file correction: Kaggle only accepts submission.csv. Blend accepted ref=56592387. Formula/ours alternate filenames rejected HTTP400; zero slots consumed by rejected requests; journal reconciled.
+2026-09-26T21:14:28-03:00 PREVENCAO: safety_guards centraliza filename literal, hash/versao, CPU/kernelspec/inputs, OAuth ID/escopo e classificação de nota. Runner registra falhas em incidents.jsonl. Testes locais 26/26 PASS; 4 notebooks precheck PASS. Nenhum submit/push de kernel nesta revisão.
+2026-09-26T21:14:28-03:00 ORDEM PERMANENTE Victor: registrar TODO erro para evitar repetição. ERROR_REGISTRY.md criado, 17 incidentes catalogados + hipóteses científicas encerradas.
+2026-09-26T22:39:34-03:00 NAMED_LIMITS {"numToday": 1, "numTotal": 51, "numAllowedNow": 4, "limitedByTotal": false}
+2026-09-26T22:39:35-03:00 NAMED_CHECK_ONCE w088-formula {"status": "COMPLETE", "failureMessage": null}
+2026-09-26T22:39:35-03:00 NAMED_CHECK_ONCE w088-dedup {"status": "COMPLETE", "failureMessage": null}
+2026-09-26T22:39:35-03:00 NAMED_CHECK_ONCE w088-ours {"status": "COMPLETE", "failureMessage": null}
+2026-09-26T22:39:35-03:00 NAMED_CHECK_ONCE w088-pv {"status": "COMPLETE", "failureMessage": null}
+2026-09-26T22:39:42-03:00 SUBMITTED w088-formula {"message": "", "ref": 56594468}
+2026-09-26T22:39:44-03:00 SUBMITTED w088-dedup {"message": "", "ref": 56594469}
+2026-09-26T22:39:46-03:00 SUBMITTED w088-ours {"message": "", "ref": 56594472}
+2026-09-26T22:39:48-03:00 SUBMITTED w088-pv {"message": "", "ref": 56594473}
+2026-09-26T22:39:48-03:00 NAMED_LIMITS_AFTER {"numToday": 5, "numTotal": 55, "numAllowedNow": 0, "limitedByTotal": false}
+2026-09-26T22:39:48-03:00 NAMED_DONE accepted_now=4; no retry or polling scheduled by this script
+2026-09-26T22:40:06-03:00 SCORE_CHECK_ONCE {"w088-blend": 0.341}; no repeat scheduled
+2026-09-26T22:40:43-03:00 E001 validado em produção: quatro pedidos com nome corrigido aceitos. E017 recorrente: timer 22:15 sem envios/registro local; origem de interrupção não determinada; recuperação manual, nenhum novo timer entre sessões. Testes 26/26 PASS antes da ação.
+2026-09-26T22:40:43-03:00 WAVE7 FECHADA EM ENVIOS: 5/5 usados, 55 total, 0 disponíveis; 1/5 ranqueada e 4/5 PENDING. W088 blend COMPLETE 0.341 (+0.009 vs 0.332). Formula=56594468 dedup=56594469 ours=56594472 pv=56594473; arquivo literal submission.csv, versões 1, hashes validados, CPU-only, sem duplicar blend.
+2026-09-27T05:15:59-03:00 SCORE_CHECK_ONCE {"w088-pv": 0.341, "w088-ours": 0.341, "w088-dedup": 0.341, "w088-formula": 0.341, "w088-blend": 0.341}; no repeat scheduled
+2026-09-27T05:18:37-03:00 SCORE_CHECK_ONCE {"w088-pv": 0.341, "w088-ours": 0.341, "w088-dedup": 0.341, "w088-formula": 0.341, "w088-blend": 0.341}; no repeat scheduled
+2026-09-27T05:21:09-03:00 E018-E021: relatório causal automático bloqueado; CSV-base publicado cedo e golden-hash/400 fixos detectados. Novos prechecks bloqueiam reuso dos 4 kernels; 35 testes PASS. Próximo build exigirá publicação única atômica e validação dependente do sample; ainda não construído. Nenhum submit/push/timer nesta rodada. Segunda renderização do relatório foi offline, não polling.
+2026-09-27T05:21:09-03:00 WAVE7 5/5 COMPLETE com nota 0.341, sem erros API. Quota 0/5 disponível, 55 total. Cinco hashes distintos reconfirmados nos outputs; todos os submits reportam 488898 bytes. Causalidade inconclusiva; DownloadSubmission oficial HTTP403, sem retry.
+2026-09-27T17:12:30-03:00 LOCAL_REGRESSION: fórmula replica CSV Wave7; combinado altera 217 linhas vs blend e 201 vs dedup; SHA256 e46a74a79a5ddd594486f3f9dc7449c6735cbcaf8278da2c40135a4786b9ebb3, sem duplicata no histórico recuperado. Sem atribuir nota ao novo candidato; aguarda rerun CPU + verify_wave8_atomic.py.
+2026-09-27T17:12:30-03:00 E020/E021 implementados em novo kernel: AtomicSubmission limpa output antigo no início, valida IDs/contagem do sample, staging+os.replace única no fim; nenhum golden hash/400 em produção. 50 testes PASS, incluindo 15 de publicação com falhas injetadas e contagens 1/3/401.
+2026-09-27T17:12:30-03:00 WAVE8 CPU validation pushed v1 RUNNING: victor120956/casmi26-wave8-atomic-formula-dedup-cpu; URL, código e GPU/TPU false remotos conferidos. Um candidato novo: formula(top5) após dedup/refill; controles históricos só regressão local, sem reenvio.
+2026-09-27T17:12:30-03:00 RETOMADA: quota API 0 disponíveis/5 usados/55 total, antes do reset 27/09 21h BRT. Nenhuma submissão nesta rodada.
+2026-09-27T18:17:13-03:00 E022 perfil real: 108/400 multi-aduto, 97/400 polaridades mistas, 513 grupos. 4 probes novas CPU v1 RUNNING: top1, top1_dedup, adduct, adduct_dedup; URLs e código remotos conferidos GPU/TPU=false. Top1 dois hashes novos medidos; variantes por aduto só elegíveis se preview válido/distinto.
+2026-09-27T18:17:13-03:00 WAVE8 combinado COMPLETE + PREVIEW_VERIFY_PASS: hash e46a74... confirmado, controles históricos idênticos, novo arquivo sem duplicata conhecida. Quota consultada 0/5 livre, 55 totais. Nenhum submit.
+2026-09-27T18:17:13-03:00 Persistência: downloads redundantes history_outputs e wave7_output_reaudit arquivados sem perda em read_only_audits_27sep.tar.gz; verificadores removem audit_*.csv redundantes após validar, mantendo arquivo final/provas e fixtures originais.
+2026-09-27T18:17:13-03:00 59 testes PASS + agrupamento real preserva todos os picos. Wave8: 1 pronta + 4 RUNNING (não 5 prontas). verify_wave8_extra.py somente leitura; submit_wave8.py default dry-run, --execute só 27/09 21h a 28/09 21h BRT, com quota/API/journal/hash. Sem timer/poll.
+2026-09-27T22:03:06-03:00 WAVE8_EXTRA_CHECK_ONCE top1_dedup {"status": "COMPLETE", "failureMessage": null}
+2026-09-27T22:03:06-03:00 WAVE8_EXTRA_CHECK_ONCE adduct {"status": "COMPLETE", "failureMessage": null}
+2026-09-27T22:03:06-03:00 WAVE8_EXTRA_CHECK_ONCE adduct_dedup {"status": "COMPLETE", "failureMessage": null}
+2026-09-27T22:03:06-03:00 WAVE8_EXTRA_CHECK_ONCE top1 {"status": "COMPLETE", "failureMessage": null}
+2026-09-27T22:03:21-03:00 WAVE8_QUOTA {"numToday": 0, "numTotal": 55, "numAllowedNow": 5, "limitedByTotal": false}
+2026-09-27T22:03:26-03:00 WAVE8_SUBMITTED adduct {"message": "", "ref": 56624670}
+2026-09-27T22:03:28-03:00 WAVE8_SUBMITTED adduct_dedup {"message": "", "ref": 56624671}
+2026-09-27T22:03:30-03:00 WAVE8_SUBMITTED formula_dedup {"message": "", "ref": 56624673}
+2026-09-27T22:03:32-03:00 WAVE8_SUBMITTED top1 {"message": "", "ref": 56624674}
+2026-09-27T22:03:34-03:00 WAVE8_DONE 5 accepted now; no score implied
+2026-09-27T22:03:34-03:00 WAVE8_SUBMITTED top1_dedup {"message": "", "ref": 56624675}
+2026-09-27T22:03:34-03:00 WAVE8_LIMITS_AFTER {"numToday": 5, "numTotal": 60, "numAllowedNow": 0, "limitedByTotal": false}
+2026-09-27T22:04:15-03:00 WAVE8_SCORE_CHECK_ONCE {"scores": {}, "quota": {"numToday": 5, "numTotal": 60, "numAllowedNow": 0, "limitedByTotal": false}, "attribution_warnings": []}
+2026-09-27T22:04:56-03:00 Próxima retomada SOMENTE report_wave8.py (uma consulta). Não reenviar, não usar relatório Wave7 para interpretar Wave8. Melhor confirmado permanece W088 blend 0.341. Nenhum timer armado.
+2026-09-27T22:04:56-03:00 WAVE8 ENVIADA 5/5, zero notas ainda (todos PENDING, sem erro); quota 0 disponível / 5 usados / 60 totais. Refs adduct=56624670 adduct_dedup=56624671 formula_dedup=56624673 top1=56624674 top1_dedup=56624675. Todos CPU v1, publicação atômica final, hashes conhecidos e distintos; 59 testes PASS.
+2026-09-27T22:06:53-03:00 WAVE8_SCORE_CHECK_ONCE {"scores": {}, "quota": {"numToday": 5, "numTotal": 60, "numAllowedNow": 0, "limitedByTotal": false}, "attribution_warnings": []}
+2026-09-27T22:09:42-03:00 RECON NEWS: leaderboard oficial Victor rank 330/1682 score 0.341; corte top5 0.404; gap 0.063. Fonte API/CSV vivo, não snippet desatualizado.
+2026-09-27T22:09:42-03:00 RECON HOST: David Healey permite CFM-ID4 explicitamente (topic743774) e release Enveda-180 Zenodo (743569); não generalizar licença de pesos nem supor dados novos sem dedup. Relatos de scoring demorado não diagnosticam nossos jobs. Wave8 última consulta22:06: 5PENDING sem notas/erro; nenhum novo submit/build/GPU.
+2026-09-27T22:46:39-03:00 WAVE8_SCORE_CHECK_ONCE {"scores": {}, "quota": {"numToday": 5, "numTotal": 60, "numAllowedNow": 0, "limitedByTotal": false}, "attribution_warnings": []}
+2026-09-27T22:47:14-03:00 STATUS vivo: rank 336/1684, score 0.341; corte top5 0.404, gap 0.063. Wave8 5 PENDING, sem nota/erro, ~43min desde envio; quota 0 livres / 5 usados / 60 totais. Nenhum novo envio/build. Top5 possível, não demonstrado nem prometido; diagnóstico local de cobertura vs ranking segue pendente.
+2026-09-27T22:54:14-03:00 DECISION Gemma confirmado como projeto alternativo. Overview oficial lido: treino/LoRA opcionais; final02/12. Recomendada avaliação Gemma antes de investimento, sem afirmar maior chance. E023 artefatos antigos ausentes; criado gemma/RESTART_STATUS.md novo, não recuperação. Nenhum GPU/treino/submit/consultaCASMI.
+2026-09-27T23:00:17-03:00 PRIORIDADE GEMMA conforme usuário: começar cedo. Inventário524 arquivos e starter oficial6 YAML/MD + HARNESS_README baixados; sem pesos/GPU/treino/submissão. Baseline ainda não validado. CASMI preservado, Wave8 sem nova consulta. Starter1min/10calls e adapters obrigatórios por referência exigem revisão antes de pacote.
+2026-09-27T23:03:53-03:00 WAVE8_SCORE_CHECK_ONCE {"scores": {}, "quota": {"numToday": 5, "numTotal": 60, "numAllowedNow": 0, "limitedByTotal": false}, "attribution_warnings": []}
+2026-09-27T23:05:11-03:00 DECISION: usuário indeciso CASMI/Gemma. E024 orientação precipitada registrada. API/CSV23:04 CASMI337/1684 .341 gap.063; Gemma687 times líder.15 sem linha própria. Wave8 consulta única23:03:53 5PENDING sem erro. Preservar CASMI + avaliação limitada Gemma; não prometer prêmio nem comparar notas brutas entre métricas. SemGPU/treino/submit.
+2026-09-27T23:10:59-03:00 WAVE8_SCORE_CHECK_ONCE {"scores": {}, "quota": {"numToday": 5, "numTotal": 60, "numAllowedNow": 0, "limitedByTotal": false}, "attribution_warnings": []}
+2026-09-27T23:27:50-03:00 USER CLARIFICATION: utilidade futura perguntada é do CASMI, não Gemma. E028 registrado. Pesquisa Gemma foi executada parcialmente; relatório integral ainda não produzido/entregue. Nenhuma nova consulta CASMI/GPU/treino/submit nesta correção.
+2026-09-28T09:16:58-03:00 WAVE8_SCORE_CHECK_ONCE {"scores": {}, "quota": {"numToday": 5, "numTotal": 60, "numAllowedNow": 0, "limitedByTotal": false}, "attribution_warnings": []}
+2026-09-28T09:18:00-03:00 WAVE8_RENDER_CACHED {"scores": {}, "quota": {"numToday": 5, "numTotal": 60, "numAllowedNow": 0, "limitedByTotal": false}, "attribution_warnings": []}
+2026-09-28T09:21:17-03:00 DOT: Wave8 oficial5REJEITADAS COMPLETE rerunerror semnota; E029. ReporterE030 corrigido5PASS e renderoffline sem2aAPI. Relatório aprofundadoGemma concluído com129tarefas/4grafos/5contratosPASS; utilidadeCASMI separada. SemGPU/treino/submit/push.
+2026-09-28T09:37:43-03:00 OPORTUNIDADES Kaggle: consultaAPI+fontesoficiais concluída; alternativas Solar(up to3k,15/11),RSNA(77k,22/10),ARC2/3/Paper(prêmios separados de bônus condicionais). WEAR/Battlesnake/Hyderabad/NeuroGolf excluídos por prazo/eligibilidade; AIEmulation travelawards,não cashlivre. Solar apenas candidato a triagemCPU, não migração nem chancecomprovada. SemGPU/treino/submit/inscrição/poll. Resumo opportunities_28sep/RESUMO.md.
+2026-09-28T09:45:14-03:00 USER pergunta por que5rejeitados: auditoriaCPU reproduziuE031 nos5fontes (coverage.97falha;auxiliarinválidobloqueiaramoescolhidoválido),25checksPASS. CausaocultaE029continua desconhecida. NãoatribuirKaggle. NenhumaAPI/status/reenvio/GPU.
+2026-09-28T21:20:41-03:00 E002_RECURRENCE: agente presumiu slug da competição em consulta de quota (HTTP403 em GetSubmissionLimits); slug correto lido dos fontes (enveda-CASMI26-molecule-id-mass-spectra). Nenhuma submissão afetada; quota não consumida. Correção: sempre ler COMP dos fontes do projeto antes de qualquer chamada.
+2026-09-28T21:20:41-03:00 WAVE9_QUOTA_RESET_CONFIRMED {"numToday": 0, "numAllowedNow": 5, "numTotal": 60} consulta única 00:08 UTC; janela até 29/09 21h BRT.
+2026-09-28T21:21:13-03:00 WAVE9_PUSH_CHECK {"tag": "adduct_dedup", "kernel": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu", "status": "RUNNING", "gpu": false, "tpu": false, "internet": false, "code_identical": true, "competition": ["enveda-CASMI26-molecule-id-mass-spectra"], "datasets_ok": true}
+2026-09-28T21:21:13-03:00 WAVE9_PUSH_CHECK {"tag": "adduct", "kernel": "victor120956/casmi26-wave9-isolated-adduct-cpu", "status": "RUNNING", "gpu": false, "tpu": false, "internet": false, "code_identical": true, "competition": ["enveda-CASMI26-molecule-id-mass-spectra"], "datasets_ok": true}
+2026-09-28T21:21:14-03:00 WAVE9_PUSH_CHECK {"tag": "formula_dedup", "kernel": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu", "status": "RUNNING", "gpu": false, "tpu": false, "internet": false, "code_identical": true, "competition": ["enveda-CASMI26-molecule-id-mass-spectra"], "datasets_ok": true}
+2026-09-28T21:21:15-03:00 WAVE9_PUSH_CHECK {"tag": "top1", "kernel": "victor120956/casmi26-wave9-isolated-top1-cpu", "status": "RUNNING", "gpu": false, "tpu": false, "internet": false, "code_identical": true, "competition": ["enveda-CASMI26-molecule-id-mass-spectra"], "datasets_ok": true}
+2026-09-28T21:21:15-03:00 WAVE9_PUSH_CHECK {"tag": "top1_dedup", "kernel": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu", "status": "RUNNING", "gpu": false, "tpu": false, "internet": false, "code_identical": true, "competition": ["enveda-CASMI26-molecule-id-mass-spectra"], "datasets_ok": true}
+2026-09-28T21:22:09-03:00 WAVE9 BUILT+PUSHED 5/5 v1 RUNNING (consulta única 21:21 BRT): adduct, adduct_dedup, formula_dedup, top1, top1_dedup — slugs casmi26-wave9-isolated-*-cpu. Correção E031: um mecanismo/kernel, cobertura registrada (não trava), msbuddy/dedup/aduto degradam com registro, publisher atômico preservado. 92 testes PASS (28 novos), auditoria imunidade 15 checagens, precheck 5/5, código remoto idêntico. Nenhum submit; quota 0/5 livres. Retomada: verify_wave9.py uma vez; submit_wave9.py só com ready+janela (até 29/09 21h BRT). Plano: WAVE9_PLAN.md. Sem timer/polling.
+2026-09-28T21:23:19-03:00 WAVE9_CHECK_ONCE adduct {"status": "RUNNING", "failureMessage": null}
+2026-09-28T21:23:19-03:00 WAVE9_CHECK_ONCE adduct_dedup {"status": "RUNNING", "failureMessage": null}
+2026-09-28T21:23:19-03:00 WAVE9_CHECK_ONCE formula_dedup {"status": "RUNNING", "failureMessage": null}
+2026-09-28T21:23:19-03:00 WAVE9_CHECK_ONCE top1 {"status": "RUNNING", "failureMessage": null}
+2026-09-28T21:23:19-03:00 WAVE9_CHECK_ONCE top1_dedup {"status": "RUNNING", "failureMessage": null}
+2026-09-28T21:32:05-03:00 REPAIR LOCAL:86PASS,5x400cacheequivalence. TentativaúnicapreviewCPUrepair-v1-top1 bloqueadaMaxCPU5(E034), semURL/versão. E035refprivadavaziatratada. Descobertos5Wave9isolatedRUNNINGnãojournalados; fontesrecuperadas, diferençasregistradasE036. Uma consultadeenviossemWave9novo. Nãocancelar/reenviar/assumirorigem. E029causaaindadesconhecida.
+2026-09-28T22:00:56-03:00 PREPARAÇÃO parahoje21h: horáriojápas­sado confirmado (28/09BRT). Plano5candidatos/fontesv1pinadas;100testesPASS+testeenviosemautorizaçãoBLOQUEADOantesAPI. Consultaúnica21:56 top1_dedupCOMPLETE,CSVtecnicamentePASS,degraded[],coverage.9975,hash20076467;outros4RUNNING;quota5/total60.0liberadosporrevisãofonte/reteste/canário. Envioemduasetapas;nenhumtimer,submissão,GPUnovos.
+2026-09-28T22:20:56-03:00 HANDOFF solicitado: TRANSFERENCIA_ATUAL_CASMI.md + COLE_NO_NOVO_AGENTE.txt + backupprivadosemcredenciais. Últimoestadooficial22:09,1/5CSVverificado,0enviosliberados;nenhumanovaconsultaAPI/job/submit. E037Gitdivergenteregistrado;usararquivosatuais.
+2026-09-28T22:42:26-03:00 MERGE DUAS SESSÕES concluído: 125 arquivos novos do backup CASMI_CONTINUAR; logs unidos; 128 testes PASS (100+28). E036 RESOLVIDO com evidência: código dos 5 kernels Wave9 remotos é byte-idêntico aos kpush_wave9_* locais (push 21:21 BRT desta retomada). check_next_batch_once: 5/5 COMPLETE, 5/5 arquivos verificados, degraded=[] cobertura 0.9975 em todos, hashes == expectativas locais. Quota 5 livres. Revisão de política escrita (next_batch_preparation/POLICY_REVIEW.md): canário = top1 remoto v1; rascunho estrito vira plano B. Envio segue BLOQUEADO pendente de autorização explícita do Victor (reteste + janela). E038 registrado: .git local perdido na ressincronização; repositório reconstruído sobre base remota 3c0974b, commit limpo 4d5e568 pronto para push (sem gemma/official, sem credenciais, sem outputs novos).
+2026-09-28T22:48:09-03:00 WAVE9_CHECK_ONCE adduct_dedup {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:09-03:00 WAVE9_CHECK_ONCE top1 {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:09-03:00 WAVE9_CHECK_ONCE adduct {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:09-03:00 WAVE9_CHECK_ONCE formula_dedup {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:15-03:00 WAVE9_VERIFY_FAIL top1_dedup CalledProcessError(1, ['bash', '/home/user/arm.sh'])
+2026-09-28T22:48:25-03:00 WAVE9_CHECK_ONCE adduct_dedup {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:25-03:00 WAVE9_CHECK_ONCE adduct {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:25-03:00 WAVE9_CHECK_ONCE top1_dedup {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:25-03:00 WAVE9_CHECK_ONCE formula_dedup {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:25-03:00 WAVE9_CHECK_ONCE top1 {"status": "COMPLETE", "failureMessage": null}
+2026-09-28T22:48:49-03:00 WAVE9_QUOTA {"numToday": 0, "numTotal": 60, "numAllowedNow": 5, "limitedByTotal": false}
+2026-09-28T22:48:53-03:00 WAVE9_DRY_RUN ['adduct', 'adduct_dedup', 'formula_dedup', 'top1', 'top1_dedup']; no submission called
+2026-09-28T22:48:59-03:00 WAVE9_QUOTA {"numToday": 0, "numTotal": 60, "numAllowedNow": 5, "limitedByTotal": false}
+2026-09-28T22:49:05-03:00 WAVE9_SUBMITTED adduct {"message": "", "ref": 56659089}
+2026-09-28T22:49:07-03:00 WAVE9_SUBMITTED adduct_dedup {"message": "", "ref": 56659090}
+2026-09-28T22:49:09-03:00 WAVE9_SUBMITTED formula_dedup {"message": "", "ref": 56659093}
+2026-09-28T22:49:11-03:00 WAVE9_SUBMITTED top1 {"message": "", "ref": 56659094}
+2026-09-28T22:49:12-03:00 WAVE9_SUBMITTED top1_dedup {"message": "", "ref": 56659096}
+2026-09-28T22:49:13-03:00 WAVE9_LIMITS_AFTER {"numToday": 5, "numTotal": 65, "numAllowedNow": 0, "limitedByTotal": false}
+2026-09-28T22:49:13-03:00 WAVE9_DONE 5 accepted now; no score implied
+2026-09-28T22:49:34-03:00 WAVE9 ENVIADA 5/5 com autorização explícita do Victor ("veja se ta td certo se tiver faça 5 de 5"): adduct=56659089 adduct_dedup=56659090 formula_dedup=56659093 top1=56659094 top1_dedup=56659096. Pré-envio: verify_wave9 5/5 PASS (código remoto idêntico, prova íntegra, audit_blend==W088, degraded=[], hashes==expectativas locais, distintos entre si e do histórico). Quota pós: 5 usados/0 livres/65 totais. Aceite não é nota. Próxima leitura: UMA consulta de notas quando o Victor chamar; não declarar 5/5 ranqueado pelo aceite; ausência de nota não é zero. Referência permanece 0.341.
+2026-09-28T22:56:54-03:00 GITHUB_AUTH_CONTA_ERRADA: dispositivo autorizado como arcana-devTools, sem permissão push em vitor120956-max/casmi26-casmi; guarda E010 bloqueou antes do push. Token descartado (.device-tmp removido). Nenhuma alteração remota.

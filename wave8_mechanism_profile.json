@@ -1,0 +1,26 @@
+{
+  "molecules": 400,
+  "spectra": 1213,
+  "adducts": {
+    "[M+H]+": 959,
+    "[M-H]-": 193,
+    "[M+CH2O2-H]-": 31,
+    "[M+Na]+": 22,
+    "[M+NH4]+": 4,
+    "[M+K]+": 2,
+    "[M+Cl]-": 2
+  },
+  "multi_adduct_molecules": 108,
+  "mixed_polarity_molecules": 97,
+  "adduct_groups": 513,
+  "top1_expected": {
+    "top1": {
+      "sha256": "6bad69c74a785a54c4af4980a8d4481062bcfa6d6b6e12c6ba9217fd1f279e2c",
+      "changed_rows": 148
+    },
+    "top1_dedup": {
+      "sha256": "200764676509f414dd418c66a28c181fbc3daa1bb2716ac6ebb81a06b8566d43",
+      "changed_rows": 148
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "Modos sint\u00e9ticos reproduzidos na Wave8 (wave8_failure_diagnosis) testados contra o c\u00f3digo Wave9 real. Causa oculta do E029 permanece desconhecida.",
+  "checks": [
+    {
+      "mode": "coverage_0.97",
+      "outcome": "PUBLISHED",
+      "rows": 100,
+      "rows_without_formula": 3
+    },
+    {
+      "mode": "msbuddy_unavailable",
+      "outcome": "PUBLISHED_DEGRADED",
+      "degraded": [
+        [
+          "MSBUDDY_UNAVAILABLE",
+          "AssertionError('no wheels')"
+        ],
+        [
+          "FORMULA_ROWS_WITHOUT_EVIDENCE",
+          100
+        ]
+      ],
+      "changed_rows": 0
+    },
+    {
+      "mode": "missing_mass_short_pool",
+      "outcome": "PUBLISHED_DEGRADED",
+      "rows_without_mass": 50,
+      "padded_slots": 1050
+    },
+    {
+      "mode": "invalid_spectra_rows_and_duplicate_groups",
+      "outcome": "SKIPPED_WITH_RECORD",
+      "groups": 10,
+      "degraded": [
+        [
+          "SPECTRA_ROWS_SKIPPED",
+          1
+        ],
+        [
+          "DUPLICATE_ADDUCT_GROUPS_SKIPPED",
+          1
+        ]
+      ]
+    },
+    {
+      "mode": "unused_invalid_branch_present",
+      "outcome": "PUBLISHED_SELECTED_ONLY"
+    }
+  ],
+  "kernels": [
+    {
+      "slug": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "source_sha256": "c4df0ac06a18a7e7441243a1a5b17a64b293594486d656bfaedbe57954744641",
+      "coverage_gate_present": false,
+      "cross_branch_validate_loop_present": false
+    },
+    {
+      "slug": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "source_sha256": "2d9bf8b5068cc14e66891bef061ae44c8fbb2e251a87a21138fbd21cf84f65bb",
+      "coverage_gate_present": false,
+      "cross_branch_validate_loop_present": false
+    },
+    {
+      "slug": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+      "source_sha256": "39409c15ddd6305248fd885097116dea8c9511586e124551b4852d6091194bae",
+      "coverage_gate_present": false,
+      "cross_branch_validate_loop_present": false
+    },
+    {
+      "slug": "victor120956/casmi26-wave9-isolated-top1-cpu",
+      "source_sha256": "f4c548c63740730bddaff7e6cd84aa703ba293e00e0ccbc444030d720218b38a",
+      "coverage_gate_present": false,
+      "cross_branch_validate_loop_present": false
+    },
+    {
+      "slug": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+      "source_sha256": "2ea5f02893b72821c02c8a65e9bed472acb85a1d0002d9886763d2b794dc3684",
+      "coverage_gate_present": false,
+      "cross_branch_validate_loop_present": false
+    }
+  ],
+  "checks_passed": 15
+}

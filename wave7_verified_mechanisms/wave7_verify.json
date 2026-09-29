@@ -1,0 +1,22 @@
+{
+  "baseline_md5": {
+    "submission.csv": "74dd3e23f5c4d6941239708cf20260e3",
+    "submission_ours.csv": "71dc98afa17a950e01d6dadd48c69f49",
+    "submission_pv.csv": "5364114d02f583ac518ffad28a8e1ca2"
+  },
+  "formula_changed_rows": 201,
+  "dedup_changed_rows": 34,
+  "dedup_replaced_slots": 392,
+  "gpu": false,
+  "own_dataset_inputs": false,
+  "files": {
+    "submission_formula.csv": {
+      "md5": "c2fc194e564fff9ff7341dd57d847428",
+      "sha256": "a67f6bf63078049744cb4ded8e520c37bd7067bbc40f30056ccfe1b5d7ab0965"
+    },
+    "submission_dedup.csv": {
+      "md5": "2df60dac6fe0c2ac22e1e367a84ec63d",
+      "sha256": "b3bef37a9e79c163b57631a67bef39f835e32098c8087338c03905fc7cbca37f"
+    }
+  }
+}

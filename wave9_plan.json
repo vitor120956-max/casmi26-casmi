@@ -1,0 +1,67 @@
+[
+  {
+    "tag": "adduct",
+    "kernel": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "folder": "/home/user/kpush_wave9_adduct",
+    "question": "Separar espectros por aduto/polaridade melhora a fórmula e o ranking?",
+    "decision": "Se ganhar, adotar evidência por grupo; sem ganho, não promover.",
+    "needs_dedup": false,
+    "needs_adduct": true,
+    "preview_verified": false,
+    "no_automatic_submission": true
+  },
+  {
+    "tag": "adduct_dedup",
+    "kernel": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "folder": "/home/user/kpush_wave9_adduct_dedup",
+    "question": "Evidência por aduto também melhora a combinação com refill?",
+    "decision": "Comparar com adduct sem refill e combinado top5 legado; escolher mecanismo demonstrado.",
+    "needs_dedup": true,
+    "needs_adduct": true,
+    "preview_verified": false,
+    "no_automatic_submission": true
+  },
+  {
+    "tag": "formula_dedup",
+    "kernel": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "folder": "/home/user/kpush_wave9_formula_dedup",
+    "question": "Fórmula top5 após dedup/refill supera o W088 blend 0.341?",
+    "decision": "Manter combinação apenas com ganho confiável sobre a referência.",
+    "needs_dedup": true,
+    "needs_adduct": false,
+    "preview_verified": false,
+    "no_automatic_submission": true
+  },
+  {
+    "tag": "top1",
+    "kernel": "victor120956/casmi26-wave9-isolated-top1-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "folder": "/home/user/kpush_wave9_top1",
+    "question": "Top1 msbuddy reduz promoções espúrias em relação à evidência top5?",
+    "decision": "Comparar ao W088 blend e ao top1+dedup; promover somente ganho confiável.",
+    "needs_dedup": false,
+    "needs_adduct": false,
+    "preview_verified": false,
+    "no_automatic_submission": true
+  },
+  {
+    "tag": "top1_dedup",
+    "kernel": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+    "version": 1,
+    "file": "submission.csv",
+    "folder": "/home/user/kpush_wave9_top1_dedup",
+    "question": "Top1 aplicado após refill supera o combinado top5+dedup?",
+    "decision": "Escolher política top1/top5 após notas atribuíveis, sem varrer pesos.",
+    "needs_dedup": true,
+    "needs_adduct": false,
+    "preview_verified": false,
+    "no_automatic_submission": true
+  }
+]

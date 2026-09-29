@@ -1,0 +1,42 @@
+[
+  {
+    "tag": "w088-formula",
+    "kernel": "victor120956/casmi26-wave7-w088-formula-submit-cpu",
+    "remote_cpu": true,
+    "source_identical": true,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    }
+  },
+  {
+    "tag": "w088-dedup",
+    "kernel": "victor120956/casmi26-wave7-w088-dedup-submit-cpu",
+    "remote_cpu": true,
+    "source_identical": true,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    }
+  },
+  {
+    "tag": "w088-ours",
+    "kernel": "victor120956/casmi26-wave7-w088-ours-submit-cpu",
+    "remote_cpu": true,
+    "source_identical": true,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    }
+  },
+  {
+    "tag": "w088-pv",
+    "kernel": "victor120956/casmi26-wave7-w088-pv-submit-cpu",
+    "remote_cpu": true,
+    "source_identical": true,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    }
+  }
+]

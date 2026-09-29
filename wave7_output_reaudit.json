@@ -1,0 +1,42 @@
+[
+  {
+    "tag": "w088-blend",
+    "kernel": "victor120956/casmi26-w088-replica-llccqq624-apache-2-0",
+    "output_bytes": 394868,
+    "output_sha256": "7d29205d84c03095972e5354e46f968dd60ca276c8d91aea604d11cb9d875127",
+    "expected_sha256": "7d29205d84c03095972e5354e46f968dd60ca276c8d91aea604d11cb9d875127",
+    "matches_verified_plan": true
+  },
+  {
+    "tag": "w088-formula",
+    "kernel": "victor120956/casmi26-wave7-w088-formula-submit-cpu",
+    "output_bytes": 394868,
+    "output_sha256": "a67f6bf63078049744cb4ded8e520c37bd7067bbc40f30056ccfe1b5d7ab0965",
+    "expected_sha256": "a67f6bf63078049744cb4ded8e520c37bd7067bbc40f30056ccfe1b5d7ab0965",
+    "matches_verified_plan": true
+  },
+  {
+    "tag": "w088-dedup",
+    "kernel": "victor120956/casmi26-wave7-w088-dedup-submit-cpu",
+    "output_bytes": 409897,
+    "output_sha256": "b3bef37a9e79c163b57631a67bef39f835e32098c8087338c03905fc7cbca37f",
+    "expected_sha256": "b3bef37a9e79c163b57631a67bef39f835e32098c8087338c03905fc7cbca37f",
+    "matches_verified_plan": true
+  },
+  {
+    "tag": "w088-ours",
+    "kernel": "victor120956/casmi26-wave7-w088-ours-submit-cpu",
+    "output_bytes": 393760,
+    "output_sha256": "5d22093b0cac4224e39d730b2bfca60cbdc08ebeff2ba3a2f6825780e91effdb",
+    "expected_sha256": "5d22093b0cac4224e39d730b2bfca60cbdc08ebeff2ba3a2f6825780e91effdb",
+    "matches_verified_plan": true
+  },
+  {
+    "tag": "w088-pv",
+    "kernel": "victor120956/casmi26-wave7-w088-pv-submit-cpu",
+    "output_bytes": 395252,
+    "output_sha256": "527d9c09f20578c97bc3713cd5bd2976890b7703dd347a35ebff01585a76bd44",
+    "expected_sha256": "527d9c09f20578c97bc3713cd5bd2976890b7703dd347a35ebff01585a76bd44",
+    "matches_verified_plan": true
+  }
+]

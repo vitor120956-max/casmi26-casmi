@@ -1,0 +1,114 @@
+{
+  "created_at": "2026-09-28T21:55:47.472827-03:00",
+  "requested_local_day": "2026-09-28",
+  "requested_time": "21:00",
+  "timezone": "America/Sao_Paulo",
+  "target_time_already_passed": true,
+  "automatic_dispatch": false,
+  "automatic_retry": false,
+  "preparation_only": true,
+  "competition": "enveda-CASMI26-molecule-id-mass-spectra",
+  "policy": "One corrected control first; remaining four require review of its scored result. Source/runtime and duplicate-prediction review mandatory.",
+  "candidates": [
+    {
+      "variant": "top1",
+      "kernel": "victor120956/casmi26-wave9-isolated-top1-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "463a3d13ba004c80f048697c676ed17c802ec213f8a5b617f2e52cda150e9aca",
+      "question": "Primeiro reteste operacional: fonte corrigida consegue nota válida? Científico: promoção top1 vs referência W088.",
+      "role": "first_corrected_control",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false
+    },
+    {
+      "variant": "adduct",
+      "kernel": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "247615fa053491f18dac69b6842ba53ee23cb0c33e56d202d4e8a252852ca86b",
+      "question": "Separar evidência por aduto/polaridade melhora a ordenação sem refill?",
+      "role": "conditional_after_control_review",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false
+    },
+    {
+      "variant": "adduct_dedup",
+      "kernel": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "84e21511ebab674b075f0ef4317b9a4c6a7a70321c99d82741104066c7a709ea",
+      "question": "Agrupamento por aduto mantém benefício com dedup/refill?",
+      "role": "conditional_after_control_review",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false
+    },
+    {
+      "variant": "formula_dedup",
+      "kernel": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "69332bf0450da7cc4850801b7c61f58b26a0ea2222a367f0243d93f97e67620e",
+      "question": "Top5 de fórmula combinado com dedup/refill supera referência?",
+      "role": "conditional_after_control_review",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false
+    },
+    {
+      "variant": "top1_dedup",
+      "kernel": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "source_sha256": "6c6f9a633afd8fa89f60ac55036119d4c4262a716b3759402925c02a26044342",
+      "question": "Top1 supera top5 com a mesma política de dedup/refill?",
+      "role": "conditional_after_control_review",
+      "source_reviewed_for_release": false,
+      "source_risks": {
+        "engine_output_branches": [
+          "blend",
+          "pv",
+          "ours"
+        ],
+        "global_dependency_degraded_fallback": true
+      },
+      "csv_sha256": null,
+      "submission_authorized": false
+    }
+  ]
+}

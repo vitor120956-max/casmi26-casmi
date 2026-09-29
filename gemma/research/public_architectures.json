@@ -1,0 +1,74 @@
+[
+  {
+    "ref": "ryanholbrook/getting-started-gemma-4-developer-agent",
+    "code_cells": 6,
+    "bundles": {}
+  },
+  {
+    "ref": "romanrozen/gemma-eda-baseline-for-a-start-lb-top-1",
+    "code_cells": 27,
+    "bundles": {
+      "CFG": {
+        "architecture": "14 chars",
+        "bundle_base": "7 chars",
+        "model_alias": null,
+        "fallback_model_alias": "27 chars",
+        "temperature": 0.2,
+        "top_p": 0.95,
+        "top_k": 40,
+        "max_output_tokens": 8192,
+        "thinking_budget": 4096,
+        "context_limit": null,
+        "fallback_context_limit": 32768,
+        "localization_max_tasks": 200,
+        "graph_scan_max_tasks": 60,
+        "time_budget_s": 240,
+        "seed": 42,
+        "bundle_dir": "17 chars",
+        "zip_name": "14 chars"
+      }
+    }
+  },
+  {
+    "ref": "nihilisticneuralnet/0-10-gemma-4-developer-agent-submission",
+    "code_cells": 16,
+    "bundles": {}
+  },
+  {
+    "ref": "lucifer19/black-cat-swe-agent-pack-instinct",
+    "code_cells": 3,
+    "bundles": {
+      "CHALLENGER": {
+        "agent.yaml": "name: black_cat_coder\nmodel: gemma-4-31b-it-qat-w4a16-ct\ndescription: Fixes one repository issue with a small, verified source patch.\ninstruction: !include prompts/system.md\ntools:\n  - run_command\n  - read_file\n  - edit_file\n  - write_file\n  - get_status\n  - submit_patch\n  - get_code_neighbors\n  - search_similar_code\n  - get_code_subgraph\n  - agent_tool:\n      config_path: sub_agents/code_analyzer.yaml\n      skip_summarization: true\ngenerate_content_config: !include configs/sampling.yaml\n",
+        "sub_agents/code_analyzer.yaml": "name: code_analyzer\nmodel: gemma-4-31b-it-qat-w4a16-ct\ndescription: Read-only code navigator. It already knows the issue; returns the exact fix location, root cause, fix plan and closest tests.\ninstruction: !include ../prompts/analyzer.md\ntools:\n  - run_command\n  - read_file\n  - get_code_neighbors\n  - get_code_subgraph\ngenerate_content_config:\n  temperature: 0.1\n  top_p: 0.95\n  top_k: 40\n  max_output_tokens: 2048\n  thinking_config:\n    include_thoughts: false\n",
+        "configs/sampling.yaml": "temperature: 0.2\ntop_p: 0.95\ntop_k: 40\nmax_output_tokens: 8192\nthinking_config:\n  include_thoughts: false\n",
+        "eval_config.yaml": "evaluation:\n  timeout_seconds: 300\n  max_tool_calls: 100\n  max_time_minutes: 8\n  max_turns: 150\n"
+      },
+      "ANCHOR": {
+        "agent.yaml": "name: black_cat_coder\nmodel: gemma-4-31b-it-qat-w4a16-ct\ndescription: Fixes one repository issue with a small, verified source patch.\ninstruction: !include prompts/system.md\ntools:\n  - run_command\n  - read_file\n  - edit_file\n  - write_file\n  - get_status\n  - submit_patch\n  - get_code_neighbors\n  - search_similar_code\n  - get_code_subgraph\n  - agent_tool:\n      config_path: sub_agents/code_analyzer.yaml\n      skip_summarization: true\ngenerate_content_config: !include configs/sampling.yaml\n",
+        "sub_agents/code_analyzer.yaml": "name: code_analyzer\nmodel: gemma-4-31b-it-qat-w4a16-ct\ndescription: Read-only code navigator. It already knows the issue; returns the exact fix location, root cause, fix plan and closest tests.\ninstruction: !include ../prompts/analyzer.md\ntools:\n  - run_command\n  - read_file\n  - get_code_neighbors\n  - get_code_subgraph\ngenerate_content_config:\n  temperature: 0.1\n  top_p: 0.95\n  top_k: 40\n  max_output_tokens: 2048\n  thinking_config:\n    include_thoughts: false\n",
+        "configs/sampling.yaml": "temperature: 0.2\ntop_p: 0.95\ntop_k: 40\nmax_output_tokens: 4096\nthinking_config:\n  include_thoughts: false\n",
+        "eval_config.yaml": "evaluation:\n  timeout_seconds: 120\n  max_tool_calls: 40\n  max_time_minutes: 5\n  max_turns: 100\n"
+      },
+      "FALLBACK": {
+        "agent.yaml": "name: black_cat_fallback\nmodel: gemma-4-31b-it-qat-w4a16-ct\ninstruction: !include prompts/system.md\ntools: [run_command, read_file, edit_file, get_status, submit_patch]\ngenerate_content_config:\n  temperature: 0.1\n  max_output_tokens: 4096\n  thinking_config:\n    include_thoughts: false\n",
+        "eval_config.yaml": "evaluation:\n  timeout_seconds: 300\n  max_tool_calls: 40\n  max_time_minutes: 4\n  max_turns: 40\n"
+      }
+    }
+  },
+  {
+    "ref": "busyaprime/119-of-129-sound-the-gemma-4-grader-rebuilt",
+    "code_cells": 18,
+    "bundles": {}
+  },
+  {
+    "ref": "woldywei/gemma4-graph-coverage-audit",
+    "code_cells": 5,
+    "bundles": {}
+  },
+  {
+    "ref": "woldywei/gemma4-rq4-query-encoding",
+    "code_cells": 7,
+    "bundles": {}
+  }
+]

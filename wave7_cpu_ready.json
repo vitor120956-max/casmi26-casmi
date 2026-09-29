@@ -1,0 +1,18 @@
+[
+  {
+    "tag": "w088-formula",
+    "kernel": "victor120956/casmi26-wave7-w088-formula-dedup-cpu",
+    "version": 1,
+    "file": "submission_formula.csv",
+    "path": "/home/user/probeout_wave7_cpu/submission_formula.csv",
+    "sha256": "a67f6bf63078049744cb4ded8e520c37bd7067bbc40f30056ccfe1b5d7ab0965"
+  },
+  {
+    "tag": "w088-dedup",
+    "kernel": "victor120956/casmi26-wave7-w088-formula-dedup-cpu",
+    "version": 1,
+    "file": "submission_dedup.csv",
+    "path": "/home/user/probeout_wave7_cpu/submission_dedup.csv",
+    "sha256": "b3bef37a9e79c163b57631a67bef39f835e32098c8087338c03905fc7cbca37f"
+  }
+]

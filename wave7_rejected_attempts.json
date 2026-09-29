@@ -1,0 +1,36 @@
+{
+  "w088-formula": {
+    "phase": "ambiguous_or_failed",
+    "plan": {
+      "tag": "w088-formula",
+      "kernel": "victor120956/casmi26-wave7-w088-formula-dedup-cpu",
+      "version": 1,
+      "file": "submission_formula.csv",
+      "path": "/home/user/probeout_wave7_cpu/submission_formula.csv",
+      "sha256": "a67f6bf63078049744cb4ded8e520c37bd7067bbc40f30056ccfe1b5d7ab0965",
+      "semantic_sha256": "da6c71510daf68e6f28ab1daeb2814e0cf20456efa3cfdbb2913c995f0449c97",
+      "message": "PROBE-WAVE7:w088-formula VERIFY PASS"
+    },
+    "at": "2026-09-26T21:05:32.570298-03:00",
+    "error": "HTTPError('400 Client Error: Bad Request for url: https://api.kaggle.com/v1/competitions.CompetitionApiService/CreateCodeSubmission')",
+    "reconciled_as": "REJECTED_NO_SLOT_USED: competition requires literal submission.csv; API quota/history showed only blend accepted"
+  },
+  "w088-ours": {
+    "phase": "ambiguous_or_failed",
+    "plan": {
+      "tag": "w088-ours",
+      "kernel": "victor120956/casmi26-w088-replica-llccqq624-apache-2-0",
+      "version": 1,
+      "file": "submission_ours.csv",
+      "path": "/home/user/probeout_w088/submission_ours.csv",
+      "sha256": "5d22093b0cac4224e39d730b2bfca60cbdc08ebeff2ba3a2f6825780e91effdb",
+      "message": "PROBE-WAVE7:w088-ours VERIFY PASS",
+      "semantic_sha256": "c2bbc66e23d3d6323a657df64daa9bb6375357cf9211747a7d1bc7d80a62efe2"
+    },
+    "at": "2026-09-26T21:06:21.400901-03:00",
+    "error": "HTTPError('400 Client Error: Bad Request for url: https://api.kaggle.com/v1/competitions.CompetitionApiService/CreateCodeSubmission')",
+    "http_status": 400,
+    "response_body": "{\"error\":{\"code\":400,\"message\":\"Submission not allowed:  Submission files must be named \\u0022submission.csv\\u0022 for this Competition.\",\"status\":\"FAILED_PRECONDITION\"}}",
+    "reconciled_as": "REJECTED_NO_SLOT_USED: competition requires literal submission.csv; API quota/history showed only blend accepted"
+  }
+}

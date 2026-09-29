@@ -1,0 +1,61 @@
+{
+  "teams": 1684,
+  "top5": [
+    {
+      "Rank": "1",
+      "TeamId": "16898640",
+      "TeamName": "Ozymandias31415",
+      "LastSubmissionDate": "2026-09-25 00:00:57",
+      "Score": "0.425",
+      "SubmissionCount": "50",
+      "TeamMemberUserNames": "ozymandias31415"
+    },
+    {
+      "Rank": "2",
+      "TeamId": "16893685",
+      "TeamName": "pikachu",
+      "LastSubmissionDate": "2026-09-27 15:41:06",
+      "Score": "0.421",
+      "SubmissionCount": "43",
+      "TeamMemberUserNames": "jzhpfn"
+    },
+    {
+      "Rank": "3",
+      "TeamId": "16898387",
+      "TeamName": "Udam Liyanage",
+      "LastSubmissionDate": "2026-09-27 07:51:01",
+      "Score": "0.414",
+      "SubmissionCount": "36",
+      "TeamMemberUserNames": "udamliyanage"
+    },
+    {
+      "Rank": "4",
+      "TeamId": "16897131",
+      "TeamName": "Randy",
+      "LastSubmissionDate": "2026-09-28 00:01:33",
+      "Score": "0.411",
+      "SubmissionCount": "34",
+      "TeamMemberUserNames": "rvndyerwin"
+    },
+    {
+      "Rank": "5",
+      "TeamId": "16926646",
+      "TeamName": "Shehab Alshehabi",
+      "LastSubmissionDate": "2026-09-27 14:59:57",
+      "Score": "0.404",
+      "SubmissionCount": "27",
+      "TeamMemberUserNames": "shehabalshehabi"
+    }
+  ],
+  "ours": [
+    {
+      "Rank": "336",
+      "TeamId": "16909525",
+      "TeamName": "Victor alexandre ",
+      "LastSubmissionDate": "2026-09-27 01:39:46",
+      "Score": "0.341",
+      "SubmissionCount": "55",
+      "TeamMemberUserNames": "victor120956"
+    }
+  ]
+}

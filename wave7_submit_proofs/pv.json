@@ -1,0 +1,15 @@
+{
+  "tag": "w088-pv",
+  "source_file": "submission_pv.csv",
+  "file": "submission.csv",
+  "sha256": "527d9c09f20578c97bc3713cd5bd2976890b7703dd347a35ebff01585a76bd44",
+  "expected_sha256": "527d9c09f20578c97bc3713cd5bd2976890b7703dd347a35ebff01585a76bd44",
+  "cpu_only": true,
+  "full_pipeline": true,
+  "original_baseline_md5": {
+    "submission.csv": "74dd3e23f5c4d6941239708cf20260e3",
+    "submission_ours.csv": "71dc98afa17a950e01d6dadd48c69f49",
+    "submission_pv.csv": "5364114d02f583ac518ffad28a8e1ca2"
+  },
+  "transport_only_change": true
+}

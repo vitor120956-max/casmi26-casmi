@@ -1,0 +1,127 @@
+{
+  "at": "2026-09-28T21:28:26-03:00",
+  "scope": "Status only for valid refs from the returned recent-owned-kernels list. Not an exhaustive session inventory; invalid entries skipped. No cancellations or polling.",
+  "checks": [
+    {
+      "status": "SKIPPED_INVALID_REF",
+      "metadata": {
+        "title": "[Private Notebook]",
+        "lastRunTime": "2010-04-01T00:00:00.000Z"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-top1-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "status": {
+        "status": "RUNNING"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave8-atomic-top1-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave8-atomic-adduct-dedup-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave8-atomic-adduct-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave8-atomic-top1-dedup-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave8-atomic-formula-dedup-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave7-w088-formula-submit-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave7-w088-ours-submit-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave7-w088-pv-submit-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave7-w088-dedup-submit-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-wave7-w088-formula-dedup-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-w088-replica-llccqq624-apache-2-0",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-post4-mistform-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-post3-deduprefill-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    },
+    {
+      "ref": "victor120956/casmi26-post2-fstrict-cpu",
+      "status": {
+        "status": "COMPLETE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "tag": "adduct",
+    "kernel": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+    "status": "RUNNING",
+    "gpu": false,
+    "tpu": false,
+    "internet": false,
+    "code_identical": true,
+    "competition": [
+      "enveda-CASMI26-molecule-id-mass-spectra"
+    ],
+    "datasets_ok": true
+  },
+  {
+    "tag": "adduct_dedup",
+    "kernel": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+    "status": "RUNNING",
+    "gpu": false,
+    "tpu": false,
+    "internet": false,
+    "code_identical": true,
+    "competition": [
+      "enveda-CASMI26-molecule-id-mass-spectra"
+    ],
+    "datasets_ok": true
+  },
+  {
+    "tag": "formula_dedup",
+    "kernel": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
+    "status": "RUNNING",
+    "gpu": false,
+    "tpu": false,
+    "internet": false,
+    "code_identical": true,
+    "competition": [
+      "enveda-CASMI26-molecule-id-mass-spectra"
+    ],
+    "datasets_ok": true
+  },
+  {
+    "tag": "top1",
+    "kernel": "victor120956/casmi26-wave9-isolated-top1-cpu",
+    "status": "RUNNING",
+    "gpu": false,
+    "tpu": false,
+    "internet": false,
+    "code_identical": true,
+    "competition": [
+      "enveda-CASMI26-molecule-id-mass-spectra"
+    ],
+    "datasets_ok": true
+  },
+  {
+    "tag": "top1_dedup",
+    "kernel": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
+    "status": "RUNNING",
+    "gpu": false,
+    "tpu": false,
+    "internet": false,
+    "code_identical": true,
+    "competition": [
+      "enveda-CASMI26-molecule-id-mass-spectra"
+    ],
+    "datasets_ok": true
+  }
+]

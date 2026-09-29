@@ -1,0 +1,48 @@
+{
+  "send_authorized": true,
+  "canary_variant": "top1",
+  "canary_result_reviewed": false,
+  "canary_sequence_overridden_by_owner": true,
+  "owner_authorization": {
+    "at": "2026-09-29T01:48:48+00:00",
+    "verbatim": "veja se ta td certo se tiver faça 5 de 5",
+    "scope": "lote 5/5 Wave9 (top1, top1_dedup, formula_dedup, adduct, adduct_dedup)",
+    "condition": "verificação concluída: 5/5 COMPLETE, artefatos verificados, degraded=[], hashes == expectativas locais",
+    "risk_acknowledged": "causa exata do E029 permanece desconhecida; se a falha de rerun persistir, o lote inteiro é consumido (risco do dono, informado no POLICY_REVIEW.md)"
+  },
+  "allowed_not_before": "2026-09-29T01:48:48+00:00",
+  "allowed_not_after": "2026-09-30T00:00:00+00:00",
+  "approvals": {
+    "top1": {
+      "source_reviewed": true,
+      "source_sha256": "463a3d13ba004c80f048697c676ed17c802ec213f8a5b617f2e52cda150e9aca",
+      "corrected_rerun_explicitly_approved": true,
+      "basis": "POLICY_REVIEW.md + verify_wave9.py PASS 22:48 BRT + autorização do dono acima"
+    },
+    "adduct": {
+      "source_reviewed": true,
+      "source_sha256": "247615fa053491f18dac69b6842ba53ee23cb0c33e56d202d4e8a252852ca86b",
+      "corrected_rerun_explicitly_approved": true,
+      "basis": "POLICY_REVIEW.md + verify_wave9.py PASS 22:48 BRT + autorização do dono acima"
+    },
+    "adduct_dedup": {
+      "source_reviewed": true,
+      "source_sha256": "84e21511ebab674b075f0ef4317b9a4c6a7a70321c99d82741104066c7a709ea",
+      "corrected_rerun_explicitly_approved": true,
+      "basis": "POLICY_REVIEW.md + verify_wave9.py PASS 22:48 BRT + autorização do dono acima"
+    },
+    "formula_dedup": {
+      "source_reviewed": true,
+      "source_sha256": "69332bf0450da7cc4850801b7c61f58b26a0ea2222a367f0243d93f97e67620e",
+      "corrected_rerun_explicitly_approved": true,
+      "basis": "POLICY_REVIEW.md + verify_wave9.py PASS 22:48 BRT + autorização do dono acima"
+    },
+    "top1_dedup": {
+      "source_reviewed": true,
+      "source_sha256": "6c6f9a633afd8fa89f60ac55036119d4c4262a716b3759402925c02a26044342",
+      "corrected_rerun_explicitly_approved": true,
+      "basis": "POLICY_REVIEW.md + verify_wave9.py PASS 22:48 BRT + autorização do dono acima"
+    }
+  },
+  "reason": "Autorização explícita do Victor para o lote 5/5 após verificação; sequência canário-único sobrescrita pelo dono."
+}

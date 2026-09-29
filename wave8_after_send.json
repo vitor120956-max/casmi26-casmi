@@ -1,0 +1,86 @@
+{
+  "at": "2026-09-28T09:16:58.146949-03:00",
+  "quota": {
+    "numToday": 5,
+    "numTotal": 60,
+    "numAllowedNow": 0,
+    "limitedByTotal": false
+  },
+  "submissions": [
+    {
+      "ref": 56624675,
+      "totalBytes": 0,
+      "date": "2026-09-28T01:03:33.203Z",
+      "description": "PROBE-WAVE8:top1_dedup VERIFY PASS",
+      "errorDescription": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset",
+      "fileName": "submission.csv",
+      "publicScore": null,
+      "privateScore": null,
+      "status": "COMPLETE",
+      "submittedBy": "victor120956",
+      "submittedByRef": "victor120956",
+      "teamName": "Victor alexandre ",
+      "url": "/code/victor120956/casmi26-wave8-atomic-top1-dedup-cpu?scriptVersionId=353415330"
+    },
+    {
+      "ref": 56624674,
+      "totalBytes": 0,
+      "date": "2026-09-28T01:03:31.090Z",
+      "description": "PROBE-WAVE8:top1 VERIFY PASS",
+      "errorDescription": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset",
+      "fileName": "submission.csv",
+      "publicScore": null,
+      "privateScore": null,
+      "status": "COMPLETE",
+      "submittedBy": "victor120956",
+      "submittedByRef": "victor120956",
+      "teamName": "Victor alexandre ",
+      "url": "/code/victor120956/casmi26-wave8-atomic-top1-cpu?scriptVersionId=353415333"
+    },
+    {
+      "ref": 56624673,
+      "totalBytes": 0,
+      "date": "2026-09-28T01:03:29.107Z",
+      "description": "PROBE-WAVE8:formula_dedup VERIFY PASS",
+      "errorDescription": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset",
+      "fileName": "submission.csv",
+      "publicScore": null,
+      "privateScore": null,
+      "status": "COMPLETE",
+      "submittedBy": "victor120956",
+      "submittedByRef": "victor120956",
+      "teamName": "Victor alexandre ",
+      "url": "/code/victor120956/casmi26-wave8-atomic-formula-dedup-cpu?scriptVersionId=353404808"
+    },
+    {
+      "ref": 56624671,
+      "totalBytes": 0,
+      "date": "2026-09-28T01:03:27.037Z",
+      "description": "PROBE-WAVE8:adduct_dedup VERIFY PASS",
+      "errorDescription": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset",
+      "fileName": "submission.csv",
+      "publicScore": null,
+      "privateScore": null,
+      "status": "COMPLETE",
+      "submittedBy": "victor120956",
+      "submittedByRef": "victor120956",
+      "teamName": "Victor alexandre ",
+      "url": "/code/victor120956/casmi26-wave8-atomic-adduct-dedup-cpu?scriptVersionId=353415332"
+    },
+    {
+      "ref": 56624670,
+      "totalBytes": 0,
+      "date": "2026-09-28T01:03:25.153Z",
+      "description": "PROBE-WAVE8:adduct VERIFY PASS",
+      "errorDescription": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset",
+      "fileName": "submission.csv",
+      "publicScore": null,
+      "privateScore": null,
+      "status": "COMPLETE",
+      "submittedBy": "victor120956",
+      "submittedByRef": "victor120956",
+      "teamName": "Victor alexandre ",
+      "url": "/code/victor120956/casmi26-wave8-atomic-adduct-cpu?scriptVersionId=353415331"
+    }
+  ]
+}

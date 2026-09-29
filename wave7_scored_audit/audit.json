@@ -1,0 +1,27 @@
+[
+  {
+    "ref": 56594473,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "ref": 56594472,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "ref": 56594469,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "ref": 56594468,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  {
+    "ref": 56592387,
+    "error_type": "HTTPError",
+    "http_status": 403
+  }
+]

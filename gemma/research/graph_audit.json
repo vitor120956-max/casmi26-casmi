@@ -1,0 +1,69 @@
+{
+  "sample_graphs": [
+    {
+      "repo": "fastapi/fastapi",
+      "commit": "a7f2dbe976bf72703376f0cd04487bfc4a849f83",
+      "nodes": 3255,
+      "edges": 2014,
+      "edge_types": {
+        "calls": 2014
+      },
+      "max_node_source_chars": 356100,
+      "nodes_over_10000_source_chars": 34,
+      "distinct_nodes_starting_async_def": 0
+    },
+    {
+      "repo": "encode/httpx",
+      "commit": "4acf5c2c37714cc63b5cf71b3e284fca83c90311",
+      "nodes": 740,
+      "edges": 1618,
+      "edge_types": {
+        "calls": 1618
+      },
+      "max_node_source_chars": 5692,
+      "nodes_over_10000_source_chars": 0,
+      "distinct_nodes_starting_async_def": 0
+    },
+    {
+      "repo": "psf/requests",
+      "commit": "7a13c041dbef42f9f3feb14110f02626f6892e9a",
+      "nodes": 712,
+      "edges": 1750,
+      "edge_types": {
+        "calls": 1750
+      },
+      "max_node_source_chars": 16172,
+      "nodes_over_10000_source_chars": 1,
+      "distinct_nodes_starting_async_def": 0
+    },
+    {
+      "repo": "Textualize/rich",
+      "commit": "577def22dd83b999c5937cb2bf2ed49600943325",
+      "nodes": 1944,
+      "edges": 5542,
+      "edge_types": {
+        "calls": 5542
+      },
+      "max_node_source_chars": 11806,
+      "nodes_over_10000_source_chars": 3,
+      "distinct_nodes_starting_async_def": 0
+    }
+  ],
+  "httpx_snapshot_library_audit": {
+    "python_files_parsed": 32,
+    "class_total": 75,
+    "class_present": 75,
+    "sync_total": 520,
+    "sync_present": 520,
+    "async_total": 98,
+    "async_present": 0,
+    "missing_async_examples": [
+      "ahttpx._client.Client.request",
+      "ahttpx._client.Client.stream",
+      "ahttpx._client.Client.get",
+      "ahttpx._client.Client.post",
+      "ahttpx._client.Client.put"
+    ]
+  },
+  "scope": "Four graph snapshots, one per repository. AST coverage independently checked only on HTTPX library snapshot; do not generalize numeric totals to all tasks."
+}

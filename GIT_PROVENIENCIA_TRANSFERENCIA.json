@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-09-28T22:20:56-03:00",
+  "actual_local_head": "272b189ebc6a7a64f208881b8e10c59800fb92fc",
+  "latest_commit_claimed_in_conversation": "8db4867",
+  "last_confirmed_remote_push": "3c0974b2a6ae1c0f480c632a3ecf5f3f9cd3092e",
+  "cause_of_discrepancy": "unknown",
+  "archive_contains_git_history": false,
+  "archive_source_of_truth": "current regular files + SHA256 manifest"
+}

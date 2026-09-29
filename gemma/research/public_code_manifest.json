@@ -1,0 +1,44 @@
+[
+  {
+    "ref": "ryanholbrook/getting-started-gemma-4-developer-agent",
+    "id": 135692529,
+    "path": "gemma/research/public_code/ryanholbrook/getting-started-gemma-4-developer-agent.ipynb",
+    "sha256": "0c54c3bac3269e422b1d48ac8087ff26b49fe764231b7983c90ef842382f9a87"
+  },
+  {
+    "ref": "romanrozen/gemma-eda-baseline-for-a-start-lb-top-1",
+    "id": 135560430,
+    "path": "gemma/research/public_code/romanrozen/gemma-eda-baseline-for-a-start-lb-top-1.ipynb",
+    "sha256": "9903470187ff9953c99dc254f330287ec9203b751ed844c4d17b34b60f49becf"
+  },
+  {
+    "ref": "nihilisticneuralnet/0-10-gemma-4-developer-agent-submission",
+    "id": 135556508,
+    "path": "gemma/research/public_code/nihilisticneuralnet/0-10-gemma-4-developer-agent-submission.ipynb",
+    "sha256": "2a6d45c4093e8b2764a98e5766b9c1fd3c0da265d96cbe0240322c045546d5c2"
+  },
+  {
+    "ref": "lucifer19/black-cat-swe-agent-pack-instinct",
+    "id": 135551209,
+    "path": "gemma/research/public_code/lucifer19/black-cat-swe-agent-pack-instinct.ipynb",
+    "sha256": "635a7d125319b7e1a212442696ec1693eb3348caeac7e7f59b2346eedc4609e2"
+  },
+  {
+    "ref": "busyaprime/119-of-129-sound-the-gemma-4-grader-rebuilt",
+    "id": 135631743,
+    "path": "gemma/research/public_code/busyaprime/119-of-129-sound-the-gemma-4-grader-rebuilt.ipynb",
+    "sha256": "c0092004ffd3db36e4f47f37d2007cb38f0c11933c66095fe39cb930dd123c1f"
+  },
+  {
+    "ref": "woldywei/gemma4-graph-coverage-audit",
+    "id": 135680241,
+    "path": "gemma/research/public_code/woldywei/gemma4-graph-coverage-audit/gemma4-graph-coverage-audit.ipynb",
+    "sha256": "c37ebe067e7830974093f17ee53f24c0fd7c635cfd5c5246ed4159c2e5da0287"
+  },
+  {
+    "ref": "woldywei/gemma4-rq4-query-encoding",
+    "id": 135697273,
+    "path": "gemma/research/public_code/woldywei/gemma4-rq4-query-encoding/gemma4-graph-coverage-audit.ipynb",
+    "sha256": "2b496e15cbb9ab1f345c0585bcc4e102f1fce1590f3d87c355b026469dcc601e"
+  }
+]

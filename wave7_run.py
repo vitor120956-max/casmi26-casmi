@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """One-shot Wave7: no sleep, no status polling, no automatic retry of submissions."""
 import argparse,csv,datetime as dt,fcntl,hashlib,json,pathlib,subprocess,sys,traceback
+from safety_guards import classify_submission,record_failure,score_attribution_warnings
 ROOT=pathlib.Path('/home/user')
 COMP='enveda-CASMI26-molecule-id-mass-spectra'
 ORIGINAL='victor120956/casmi26-w088-replica-llccqq624-apache-2-0'
@@ -72,77 +73,46 @@ def gather_cpu(api):
  return plans
 
 def execute(dry=False):
- api=connect()
- limits=obj(api.competition_get_submission_limits(COMP));log('LIMITS '+json.dumps(limits))
- if not dry:
-  now=dt.datetime.now(dt.timezone.utc)
-  assert RESET<=now<END, 'OUTSIDE_AUTHORIZED_RESET_WINDOW'
-  if int(limits['numAllowedNow'])==0:log('STOP: quota zero; no retry, no orphan replacement');return
- plans=old_plans()
- if not dry:
-  try:plans=gather_cpu(api)+plans
-  except Exception as e:log('CPU_NOT_VERIFIED: '+repr(e)+'; keep its two slots unused')
- else:log('DRY_RUN: CPU output not fetched while job runs; submission API will NOT be called')
- history=json.loads((ROOT/'historical_hashes.json').read_text())
- seen={};valid=[]
- # All local validation before the first remote submission.
- for p in plans:
-  sig,_=verify(pathlib.Path(p['path']),p['sha256'],history)
-  assert sig not in seen, ('DUPLICATE_IN_WAVE',p['tag'])
-  seen[sig]=p['tag'];p['semantic_sha256']=sig
-  p['message']='PROBE-WAVE7:'+p['tag']+' VERIFY PASS'
-  valid.append(p)
- if dry:
-  dump('wave7_dry_run.json',valid);log('DRY_RUN_PASS '+str([p['tag'] for p in valid]));return
- submissions=[obj(x) for x in api.competition_submissions(COMP,page_size=100)]
- dump('submissions_at_reset.json',submissions)
- statepath=ROOT/'wave7_submit_state.json'
- state=json.loads(statepath.read_text()) if statepath.exists() else {}
- capacity=int(limits['numAllowedNow']);count=0
- needed=[p for p in valid if p['tag'] not in state and not any(s.get('description')==p['message'] for s in submissions)]
- if capacity < len(needed):
-  log('STOP: quota insufficient for the verified batch; no partial orphan allocation');return
- for p in valid:
-  tag=p['tag']
-  already=[s for s in submissions if s.get('description')==p['message']]
-  if already:
-   log('SKIP_ALREADY_SUBMITTED '+tag+' refs='+str([s['ref'] for s in already]));continue
-  if tag in state:
-   log('SKIP_JOURNALED '+tag+' (resolve ambiguous intent manually; never retry blindly)');continue
-  if count>=capacity:log('STOP_CAPACITY '+str(capacity));break
-  state[tag]={'phase':'intent','plan':p,'at':dt.datetime.now(BRT).isoformat()}
-  dump('wave7_submit_state.json',state)  # write-ahead: crash cannot silently cause retry
-  try:
-   response=obj(api.competition_submit_code(file_name=p['file'],message=p['message'],competition=COMP,kernel=p['kernel'],kernel_version=1,quiet=True))
-   assert response.get('ref'), ('NO_SUBMISSION_REF',response)
-   state[tag].update(phase='accepted',response=response)
-   dump('wave7_submit_state.json',state);count+=1
-   log('SUBMITTED '+tag+' '+json.dumps(response))
-  except Exception as e:
-   state[tag].update(phase='ambiguous_or_failed',error=repr(e))
-   dump('wave7_submit_state.json',state);log('STOP_SUBMIT_ERROR '+repr(e));break
- log('LIMITS_AFTER '+str(api.competition_get_submission_limits(COMP)))
- log('DONE accepted_now='+str(count)+'; acceptance is NOT a ranked score')
+ # Competition enforces literal submission.csv. Never use old alt-filename plans.
+ from wave7_named_run import run
+ return run(dry=dry)
 
 def report():
  api=connect();subs=[obj(s) for s in api.competition_submissions(COMP,page_size=100)]
  dump('submissions_score_check.json',subs)
+ render_report(subs)
+
+def render_report(subs):
  wave=[s for s in subs if (s.get('description') or '').startswith('PROBE-WAVE7:')]
- scores={s['description'].split(':',1)[1].split(' ')[0]:float(s['publicScore']) for s in wave if s.get('publicScore') not in [None,'']}
+ scores={s['description'].split(':',1)[1].split(' ')[0]:float(s['publicScore']) for s in wave if classify_submission(s)=='RANQUEADA'}
+ footprints={}
+ statepath=ROOT/'wave7_submit_state.json'
+ if statepath.exists():
+  for tag,entry in json.loads(statepath.read_text()).items():
+   plan=entry.get('plan',{});p=pathlib.Path(plan.get('path',''))
+   if p.is_file():footprints[tag]={'local_bytes':p.stat().st_size,'sha256':plan.get('sha256')}
+ warnings=score_attribution_warnings(wave,footprints)
+ dump('wave7_attribution.json',{'warnings':warnings,'footprints':footprints,'not_proof_of_duplicate_scoring':True})
  lines=['# Wave7 — leitura única de notas', '', 'Aceito/COMPLETE sem nota não é ranqueado.', '',f'Notas confirmadas: {len(scores)}/5', '',json.dumps(scores,ensure_ascii=False,indent=2),'']
- if all(t in scores for t in ['w088-blend','w088-ours','w088-pv']):
+ if warnings:
+  lines += ['ALERTA DE ATRIBUIÇÃO: '+', '.join(warnings), 'Notas oficiais confirmadas; comparação causal dos mecanismos INCONCLUSIVA. Metadados iguais não provam arquivos iguais nem falha do avaliador.', 'Manter W088 blend como referência. Não promover nem eliminar mecanismos com base apenas neste aparente empate.']
+ if not warnings and all(t in scores for t in ['w088-blend','w088-ours','w088-pv']):
   tags=['w088-blend','w088-ours','w088-pv'];winner=max(tags,key=lambda t:scores[t]);ties=[t for t in tags if scores[t]==scores[winner]]
   lines += ['Próximo build: '+('empate; preferir ramo mais simples, sem caça a pesos/seeds.' if len(ties)>1 else 'ramo '+winner+' como referência provisória, não ganho definitivo.')]
- if 'w088-blend' in scores:
+ if not warnings and 'w088-blend' in scores:
   for tag in ['w088-formula','w088-dedup']:
    if tag in scores:
     delta=scores[tag]-scores['w088-blend'];lines.append(f'{tag}: delta {delta:+.3f}; '+('levar mecanismo ao próximo build.' if delta>0 else 'não promover mecanismo; empate/perda.'))
+ errors=[s for s in wave if classify_submission(s)=='REJEITADA']
+ for s in errors:lines.append(f"REJEITADA ref={s['ref']}: {s.get('errorDescription')}")
  if len(scores)<5:lines.append('Ainda faltam notas/probes. Sem decisão por ausência, sem resubmit automático.')
  (ROOT/'WAVE7_RESULTADO.md').write_text('\n'.join(lines)+'\n')
- log('SCORE_CHECK_ONCE '+json.dumps(scores)+'; no repeat scheduled')
+ log('SCORE_REPORT_RENDER '+json.dumps(scores)+'; source=submissions_score_check.json; render itself is offline')
 
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('--dry-run',action='store_true');parser.add_argument('--report',action='store_true');args=parser.parse_args()
  lock=(ROOT/'wave7.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
  try:report() if args.report else execute(args.dry_run)
- except Exception as e:log('FATAL '+repr(e));traceback.print_exc();sys.exit(1)
+ except Exception as e:
+  record_failure('RUNNER_FATAL',repr(e),{'stage':'wave7_run'})
+  log('FATAL '+repr(e));traceback.print_exc();sys.exit(1)
