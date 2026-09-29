@@ -1,3 +1,9 @@
+# ATUALIZAÇÃO — 29/09 08:30 BRT (resultado Wave9)
+
+**5/5 RANQUEADAS: novo melhor 0.350 (top1 e top1_dedup); rank 225/1784 (era 337). E029 superado pela arquitetura Wave9.** adduct/adduct_dedup/formula_dedup = 0.342. Top1 promovido; dedup neutro; aduto-top5 fraco. Detalhes: WAVE9_RESULTADO.md. Quota 0 livres até 21h BRT. Próximo lote: perguntas no-orphan listadas em WAVE9_RESULTADO.md, aguardando decisão do Victor. Sem timer/polling.
+
+---
+
 # ATUALIZAÇÃO — 29/09 (regra de armazenamento + limpeza)
 
 **Workspace limpo: 120 MB → 24 MB, 448 arquivos.** Regra permanente do Victor: nada é salvo no workspace; persistência = GitHub `export-clean` (rebuild_export.sh clona o espelho se ausente) + Drive do Victor. Início de conversa: clonar export-clean, mesclar ZIP Drive se houver, arm.sh, ler docs. E039 registrado. Estado CASMI inalterado: Wave9 5/5 enviada (refs 56659089-90-93/94/96), aguardando UMA consulta de notas quando Victor chamar; quota 0 livres até reset 29/09 21h BRT.

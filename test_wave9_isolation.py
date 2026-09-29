@@ -90,6 +90,32 @@ class TestFormulaOrder(unittest.TestCase):
         self.assertEqual(out.at[0, 'smiles'].split(';')[0], 'CO')
 
 
+class TestFormulaSwapFirst(unittest.TestCase):
+    def test_swap_promotes_first_match_only(self):
+        from wave9_runtime import formula_swap_first
+        sub = frame([{'molecule_id': 'm1', 'smiles': ';'.join(['CCCCO', 'CCCO', 'CO', 'CCO'] + ['C'] * 21)}])
+        out, stats = formula_swap_first(sub, {'m1': ['CH4O']}, calc_f)
+        self.assertEqual(out.at[0, 'smiles'].split(';')[:3], ['CO', 'CCCCO', 'CCCO'])
+        self.assertEqual(stats['changed_rows'], 1)
+
+    def test_position_zero_already_matching_untouched(self):
+        from wave9_runtime import formula_swap_first
+        sub = frame([{'molecule_id': 'm2', 'smiles': ';'.join(['CO', 'CCCCO'] + ['C'] * 23)}])
+        out, stats = formula_swap_first(sub, {'m2': ['CH4O']}, calc_f)
+        self.assertTrue(out.equals(sub))
+        self.assertEqual(stats['changed_rows'], 0)
+
+    def test_no_formula_or_no_match_is_noop(self):
+        from wave9_runtime import formula_swap_first
+        sub = frame([{'molecule_id': 'm3', 'smiles': ';'.join(['CCCCO', 'CCCO'] + ['C'] * 23)},
+                     {'molecule_id': 'm4', 'smiles': ';'.join(['CCCCO', 'CCCO'] + ['C'] * 23)}])
+        degraded = []
+        out, stats = formula_swap_first(sub, {'m4': ['C6H12O6']}, calc_f, degraded)
+        self.assertTrue(out.equals(sub))
+        self.assertEqual(stats, {'changed_rows': 0, 'rows_without_formula': 1, 'rows_without_match': 1})
+        self.assertEqual(degraded, [['FORMULA_ROWS_WITHOUT_EVIDENCE', 1]])
+
+
 class TestRefill(unittest.TestCase):
     def test_refill_by_mass(self):
         base = ['CCO'] + ['CO'] + ['C'] * 3  # 1 real + padding
@@ -301,15 +327,19 @@ class TestStaticIsolation(unittest.TestCase):
             ids.add(meta['id'])
             self.assertIn(f"VARIANT={tag!r}", code_text(nb))
 
+    WAVE9_FROZEN_RUNTIME_SHA = '5bb4cc6fdc356c0c134f4cd6295f286eead99e192119ed0a53c40ab2e8fc9c40'
+
     def test_embedded_runtime_is_single_source_of_truth(self):
-        local = (R / 'wave9_runtime.py').read_text()
+        import hashlib
         evidence = (R / 'formula_evidence.py').read_text()
         for tag in TAGS:
             _, _, nb = load(tag)
             embedded = [c for c in nb['cells'] if c['cell_type'] == 'code'
                         and ''.join(c['source']).startswith('%%writefile wave9_runtime.py')]
             self.assertEqual(len(embedded), 1, tag)
-            self.assertEqual(''.join(embedded[0]['source']), '%%writefile wave9_runtime.py\n' + local)
+            # Wave9 já submetida/ranqueada: runtime embutido é artefato histórico congelado.
+            self.assertEqual(hashlib.sha256(''.join(embedded[0]['source']).encode()).hexdigest(),
+                             self.WAVE9_FROZEN_RUNTIME_SHA, tag)
             if tag.startswith('adduct'):
                 ev = [c for c in nb['cells'] if c['cell_type'] == 'code'
                       and ''.join(c['source']).startswith('%%writefile formula_evidence.py')]

@@ -116,3 +116,34 @@ def dedup_rows(sub, recs, pool, canon_key, degraded=None):
         if no_mass:
             degraded.append(['NO_VALID_MASS', int(no_mass)])
     return result, stats
+
+
+def formula_swap_first(sub, formulas_by_id, calc_f, degraded=None):
+    """Promove o primeiro candidato que casa com a fórmula rank1 para a posição 0.
+
+    Conservador: se a posição 0 já casa ou nenhum candidato casa, a linha fica
+    intacta. Responde de onde vem o ganho do top1 (posição 1 vs reordenação ampla).
+    """
+    result = sub.copy()
+    changed = no_formula = no_hit = 0
+    for idx, row in result.iterrows():
+        base = row.smiles.split(';')
+        formulas = set((formulas_by_id.get(row.molecule_id)
+                        or formulas_by_id.get(str(row.molecule_id)) or [])[:1])
+        if not formulas:
+            no_formula += 1
+            continue
+        if calc_f(base[0]) in formulas:
+            continue  # posição 0 já correta
+        hit = next((j for j in range(1, len(base)) if calc_f(base[j]) in formulas), None)
+        if hit is None:
+            no_hit += 1
+            continue
+        out = [base[hit]] + base[:hit] + base[hit + 1:]
+        result.at[idx, 'smiles'] = ';'.join(out)
+        changed += 1
+    stats = {'changed_rows': int(changed), 'rows_without_formula': int(no_formula),
+             'rows_without_match': int(no_hit)}
+    if degraded is not None and no_formula:
+        degraded.append(['FORMULA_ROWS_WITHOUT_EVIDENCE', int(no_formula)])
+    return result, stats

@@ -1,7 +1,7 @@
 {
-  "send_authorized": true,
+  "send_authorized": false,
   "canary_variant": "top1",
-  "canary_result_reviewed": false,
+  "canary_result_reviewed": true,
   "canary_sequence_overridden_by_owner": true,
   "owner_authorization": {
     "at": "2026-09-29T01:48:48+00:00",
@@ -44,5 +44,10 @@
       "basis": "POLICY_REVIEW.md + verify_wave9.py PASS 22:48 BRT + autorização do dono acima"
     }
   },
-  "reason": "Autorização explícita do Victor para o lote 5/5 após verificação; sequência canário-único sobrescrita pelo dono."
+  "reason": "Lote Wave9 concluído e revisado: 5/5 ranqueadas, melhor 0.350 (top1). Novo lote exige novo plano e nova autorização.",
+  "canary_result": {
+    "at": "2026-09-29T08:28:06-03:00",
+    "top1": "0.350 RANQUEADA",
+    "lote": "5/5 ranqueadas; melhor 0.350"
+  }
 }
