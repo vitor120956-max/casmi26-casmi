@@ -278,3 +278,17 @@ Cinco candidatos Wave8 passaram nos testes/outputs de preview e foram aceitos pa
 - **Impacto:** parte dos arquivos da sessão não persistiu; nenhum dado crítico perdido (estado essencial estava no GitHub export-clean 4b689dc e nos JSONs de journal, íntegros).
 - **Correção (regra permanente do Victor, 29/09):** workspace é área de trabalho EFÊMERA — nada é "salvo" nele. Persistência somente GitHub (branch export-clean, fluxo rebuild_export.sh + github_device_export.py) e/ou Drive do Victor. Início de conversa: clonar export-clean + extrair backup Drive anexado, depois arm.sh.
 - **Trava:** conferir `du -sh /home/user` antes de encerrar turno; apagar artefatos regeneráveis (pulls remotos, outputs baixados, espelhos) logo após o uso; nunca manter duas cópias grandes do mesmo conteúdo.
+
+## E040 — wave10_submit_state.json perdido entre turnos (30/09)
+- **Evidência:** journal 29/09 21:08 BRT tem `WAVE10_SUBMITTED` x5 com refs, mas o arquivo de estado não estava no workspace em 30/09 08:13 (wave10_before_send.json e demais sobreviveram).
+- **Causa:** não confirmada (snapshot entre turnos falhou para esse arquivo; causa-raiz desconhecida).
+- **Impacto:** nenhum — reconstruído integralmente de journal + wave10_ready.json (redundância deliberada salvou o estado).
+- **Correção:** estado crítico de envio deve ser pushado pro GitHub na mesma janela da ação, não adiado.
+- **Trava:** após qualquer envio, incluir submit_state no próximo push imediatamente; journal continua sendo fonte secundária obrigatória de refs.
+
+## E041 — ListSubmissions 403 / GetLeaderboard 404 bloqueiam leitura de scores (30/09 08:13 BRT)
+- **Evidência:** `competitions.CompetitionApiService/ListSubmissions` → 403 (via API Python e CLI, sequencial e paralelo); `GetLeaderboard --show` → 404 nesse SDK (Kaggle CLI 2.2.4). Auth válida (kernels_status OK na mesma hora).
+- **Causa:** não confirmada (auth OK; bloqueio específico do endpoint — provável rate-limit/mudança server-side do Kaggle).
+- **Impacto:** scores da Wave10 (refs 56691295-97-98/99 e 56691304) ainda não lidos. Envios intactos; ausência de score ≠ zero.
+- **Correção:** sem retry cego (regra). Uma única re-tentativa espaçada OU leitura pelo Victor na UI "My Submissions".
+- **Trava:** não martelar o endpoint; registrar cada tentativa no journal.

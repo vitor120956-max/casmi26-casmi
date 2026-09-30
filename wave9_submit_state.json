@@ -1,137 +1,158 @@
 {
-  "adduct": {
+  "adduct_top1": {
     "phase": "accepted",
-    "at": "2026-09-28T22:49:03.321202-03:00",
+    "at": "2026-09-29T21:07:58.626761-03:00",
     "plan": {
-      "tag": "adduct",
-      "kernel": "victor120956/casmi26-wave9-isolated-adduct-cpu",
+      "tag": "adduct_top1",
+      "kernel": "victor120956/casmi26-wave10-adduct-top1-cpu",
       "version": 1,
       "file": "submission.csv",
-      "folder": "/home/user/kpush_wave9_adduct",
-      "question": "Separar espectros por aduto/polaridade melhora a fórmula e o ranking?",
-      "decision": "Se ganhar, adotar evidência por grupo; sem ganho, não promover.",
-      "needs_dedup": false,
+      "folder": "/home/user/kpush_wave10_adduct_top1",
+      "question": "Evidência por grupo de aduto com seletividade top1 supera o top1 legado (0.350)?",
+      "decision": "Combinar os dois sinais positivos; ganhar promove a combinação, perder mantém top1 legado.",
       "needs_adduct": true,
       "preview_verified": true,
       "no_automatic_submission": true,
-      "path": "/home/user/probeout_wave9/adduct/submission.csv",
-      "sha256": "429ccaec7ae230798f0b9d6b4d08c508e3a4fd9229b62b71bf9fe47f99dc28ef",
-      "semantic_sha256": "cd7c96c2eba8c6e78d079a4eea54838e7d9dc22344c0c1c972f5b056b5314c79",
+      "path": "/home/user/probeout_wave10/adduct_top1/submission.csv",
+      "sha256": "72b25f0d1ed40fb6de52f4ffa5e6ed40274d9f0c2ebb361ebad11cf9363d1396",
+      "semantic_sha256": "9f24d8937cbb24a4999aa8205a7a16e1d0eb7e1d25d805574a6f00ac016cdc2a",
       "engine_blend_regression_pass": true,
       "preview_degraded": [],
-      "message": "PROBE-WAVE9:adduct VERIFY PASS"
+      "changed_rows": 178,
+      "mechanism": {
+        "changed_rows": 178,
+        "rows_without_formula": 0
+      },
+      "message": "PROBE-WAVE10:adduct_top1 VERIFY PASS"
     },
     "response": {
       "message": "",
-      "ref": 56659089
+      "ref": 56691295
     }
   },
-  "adduct_dedup": {
+  "top2": {
     "phase": "accepted",
-    "at": "2026-09-28T22:49:05.315608-03:00",
+    "at": "2026-09-29T21:08:00.539964-03:00",
     "plan": {
-      "tag": "adduct_dedup",
-      "kernel": "victor120956/casmi26-wave9-isolated-adduct-dedup-cpu",
+      "tag": "top2",
+      "kernel": "victor120956/casmi26-wave10-top2-cpu",
       "version": 1,
       "file": "submission.csv",
-      "folder": "/home/user/kpush_wave9_adduct_dedup",
-      "question": "Evidência por aduto também melhora a combinação com refill?",
-      "decision": "Comparar com adduct sem refill e combinado top5 legado; escolher mecanismo demonstrado.",
-      "needs_dedup": true,
+      "folder": "/home/user/kpush_wave10_top2",
+      "question": "Onde está o pico de seletividade: top1 (0.350), top2 ou top5 (0.342)?",
+      "decision": "Curva de seletividade; o vencedor define a família do próximo refinamento.",
+      "needs_adduct": false,
+      "preview_verified": true,
+      "no_automatic_submission": true,
+      "path": "/home/user/probeout_wave10/top2/submission.csv",
+      "sha256": "654299fa751e60da0a66581cff44aa6da530fc114742181109ecbcbc951f5846",
+      "semantic_sha256": "6f81188732ccbb55f8910ee74f6e633060fc3cebad711273c42d0893c746a68c",
+      "engine_blend_regression_pass": true,
+      "preview_degraded": [],
+      "changed_rows": 184,
+      "mechanism": {
+        "changed_rows": 184,
+        "rows_without_formula": 1
+      },
+      "message": "PROBE-WAVE10:top2 VERIFY PASS"
+    },
+    "response": {
+      "message": "",
+      "ref": 56691297
+    }
+  },
+  "top3": {
+    "phase": "accepted",
+    "at": "2026-09-29T21:08:02.475783-03:00",
+    "plan": {
+      "tag": "top3",
+      "kernel": "victor120956/casmi26-wave10-top3-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "folder": "/home/user/kpush_wave10_top3",
+      "question": "Top3 completa a curva de seletividade entre 1 e 5.",
+      "decision": "Se top1>top2>top3~top5, a promoção seletiva mínima é o mecanismo final.",
+      "needs_adduct": false,
+      "preview_verified": true,
+      "no_automatic_submission": true,
+      "path": "/home/user/probeout_wave10/top3/submission.csv",
+      "sha256": "16b436bda5b7919ae3803865ceb59bb129b71b11223966a4d64650c03bfee5a1",
+      "semantic_sha256": "7be6abe8955694896670933f9552969b8d73da2ad598ac94bde903c72fe7b337",
+      "engine_blend_regression_pass": true,
+      "preview_degraded": [],
+      "changed_rows": 196,
+      "mechanism": {
+        "changed_rows": 196,
+        "rows_without_formula": 1
+      },
+      "message": "PROBE-WAVE10:top3 VERIFY PASS"
+    },
+    "response": {
+      "message": "",
+      "ref": 56691298
+    }
+  },
+  "top1_swap": {
+    "phase": "accepted",
+    "at": "2026-09-29T21:08:04.498446-03:00",
+    "plan": {
+      "tag": "top1_swap",
+      "kernel": "victor120956/casmi26-wave10-top1-swap-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "folder": "/home/user/kpush_wave10_top1_swap",
+      "question": "O ganho do top1 vem de corrigir a posição 1 ou da reordenação ampla?",
+      "decision": "Se swap ~= top1, o ganho está no topo; se swap < top1, a reordenação profunda importa.",
+      "needs_adduct": false,
+      "preview_verified": true,
+      "no_automatic_submission": true,
+      "path": "/home/user/probeout_wave10/top1_swap/submission.csv",
+      "sha256": "5d7e5a0e24ee20009bdce0e97946545a2ac58cd6d88d5c09bc1a43d77b412c8d",
+      "semantic_sha256": "1c9371f4ca9c1f153b5d0b99fc570e76a69cea812f2e775498f585cd94381cfd",
+      "engine_blend_regression_pass": true,
+      "preview_degraded": [],
+      "changed_rows": 48,
+      "mechanism": {
+        "changed_rows": 48,
+        "rows_without_formula": 1,
+        "rows_without_match": 137
+      },
+      "message": "PROBE-WAVE10:top1_swap VERIFY PASS"
+    },
+    "response": {
+      "message": "",
+      "ref": 56691299
+    }
+  },
+  "adduct_top2": {
+    "phase": "accepted",
+    "at": "2026-09-29T21:08:06.449320-03:00",
+    "plan": {
+      "tag": "adduct_top2",
+      "kernel": "victor120956/casmi26-wave10-adduct-top2-cpu",
+      "version": 1,
+      "file": "submission.csv",
+      "folder": "/home/user/kpush_wave10_adduct_top2",
+      "question": "Top2 por aduto: a curva 1-2-5 da evidência agrupada tem o mesmo formato da legada?",
+      "decision": "A curva de seletividade se comporta igual na evidência agrupada?",
       "needs_adduct": true,
       "preview_verified": true,
       "no_automatic_submission": true,
-      "path": "/home/user/probeout_wave9/adduct_dedup/submission.csv",
-      "sha256": "c5fd29e0d88d215c4c6ccc8bd281257b2be1f1555653f2100773efac51007e4d",
-      "semantic_sha256": "7ccc51c30f41ff49c7b454a3787301853b10f54b9e1d677afb4be66329294bc9",
+      "path": "/home/user/probeout_wave10/adduct_top2/submission.csv",
+      "sha256": "0087efe6c827df17959386c129b5b1c65a1e32b0f72d6a63bc0d37035a3d6b61",
+      "semantic_sha256": "7508005e8d327ed425323f4d7b5450f3f207d6df90a0455d5cc81861868343d4",
       "engine_blend_regression_pass": true,
       "preview_degraded": [],
-      "message": "PROBE-WAVE9:adduct_dedup VERIFY PASS"
+      "changed_rows": 219,
+      "mechanism": {
+        "changed_rows": 219,
+        "rows_without_formula": 0
+      },
+      "message": "PROBE-WAVE10:adduct_top2 VERIFY PASS"
     },
     "response": {
       "message": "",
-      "ref": 56659090
-    }
-  },
-  "formula_dedup": {
-    "phase": "accepted",
-    "at": "2026-09-28T22:49:07.044237-03:00",
-    "plan": {
-      "tag": "formula_dedup",
-      "kernel": "victor120956/casmi26-wave9-isolated-formula-dedup-cpu",
-      "version": 1,
-      "file": "submission.csv",
-      "folder": "/home/user/kpush_wave9_formula_dedup",
-      "question": "Fórmula top5 após dedup/refill supera o W088 blend 0.341?",
-      "decision": "Manter combinação apenas com ganho confiável sobre a referência.",
-      "needs_dedup": true,
-      "needs_adduct": false,
-      "preview_verified": true,
-      "no_automatic_submission": true,
-      "path": "/home/user/probeout_wave9/formula_dedup/submission.csv",
-      "sha256": "e46a74a79a5ddd594486f3f9dc7449c6735cbcaf8278da2c40135a4786b9ebb3",
-      "semantic_sha256": "5ef14a5bb17e37e43e1d3b71ce31d7c166a74ce1cbbe3fb9debc99fa5fef1cd0",
-      "engine_blend_regression_pass": true,
-      "preview_degraded": [],
-      "message": "PROBE-WAVE9:formula_dedup VERIFY PASS"
-    },
-    "response": {
-      "message": "",
-      "ref": 56659093
-    }
-  },
-  "top1": {
-    "phase": "accepted",
-    "at": "2026-09-28T22:49:09.176862-03:00",
-    "plan": {
-      "tag": "top1",
-      "kernel": "victor120956/casmi26-wave9-isolated-top1-cpu",
-      "version": 1,
-      "file": "submission.csv",
-      "folder": "/home/user/kpush_wave9_top1",
-      "question": "Top1 msbuddy reduz promoções espúrias em relação à evidência top5?",
-      "decision": "Comparar ao W088 blend e ao top1+dedup; promover somente ganho confiável.",
-      "needs_dedup": false,
-      "needs_adduct": false,
-      "preview_verified": true,
-      "no_automatic_submission": true,
-      "path": "/home/user/probeout_wave9/top1/submission.csv",
-      "sha256": "6bad69c74a785a54c4af4980a8d4481062bcfa6d6b6e12c6ba9217fd1f279e2c",
-      "semantic_sha256": "e493d04c21114ed0cd65477d2cc82b68bb4a87876db7ad45281c7bd7d8ea86e0",
-      "engine_blend_regression_pass": true,
-      "preview_degraded": [],
-      "message": "PROBE-WAVE9:top1 VERIFY PASS"
-    },
-    "response": {
-      "message": "",
-      "ref": 56659094
-    }
-  },
-  "top1_dedup": {
-    "phase": "accepted",
-    "at": "2026-09-28T22:49:11.009158-03:00",
-    "plan": {
-      "tag": "top1_dedup",
-      "kernel": "victor120956/casmi26-wave9-isolated-top1-dedup-cpu",
-      "version": 1,
-      "file": "submission.csv",
-      "folder": "/home/user/kpush_wave9_top1_dedup",
-      "question": "Top1 aplicado após refill supera o combinado top5+dedup?",
-      "decision": "Escolher política top1/top5 após notas atribuíveis, sem varrer pesos.",
-      "needs_dedup": true,
-      "needs_adduct": false,
-      "preview_verified": true,
-      "no_automatic_submission": true,
-      "path": "/home/user/probeout_wave9/top1_dedup/submission.csv",
-      "sha256": "200764676509f414dd418c66a28c181fbc3daa1bb2716ac6ebb81a06b8566d43",
-      "semantic_sha256": "a663cf143c008b946a548d6f70301dfe44bb4dcad4e7b10139a0237cef02f94d",
-      "engine_blend_regression_pass": true,
-      "preview_degraded": [],
-      "message": "PROBE-WAVE9:top1_dedup VERIFY PASS"
-    },
-    "response": {
-      "message": "",
-      "ref": 56659096
+      "ref": 56691304
     }
   }
 }
