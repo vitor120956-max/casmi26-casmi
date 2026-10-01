@@ -179,3 +179,74 @@
 2026-09-30T08:18:59-03:00 WAVE10_SCORES_UI adduct_top2=0.340 top1_swap=0.348 top3=0.342 top2=0.342 adduct_top1=0.347 (melhor segue Wave9 top1 0.350)
 2026-09-30T08:23:51-03:00 E041-update: 403 detalhado via curl = "Permission competitions.participate was denied" (mesmo com Basic auth válido). Bloqueio server-side de escopo, não de cliente. Kernels escopo OK. Leitura de scores/submissões via token bloqueada; caminho alternativo = novo token (Victor) ou cessação do deny.
 2026-09-30T08:26:54-03:00 WAVE11_PLAN escrito: ICEBERG pós-ranker sobre top1, CPU, 5 probes (λ .25/.5/.75, N 40/60, budget 4h/6h), fail-safe total, wheels offline, allowlist pendente de aprovação do Victor (ahmedberatozer/casmi26-iceberg).
+2026-09-30T08:39:48-03:00 GitHub PUSH_CONFIRMED origin/export-clean=6398eedbaf0a0988a3a13edfc3a54e4cbab3db37 árvore limpa (sem gemma/official); OAuth public_repo; sem force-push; segredo fora de snapshots.
+2026-09-30T08:39:48-03:00 WAVE11 5/5 v1 pushed Kaggle (ice-l025/050/075-b4h, l050-b2h, l050-b6h; CPU, offline, dataset iceberg na allowlist aprovada). Aguardando COMPLETE para verify (1 leitura/kernel) na próxima janela de envio 21h BRT.
+2026-09-30T08:47:55-03:00 E041-update2: token novo KGAT (Bearer) tb 403 competitions.participate => deny é account-level, não de credencial. UI funciona. Hipóteses: rules re-aceite pendente / review de conta. RISCO: envios Wave11 às 21h podem 403 — verificar antes.
+2026-09-30T10:20:23-03:00 E041 AINDA ATIVO apos acao do Victor: HTTPError('403 Client Error: Forbidden for url: https://api.kaggle.com/v1/competitions.CompetitionApiService/ListSubmissions')
+2026-09-30T10:22:45-03:00 E041-update3: UI 100% ativa (Submit Prediction habilitado, rules aceitas, sem banners) => deny API é platform-side sem causa identificada. PLANO B confirmado para envio Wave11 21h: Victor sobe submission.csv por kernel via UI (descrição PROBE-WAVE11:<tag>), se API seguir 403. Verificação dos kernels segue via API (escopo kernels OK).
+2026-09-30T10:29:30-03:00 WAVE11_CHECK_ONCE ice_l050_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:29:30-03:00 WAVE11_CHECK_ONCE ice_l075_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:29:30-03:00 WAVE11_CHECK_ONCE ice_l050_b2h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:29:30-03:00 WAVE11_CHECK_ONCE ice_l050_b6h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:29:30-03:00 WAVE11_CHECK_ONCE ice_l025_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:29:32-03:00 WAVE11_VERIFY_FAIL ice_l025_b4h ValueError('E005_NO_OWN_DATASET_OR_TIER2')
+2026-09-30T10:29:32-03:00 WAVE11_VERIFY_FAIL ice_l050_b4h ValueError('E005_NO_OWN_DATASET_OR_TIER2')
+2026-09-30T10:29:32-03:00 WAVE11_VERIFY_FAIL ice_l075_b4h ValueError('E005_NO_OWN_DATASET_OR_TIER2')
+2026-09-30T10:29:32-03:00 WAVE11_VERIFY_FAIL ice_l050_b2h ValueError('E005_NO_OWN_DATASET_OR_TIER2')
+2026-09-30T10:29:32-03:00 WAVE11_VERIFY_FAIL ice_l050_b6h ValueError('E005_NO_OWN_DATASET_OR_TIER2')
+2026-09-30T10:30:31-03:00 WAVE11_CHECK_ONCE ice_l050_b2h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:30:31-03:00 WAVE11_CHECK_ONCE ice_l075_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:30:32-03:00 WAVE11_CHECK_ONCE ice_l050_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:30:32-03:00 WAVE11_CHECK_ONCE ice_l050_b6h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:30:32-03:00 WAVE11_CHECK_ONCE ice_l025_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T10:30:39-03:00 WAVE11_DUPLICATE_BLOCKED ice_l050_b4h
+2026-09-30T10:30:39-03:00 WAVE11_DUPLICATE_BLOCKED ice_l075_b4h
+2026-09-30T10:30:39-03:00 WAVE11_DUPLICATE_BLOCKED ice_l050_b2h
+2026-09-30T10:30:39-03:00 WAVE11_DUPLICATE_BLOCKED ice_l050_b6h
+2026-09-30T10:38:45-03:00 E042 corrigido: glue v2 com instrument/ce_ev/ce_orig/ce_units; 5/5 kernels v2 pushed. Travas novas: build GLUE_MISSING_RUNNER_FIELD + verify E042_ICE_COVERAGE_ZERO/NOTHING_SCORED. Diagnóstico local: 981/1213 espectros cobertos, 400/400 mols c/ grupos isomeros top25 (898 grupos). COMPLETE estimado 1.5-3h; verify+envio às 21h c/ autorização.
+2026-09-30T19:24:10-03:00 WAVE11_CHECK_ONCE ice_l025_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T19:24:10-03:00 WAVE11_CHECK_ONCE ice_l050_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T19:24:10-03:00 WAVE11_CHECK_ONCE ice_l075_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T19:24:10-03:00 WAVE11_CHECK_ONCE ice_l050_b2h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T19:24:10-03:00 WAVE11_CHECK_ONCE ice_l050_b6h {"status": "COMPLETE", "failureMessage": null}
+2026-09-30T19:24:17-03:00 WAVE11_VERIFY_FAIL ice_l025_b4h AssertionError('E042_ICE_COVERAGE_ZERO')
+2026-09-30T19:24:17-03:00 WAVE11_VERIFY_FAIL ice_l050_b4h AssertionError('E042_ICE_COVERAGE_ZERO')
+2026-09-30T19:24:17-03:00 WAVE11_VERIFY_FAIL ice_l075_b4h AssertionError('E042_ICE_COVERAGE_ZERO')
+2026-09-30T19:24:17-03:00 WAVE11_VERIFY_FAIL ice_l050_b2h AssertionError('E042_ICE_COVERAGE_ZERO')
+2026-09-30T19:24:17-03:00 WAVE11_VERIFY_FAIL ice_l050_b6h AssertionError('E042_ICE_COVERAGE_ZERO')
+2026-09-30T19:28:31-03:00 E043: CE escalar no test.parquet derrubava 100% das linhas no glue v2 (TypeError + except largo). _flist corrige; smoke_wave11_runner.py = portão pré-push (371/400 plans). v3 5/5 pushed ~19:45 BRT. Janela de envio ABRE 21h e dura 24h — verify quando COMPLETE, sem pressa artificial.
+2026-09-30T19:31:55-03:00 DIRETRIZ VICTOR 30/09 19:3x: "a ideia não é deixar a conta intacta e sim fazer 5 de 5" — quota é recurso pra usar; alvo é 5/5 por janela quando o plano está verificado. submit_wave11.py pronto (janela 01/10 00:00-24:00 UTC). v3 rodando; verify ao COMPLETE; envio 5/5 com confirmação dele.
+2026-09-30T19:35:03-03:00 RECON-ADD 30/09: gate PubChem extraído (LIB_TAU 0.9, rel>600 agressivo slots 2-10, gentil 4-20, dedup por chave; intocados se lib_max>=0.9). recon_29sep/PUBCHEM_GATE.md. Wave12 = ICE + gate se viável CPU; sem dia ocioso.
+2026-09-30T19:41:55-03:00 VICTOR 30/09 noite: desanimado apos 2 dias perdidos; meta dele = top5. Resposta honesta: top5 (cut 0.411) e dificil (stack 4 camadas, CPU-only); caminho existe e eh mensuravel camada por camada. Compromisso: manha = verify+5/5; zero promessas de vitoria; entregar progresso real diario.
+2026-09-30T22:26:31-03:00 WAVE11_CHECK_ONCE ice_l025_b4h {"status": "RUNNING", "failureMessage": null}
+2026-09-30T22:26:31-03:00 WAVE11_CHECK_ONCE ice_l075_b4h {"status": "RUNNING", "failureMessage": null}
+2026-09-30T22:26:31-03:00 WAVE11_CHECK_ONCE ice_l050_b6h {"status": "RUNNING", "failureMessage": null}
+2026-09-30T22:26:32-03:00 WAVE11_CHECK_ONCE ice_l050_b4h {"status": "RUNNING", "failureMessage": null}
+2026-09-30T22:26:32-03:00 WAVE11_CHECK_ONCE ice_l050_b2h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T09:38:26-03:00 WAVE11_CHECK_ONCE ice_l050_b2h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T09:38:26-03:00 WAVE11_CHECK_ONCE ice_l050_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T09:38:26-03:00 WAVE11_CHECK_ONCE ice_l050_b6h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T09:38:26-03:00 WAVE11_CHECK_ONCE ice_l025_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T09:38:26-03:00 WAVE11_CHECK_ONCE ice_l075_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T09:38:33-03:00 WAVE11_DUPLICATE_BLOCKED ice_l050_b6h
+2026-10-01T09:41:12-03:00 WAVE11_QUOTA {"numToday": 0, "numTotal": 70, "numAllowedNow": 5, "limitedByTotal": false}
+2026-10-01T09:41:18-03:00 WAVE11_SUBMITTED ice_l050_b4h {"message": "", "ref": 56751145}
+2026-10-01T09:41:20-03:00 WAVE11_SUBMITTED ice_l025_b4h {"message": "", "ref": 56751146}
+2026-10-01T09:41:23-03:00 WAVE11_SUBMITTED ice_l075_b4h {"message": "", "ref": 56751151}
+2026-10-01T09:41:25-03:00 WAVE11_SUBMITTED ice_l050_b2h {"message": "", "ref": 56751152}
+2026-10-01T09:41:25-03:00 WAVE11_LIMITS_AFTER {"numToday": 4, "numTotal": 74, "numAllowedNow": 1, "limitedByTotal": false}
+2026-10-01T09:41:25-03:00 WAVE11_DONE 4 accepted now; no score implied
+2026-10-01T09:41:44-03:00 E041 ENCERRADO 01/10 09:41: API competitions voltou a aceitar (4 submits OK refs 56751145/46/51/52). Causa do deny 30/09 08:13-10:20 nao identificada (platform-side; cessou sozinho). WAVE11 4/5 enviada; 5o = ice_l100_b4h ao COMPLETE (~14h).
+2026-10-01T15:51:34-03:00 WAVE11_CHECK_ONCE ice_l100_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T15:51:34-03:00 WAVE11_CHECK_ONCE ice_l025_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T15:51:34-03:00 WAVE11_CHECK_ONCE ice_l075_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T15:51:34-03:00 WAVE11_CHECK_ONCE ice_l050_b4h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T15:51:34-03:00 WAVE11_CHECK_ONCE ice_l050_b2h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T15:51:41-03:00 WAVE11_CHECK_ONCE ice_l050_b6h {"status": "COMPLETE", "failureMessage": null}
+2026-10-01T15:51:45-03:00 WAVE11_DUPLICATE_BLOCKED ice_l050_b6h
+2026-10-01T15:51:55-03:00 WAVE11_QUOTA {"numToday": 4, "numTotal": 74, "numAllowedNow": 1, "limitedByTotal": false}
+2026-10-01T15:52:04-03:00 WAVE11_QUOTA {"numToday": 4, "numTotal": 74, "numAllowedNow": 1, "limitedByTotal": false}
+2026-10-01T15:52:08-03:00 WAVE11_SUBMITTED ice_l100_b4h {"message": "", "ref": 56757340}
+2026-10-01T15:52:08-03:00 WAVE11_LIMITS_AFTER {"numToday": 5, "numTotal": 75, "numAllowedNow": 0, "limitedByTotal": false}
+2026-10-01T15:52:08-03:00 WAVE11_DONE 1 accepted now; no score implied
+2026-10-01T15:52:32-03:00 WAVE11 5/5 ENVIADA: refs 56751145/46/51/52 (4x 0.350 public) + 56757340 (l100, score pendente). Leitura: ICE neutro no public => sem promocao (regra do empate). Wave12 alvo = gate PubChem sobre nosso engine (viabilidade CPU primeiro). Quota 01/10 esgotada; proxima janela 02/10 21h BRT.

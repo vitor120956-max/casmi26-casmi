@@ -292,3 +292,17 @@ Cinco candidatos Wave8 passaram nos testes/outputs de preview e foram aceitos pa
 - **Impacto:** scores da Wave10 (refs 56691295-97-98/99 e 56691304) ainda não lidos. Envios intactos; ausência de score ≠ zero.
 - **Correção:** sem retry cego (regra). Uma única re-tentativa espaçada OU leitura pelo Victor na UI "My Submissions".
 - **Trava:** não martelar o endpoint; registrar cada tentativa no journal.
+
+## E042 — Glue Wave11 v1 omitiu campos instrument/CE exigidos pelo runner (30/09)
+- **Evidência:** 5/5 kernels COMPLETE em ~1h com ice_meta n_mols_covered=0/n_scored=0 (status ok, rdkit 2025.03.6 instalado); diagnóstico local: 981/1213 espectros cobertos e 400/400 mols com grupos isômeros no top-25 => entrada inválida, não ausência de sinal.
+- **Causa:** build_ice_items próprio passou só mz/it/prec/adduct/mode; o runner (instr_token/spectrum_ce) lê instrument/ce_ev/ce_orig/ce_units -> exceção por mol -> plans vazios (fail-safe absorveu, cobertura zero).
+- **Impacto:** Wave11 v1 mediu NADA (artefatos = top1 legado; 4 probes bloqueados por dedup semântico E003; 1 passou mas sem ICE). Nenhum slot de submissão gasto.
+- **Correção:** glue agora carrega os 4 campos; build_wave11 trava GLUE_MISSING_RUNNER_FIELD; v2 rebuild+push.
+- **Trava:** verificar ice_meta.n_mols_covered>0 no verify_wave11 (assert adicionado na próxima edição do verificador).
+
+## E043 — CE escalar derrubou 100% das linhas de espectro no glue v2 (30/09)
+- **Evidência:** v2 COMPLETE com n_cands=9241 mas n_mols_covered=0; repro local: build_ice_items spectra=0 mesmo com covered_only=False.
+- **Causa:** collision_energy_ev é escalar no test.parquet; list-comprehension inline levantou TypeError e o except largo descartou a linha inteira (o _flist do fuse original retorna None e preserva a linha).
+- **Impacto:** v2 também mediu nada; nenhum slot gasto; ~1h de compute desperdiçado.
+- **Correção:** _flist no glue (mz/it/ce_ev); smoke_wave11_runner.py como portão obrigatório pré-push (glue+runner reais, dados reais, coverage>0).
+- **Trava:** nunca pushar Wave11+ sem rodar smoke_wave11_runner.py antes.

@@ -7,7 +7,9 @@ ALLOWED_ASSETS={
  'prvsiyan/casmi26-fp-models-v2','aidensong123/casmi26-offline-rdkit-2026033',
  'prvsiyan/casmi26-ranker-features','megayak/casmi26-simulated-ranker-rows',
  'prvsiyan/chebi-lipidmaps-casmi26','prvsiyan/coconut-casmi26-candidates',
- 'thedevastator/open-source-natural-product-annotations','franciscoangulo/casmi26-mist-msbuddy-assets'}
+ 'thedevastator/open-source-natural-product-annotations','franciscoangulo/casmi26-mist-msbuddy-assets',
+ # Aprovado por Victor em 30/09 (Wave11): pós-ranker ICEBERG, 63.8 MB, ms-pred MIT.
+ 'ahmedberatozer/casmi26-iceberg'}
 def require(condition,code):
  if not condition:raise ValueError(code)
 def validate_submission_plan(p):

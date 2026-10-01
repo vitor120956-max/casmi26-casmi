@@ -38,3 +38,19 @@
 {"at": "2026-09-28T21:32:05-03:00", "code": "E036", "summary": "Cinco Wave9 remotos RUNNING ausentes do diário/artefatos locais disponíveis.", "context": {"manifest": "remote_wave9_reconciliation/manifest.json", "new_competition_submissions_found": false, "cancellations": 0, "origin": "not established"}, "state": "REMOTE_SOURCE_RECOVERED_ORIGIN_RECONCILIATION_PENDING"}
 {"at": "2026-09-28T22:20:56-03:00", "code": "E037", "summary": "Git atual272b189 diverge de commits posteriores relatados; arquivos recentes presentes.", "context": {"actual_head": "272b189ebc6a7a64f208881b8e10c59800fb92fc", "latest_commit_claimed_in_conversation": "8db4867"}, "state": "CURRENT_FILES_BACKUP_REQUIRED_CAUSE_UNKNOWN"}
 {"at": "2026-09-28T22:48:15-03:00", "code": "WAVE9_VERIFY", "summary": "CalledProcessError(1, ['bash', '/home/user/arm.sh'])", "context": {"tag": "top1_dedup"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:29:32-03:00", "code": "WAVE11_VERIFY", "summary": "ValueError('E005_NO_OWN_DATASET_OR_TIER2')", "context": {"tag": "ice_l025_b4h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:29:32-03:00", "code": "WAVE11_VERIFY", "summary": "ValueError('E005_NO_OWN_DATASET_OR_TIER2')", "context": {"tag": "ice_l050_b4h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:29:32-03:00", "code": "WAVE11_VERIFY", "summary": "ValueError('E005_NO_OWN_DATASET_OR_TIER2')", "context": {"tag": "ice_l075_b4h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:29:32-03:00", "code": "WAVE11_VERIFY", "summary": "ValueError('E005_NO_OWN_DATASET_OR_TIER2')", "context": {"tag": "ice_l050_b2h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:29:32-03:00", "code": "WAVE11_VERIFY", "summary": "ValueError('E005_NO_OWN_DATASET_OR_TIER2')", "context": {"tag": "ice_l050_b6h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:30:39-03:00", "code": "E003", "summary": "Artefato Wave10 duplicado bloqueado", "context": {"tag": "ice_l050_b4h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:30:39-03:00", "code": "E003", "summary": "Artefato Wave10 duplicado bloqueado", "context": {"tag": "ice_l075_b4h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:30:39-03:00", "code": "E003", "summary": "Artefato Wave10 duplicado bloqueado", "context": {"tag": "ice_l050_b2h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T10:30:39-03:00", "code": "E003", "summary": "Artefato Wave10 duplicado bloqueado", "context": {"tag": "ice_l050_b6h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T19:24:17-03:00", "code": "WAVE11_VERIFY", "summary": "AssertionError('E042_ICE_COVERAGE_ZERO')", "context": {"tag": "ice_l025_b4h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T19:24:17-03:00", "code": "WAVE11_VERIFY", "summary": "AssertionError('E042_ICE_COVERAGE_ZERO')", "context": {"tag": "ice_l050_b4h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T19:24:17-03:00", "code": "WAVE11_VERIFY", "summary": "AssertionError('E042_ICE_COVERAGE_ZERO')", "context": {"tag": "ice_l075_b4h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T19:24:17-03:00", "code": "WAVE11_VERIFY", "summary": "AssertionError('E042_ICE_COVERAGE_ZERO')", "context": {"tag": "ice_l050_b2h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-09-30T19:24:17-03:00", "code": "WAVE11_VERIFY", "summary": "AssertionError('E042_ICE_COVERAGE_ZERO')", "context": {"tag": "ice_l050_b6h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-10-01T09:38:33-03:00", "code": "E003", "summary": "Artefato Wave10 duplicado bloqueado", "context": {"tag": "ice_l050_b6h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}
+{"at": "2026-10-01T15:51:45-03:00", "code": "E003", "summary": "Artefato Wave10 duplicado bloqueado", "context": {"tag": "ice_l050_b6h"}, "state": "OPEN_REQUIRES_DIAGNOSIS"}

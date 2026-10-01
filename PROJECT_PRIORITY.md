@@ -19,3 +19,9 @@ Uma consulta pontual por retomada, verificar outputs faltantes. Revisar polític
 E029:causarealdeWave8desconhecida.E031corrigidorascunhoslocaisestritos(86testesanteriores),masfontesWave9emexecuçãodiferem:engineaindablend/pv/ours,exceçõesmsbuddyviramDEGRADEDregistrado.Revisãonecessáriaantesdeliberar.
 
 Gemma/Solarpreservados,semGPU/treinonovo. Uma conta;semsleep/poll;primeiroarm.sh/transferência;errosregistrados;exportaçãopúblicabloqueadaatélicenças/históricosanitizado.
+
+## Correção 30/09 (~19:35 BRT) — Victor
+"Mas a ideia não é deixar a conta intacta e sim fazer 5 de 5" → quota de submissão é
+recurso operacional, não troféu. Preservar quota NÃO é objetivo; o objetivo é executar
+o plano completo (5/5) quando verificado, dentro da janela. Preservação só se aplica a
+retrials cegos / envios duplicados / lixo científico.

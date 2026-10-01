@@ -25,3 +25,7 @@ if [ -d /home/user/recovered/.git ]; then
 fi
 export PATH="$HOME/.local/bin:$PATH"
 kaggle --version
+# Token de acesso KGAT (30/09): restaurar se presente em uploads/
+if [ -f /home/user/uploads/access_token.txt ]; then
+  mkdir -p "$HOME/.kaggle" && cp /home/user/uploads/access_token.txt "$HOME/.kaggle/access_token" && chmod 600 "$HOME/.kaggle/access_token"
+fi
